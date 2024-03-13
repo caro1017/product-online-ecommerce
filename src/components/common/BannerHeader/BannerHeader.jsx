@@ -2,6 +2,13 @@ import { Grid } from "@mui/material";
 import { CustomButtons } from "../CustomButtons/CustomButtons";
 import { Images } from "../../images/Images";
 
+// Obtener la imagen segun el tamaño de la pantalla
+const clothesImagePath =
+  window.innerWidth >= 500 ? Images.clothesImage : Images.clothesImageMovil;
+
+const tecnologyImagePath =
+  window.innerWidth >= 500 ? Images.airPods : Images.airPodsMovil;
+
 export const BannerHeader = () => {
   return (
     <>
@@ -26,8 +33,9 @@ export const BannerHeader = () => {
               </div>
             </div>
             <div className="overflow-hidden">
-              <Images
-                imageName="iphoneImage.png"
+              <img
+                src={Images.iphoneImage}
+                alt="IPhone 14"
                 className="mt-6 md:mt-16 ml-2 lg:ml-0 overflow-hidden"
               />
             </div>
@@ -44,8 +52,9 @@ export const BannerHeader = () => {
                 className="md:h-80 bg-white md:flex text-black"
               >
                 <div className="overflow-hidden">
-                  <Images
-                    imageName="healthImage.png"
+                  <img
+                    src={Images.healthImage}
+                    alt="healthImage"
                     className="mt-6 md:mt-16 ml-2 lg:ml-0 mb-4 overflow-hidden static"
                   />
                 </div>
@@ -60,7 +69,7 @@ export const BannerHeader = () => {
                 </div>
               </div>
             </Grid>
-            
+
             {/* Imágenes en la parte inferior */}
             <Grid item xs={12} sm={6} md={6}>
               <div elevation={3} className="md:h-60 ">
@@ -69,13 +78,7 @@ export const BannerHeader = () => {
                   className="md:h-60  bg-lightGrey md:flex text-black"
                 >
                   <div className="flex items-center justify-center overflow-hidden">
-                    <Images
-                      imageName={
-                        window.innerWidth >= 500
-                          ? "clothesImage.png"
-                          : "clothesImageMovil.png"
-                      }
-                    />
+                    <img src={clothesImagePath} alt="Clothes" />
                   </div>
 
                   <div className="md:absolute md:ml-48 md:w-44 md:mt-12 lg:mt-12 md:text-left mx-2 text-center pb-5">
@@ -96,12 +99,9 @@ export const BannerHeader = () => {
                   className="md:h-60 bg-yellow md:flex text-black"
                 >
                   <div className="flex items-center justify-center overflow-hidden">
-                    <Images
-                      imageName={
-                        window.innerWidth >= 500
-                          ? "AirPods.png"
-                          : "AirPodsMovil.png"
-                      }
+                    <img
+                      src={tecnologyImagePath}
+                      alt="Tecnology"
                       className="my-5"
                     />
                   </div>
@@ -138,7 +138,7 @@ export const BannerHeader = () => {
             </div>
 
             <div className="overflow-hidden w-full mt-auto">
-              <Images imageName="homeImage.png" />
+              <img src={Images.homeImage} alt="" />
             </div>
           </div>
         </Grid>

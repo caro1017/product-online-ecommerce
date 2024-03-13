@@ -1,10 +1,22 @@
-// eslint-disable-next-line react/prop-types
-export const Images = ({ imageName, className }) => {
-  const imagePath = `../../../public/${imageName}`;
+// Ruta logo
+import logo from "../../../public/logo/Logo.svg";
+// Imagenes Banner Header
+import iphoneImage from "../../../public/img/iphoneImage.png";
+import healthImage from "../../../public/img/healthImage.png";
+import clothesImage from "../../../public/img/clothesImage.png";
+import clothesImageMovil from "../../../public/img/clothesImageMovil.png";
+import airPods from "../../../public/img/airPods.png";
+import airPodsMovil from "../../../public/img/airPodsMovil.png";
+import homeImage from "../../../public/img/homeImage.png";
 
-  return (
-    <>
-      <img className={className} src={imagePath} alt={imageName} />
-    </>
-  );
+export const Images = {
+  logo,
+
+  iphoneImage,
+  healthImage,
+  clothesImage,
+  clothesImageMovil,
+  airPods,
+  airPodsMovil,
+  homeImage,
 };
