@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
-import { CustomButtons } from "../CustomButtons/CustomButtons";
-import { Images } from "../../images/Images";
+import { CustomButtons } from "../../../common/CustomButtons/CustomButtons";
+import { Images } from "../../../images/Images";
 
 // Obtener la imagen segun el tamaño de la pantalla
 const clothesImagePath =
@@ -28,7 +28,7 @@ export const BannerHeader = () => {
                   Face ID, acelerómetro, giroscopio, proximidad, brújula.
                 </p>
               </div>
-              <div className="text-center md:text-left md:-ml-5">
+              <div className="text-center md:text-left ">
                 <CustomButtons title="Comprar" variant="outlined" />
               </div>
             </div>
@@ -132,7 +132,7 @@ export const BannerHeader = () => {
                 Encontrarás una amplia gama de productos y recursos dedicados a
                 mejorar tu salud y calidad de vida.
               </p>
-              <div className="absolute text-center md:text-left md:-ml-5">
+              <div className="absolute text-center md:text-left">
                 <CustomButtons title="Comprar" variant="outlined" />
               </div>
             </div>

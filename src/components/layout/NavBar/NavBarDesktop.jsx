@@ -31,7 +31,7 @@ export const NavBarDesktop = () => {
           {menuItems.map((menuItem, index) => (
             <MenuItem
               key={index}
-              className=" text-grey hover:text-salmon hover:underline hover:underline-offset-8"
+              className=" text-grey hover:text-salmon "
             >
               {menuItem.title}
             </MenuItem>

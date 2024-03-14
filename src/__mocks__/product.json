@@ -1,0 +1,603 @@
+[
+  {
+    "_id": "zara-vestido-floral-verano-1",
+    "title": "Vestido floral de verano",
+    "description": "Vestido de verano con estampado floral, perfecto para días soleados.",
+    "price": 39.99,
+    "inStock": 50,
+    "qualification": 4.5,
+    "brand": "Zara",
+    "gender": "female",
+    "category": "fashion",
+    "colors": ["#FF69B4", "#008000", "#0000FF"],
+    "images": [
+      "https://static.zara.net/assets/public/20d2/1765/c102442da272/01f4273f6555/02737839070-a1/02737839070-a1.jpg?ts=1709571039453&w=563",
+      "https://static.zara.net/assets/public/333d/2a83/061e46748a81/beff230dfc5d/02737839070-a3/02737839070-a3.jpg?ts=1709571037696&w=563",
+      "https://static.zara.net/assets/public/d2ca/5ede/3fd746d4aa03/2eaa712a4298/02737839070-e1/02737839070-e1.jpg?ts=1709736524622&w=563"
+    ]
+  },
+  {
+    "_id": "nike-zapatillas-air-max-2",
+    "title": "Zapatillas deportivas Air Max",
+    "description": "Zapatillas deportivas con tecnología Air Max para mayor comodidad y estilo.",
+    "price": 129.99,
+    "inStock": 30,
+    "qualification": 4.7,
+    "brand": "Nike",
+    "gender": "male",
+    "category": "fashion",
+    "colors": ["#FF0000", "#000000", "#FFFFFF"],
+    "images": [
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9f684ace-3163-4227-8f85-2d2a067dd4f5/air-max-90-gore-tex-zapatillas-fQjC4b.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9f9573bd-1a94-4466-85e6-a32661d5b013/air-max-90-gore-tex-zapatillas-fQjC4b.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/776c9567-f6d6-49fd-91c5-ed8225a2d26c/air-max-90-gore-tex-zapatillas-fQjC4b.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0f495e92-9ff3-4ca6-804d-40a1a43242b1/air-max-90-gore-tex-zapatillas-fQjC4b.png"
+    ]
+  },
+  {
+    "_id": "levis-jeans-slim-fit-3",
+    "title": "Jeans slim fit",
+    "description": "Jeans de corte slim fit para un look moderno y cómodo.",
+    "price": 49.99,
+    "inStock": 20,
+    "qualification": 4.3,
+    "brand": "Levi's",
+    "gender": "male",
+    "category": "fashion",
+    "colors": ["#0000FF", "#A52A2A", "#808080"],
+    "images": [
+      "https://exitocol.vteximg.com.br/arquivos/ids/20658771/JEAN-LEVIS-198295-1731806_a.jpg?v=638385417486800000",
+      "https://exitocol.vteximg.com.br/arquivos/ids/20658773/JEAN-LEVIS-198295-1731806_c.jpg?v=638385417492300000"
+    ]
+  },
+  {
+    "_id": "hm-blusa-estampada-4",
+    "title": "Blusa estampada",
+    "description": "Blusa ligera con estampado primaveral, perfecta para cualquier ocasión.",
+    "price": 29.99,
+    "inStock": 40,
+    "qualification": 4.6,
+    "brand": "H&M",
+    "gender": "female",
+    "category": "fashion",
+    "colors": ["#FFA500", "#FF69B4", "#FFFF00"],
+    "images": [
+      "https://hmcolombia.vtexassets.com/arquivos/ids/3510865/Blusa-en-mezcla-de-lino---Blanco-Floral-azul---H-M-CO.jpg?v=638442742878770000",
+      "https://hmcolombia.vtexassets.com/arquivos/ids/3510866/Blusa-en-mezcla-de-lino---Blanco-Floral-azul---H-M-CO.jpg?v=638442742883130000"
+    ]
+  },
+  {
+    "_id": "adidas-chaqueta-bomber-5",
+    "title": "Chaqueta bomber",
+    "description": "Chaqueta estilo bomber para un look urbano y casual.",
+    "price": 59.99,
+    "inStock": 25,
+    "qualification": 4.4,
+    "brand": "Adidas",
+    "gender": "unisex",
+    "category": "fashion",
+    "colors": ["#114332", "#000000", "#FFFFFF"],
+    "images": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78d3d0d93f58461d950480729342a8f3_9366/Buzo_Deportivo_con_Capucha_Z.N.E._Premium_Turquesa_IN5087_21_model.jpg",
+      "https://assets.adidas.com/images/c_crop,f_auto,fl_lossy,g_north,h_840,q_auto,y_40/h_840/4229045a0ed54f9caf07b039484cfbbe_9366/Buzo_Deportivo_con_Capucha_Z.N.E._Premium_Turquesa_IN5087_01_laydown.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/218ba2cbe810443786012af1e6ddb7e0_9366/Buzo_Deportivo_con_Capucha_Z.N.E._Premium_Turquesa_IN5087_42_detail.jpg"
+    ]
+  },
+  {
+    "_id": "calvin-klein-vestido-noche-elegante-6",
+    "title": "Vestido de noche elegante",
+    "description": "Vestido elegante para eventos nocturnos, con un toque de glamour.",
+    "price": 89.99,
+    "inStock": 15,
+    "qualification": 4.8,
+    "brand": "Calvin Klein",
+    "gender": "female",
+    "category": "fashion",
+    "colors": ["#000000", "#FF0000", "#FFFFFF"],
+    "images": [
+      "https://calvincolombia.vteximg.com.br/arquivos/ids/212473-650-709/J20J221156_BEH_1.jpg?v=638249169151070000",
+      "https://calvincolombia.vteximg.com.br/arquivos/ids/212475-650-709/J20J221156_BEH_16.jpg?v=638249169167200000"
+    ]
+  },
+  {
+    "_id": "mango-camisa-lino-7",
+    "title": "Camisa de lino",
+    "description": "Camisa de lino ligera y fresca, ideal para días calurosos.",
+    "price": 34.99,
+    "inStock": 35,
+    "qualification": 4.2,
+    "brand": "Mango",
+    "gender": "male",
+    "category": "fashion",
+    "colors": ["#FFFFFF", "#ADD8E6", "#00FF00"],
+    "images": [
+      "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57080618_01.jpg?ts=1678174641606&imwidth=502&imdensity=2",
+      "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57080618_01_R.jpg?ts=1678174641606&imwidth=502&imdensity=2",
+      "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57080618_01_D1.jpg?ts=1678174641606&imwidth=502&imdensity=2"
+    ]
+  },
+  {
+    "_id": "gap-pantalones-chinos-8",
+    "title": "Pantalones chinos",
+    "description": "Pantalones chinos clásicos para un estilo casual y sofisticado.",
+    "price": 44.99,
+    "inStock": 30,
+    "qualification": 4.5,
+    "brand": "Gap",
+    "gender": "male",
+    "category": "fashion",
+    "colors": ["#000000", "#FFFFFF", "#8B4513"],
+    "images": [
+      "https://www.gapcolombia.com.co/images/large/gapcolombia/Gap_Modern_Khakis_in_Slim_Fit_Kaki_YNX-YNXLV-0961_4_ZOOM.jpg",
+      "https://www.gapcolombia.com.co/images/large/gapcolombia/Gap_Modern_Khakis_in_Slim_Fit_Kaki_YNX-YNXLV-0961_3_ZOOM.jpg"
+    ]
+  },
+  {
+    "_id": "ralph-lauren-jersey-punto-9",
+    "title": "Jersey de punto",
+    "description": "Jersey de punto suave y cálido, perfecto para el invierno.",
+    "price": 54.99,
+    "inStock": 20,
+    "qualification": 4.6,
+    "brand": "Ralph Lauren",
+    "gender": "unisex",
+    "category": "fashion",
+    "colors": ["#FFA500", "#A52A2A", "#FFFF00"],
+    "images": [
+      "https://www.optimized-rlmedia.io/is/image/PoloGSI/s7-1450592_alternate10?$rl_df_pdp_5_7_a10$",
+      "https://www.optimized-rlmedia.io/is/image/PoloGSI/s7-1450592_alternate6?$rl_df_pdp_5_7$",
+      "https://www.optimized-rlmedia.io/is/image/PoloGSI/s7-1450592_alternate5?$rl_df_pdp_5_7$"
+    ]
+  },
+  {
+    "_id": "tommy-hilfiger-banador-playa-10",
+    "title": "Bañador de playa",
+    "description": "Bañador de playa con estampado tropical, ideal para vacaciones.",
+    "price": 39.99,
+    "inStock": 25,
+    "qualification": 4.3,
+    "brand": "Tommy Hilfiger",
+    "gender": "male",
+    "category": "fashion",
+    "colors": ["#0000FF", "#12d81c", "#FFD700"],
+    "images": [
+      "https://tommycolombia.vteximg.com.br/arquivos/ids/359446-1040-1387/UM0UM02846_0IG_1.jpg?v=638357017553130000",
+      "https://tommycolombia.vteximg.com.br/arquivos/ids/359451-1040-1387/UM0UM02846_0IG_3.jpg?v=638357017621630000"
+    ]
+  },
+  {
+    "_id": "apple-iphone-13-pro",
+    "title": "iPhone 13 Pro",
+    "description": "El último smartphone de Apple con una potente cámara y rendimiento excepcional.",
+    "price": 999.99,
+    "inStock": 100,
+    "qualification": 4.8,
+    "brand": "Apple",
+    "category": "technology",
+    "colors": ["#000000", "#FFFFFF", "#506e52"],
+    "images": [
+      "https://mac-center.com/cdn/shop/files/iPhone_13_Pro_Max_Green_PDP_Image_Position-2_CLCO_666b1536-0ac3-40cc-8acc-f51449a0ef79_823x.jpg?v=1700293207",
+      "https://mac-center.com/cdn/shop/files/iPhone_13_Pro_Max_Green_PDP_Image_Position-3_CLCO_9b67c6aa-bec7-49fc-a5ee-99eb40e16096_823x.jpg?v=1700293216",
+      "https://mac-center.com/cdn/shop/files/iPhone_13_Pro_Max_Green_PDP_Image_Position-4_CLCO_10638e41-2f25-4985-a729-fee2e82201be_823x.jpg?v=1700293224"
+    ]
+  },
+  {
+    "_id": "samsung-galaxy-tab-s7",
+    "title": "Samsung Galaxy Tab S7",
+    "description": "Una tablet potente con pantalla AMOLED y S Pen incluido, ideal para productividad y entretenimiento.",
+    "price": 649.99,
+    "inStock": 50,
+    "qualification": 4.7,
+    "brand": "Samsung",
+    "category": "technology",
+    "colors": ["#000000", "#F9A825", "#FFFFFF"],
+    "images": [
+      "https://http2.mlstatic.com/D_NQ_NP_2X_700548-MLU72854905380_112023-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_980952-MLU73414949317_122023-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_975686-MLU74972630803_032024-F.webp"
+    ]
+  },
+  {
+    "_id": "dell-xps-13",
+    "title": "Dell XPS 13",
+    "description": "Una laptop ultradelgada y potente con pantalla InfinityEdge, perfecta para profesionales móviles.",
+    "price": 1299.99,
+    "inStock": 30,
+    "qualification": 4.9,
+    "brand": "Dell",
+    "category": "technology",
+    "colors": ["#000000", "#FFFFFF", "#007DB8"],
+    "images": [
+      "https://http2.mlstatic.com/D_NQ_NP_2X_909223-MCO51406066346_092022-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_715915-MCO51406096196_092022-F.webp"
+    ]
+  },
+  {
+    "_id": "sony-playstation-5",
+    "title": "Sony PlayStation 5",
+    "description": "La consola de próxima generación de Sony con gráficos de alta fidelidad y experiencias de juego inmersivas.",
+    "price": 499.99,
+    "inStock": 70,
+    "qualification": 4.8,
+    "brand": "Sony",
+    "category": "technology",
+    "colors": ["#000000", "#FFFFFF"],
+    "images": ["https://m.media-amazon.com/images/I/51fM0CKG+HL._AC_SX679_.jpg"]
+  },
+  {
+    "_id": "microsoft-surface-pro-8",
+    "title": "Microsoft Surface Pro 8",
+    "description": "Una tablet convertible versátil con potencia de laptop, perfecta para trabajo y creatividad.",
+    "price": 1099.99,
+    "inStock": 40,
+    "qualification": 4.6,
+    "brand": "Microsoft",
+    "category": "technology",
+    "colors": ["#000000", "#FFFFFF", "#008080"],
+    "images": [
+      "https://m.media-amazon.com/images/I/616CxWZF5OL.__AC_SY300_SX300_QL70_ML2_.jpg",
+      "https://m.media-amazon.com/images/I/61ejNxB9poL._AC_SY879_.jpg",
+      "https://m.media-amazon.com/images/I/51lI7zKegrL._AC_SX522_.jpg"
+    ]
+  },
+  {
+    "_id": "lg-55-inch-oled-tv",
+    "title": "LG 55-inch OLED TV",
+    "description": "Un televisor OLED con colores vibrantes y negros perfectos, ideal para una experiencia cinematográfica en casa.",
+    "price": 1499.99,
+    "inStock": 20,
+    "qualification": 4.7,
+    "brand": "LG",
+    "category": "technology",
+    "colors": ["#000000", "#837d7d"],
+    "images": [
+      "https://m.media-amazon.com/images/I/71UXvut9ZPL._AC_SX522_.jpg",
+      "https://m.media-amazon.com/images/I/71RZZuoVrWL._AC_SX522_.jpg",
+      "https://m.media-amazon.com/images/I/71+9KnZ4jcL._AC_SX522_.jpg"
+    ]
+  },
+  {
+    "_id": "logitech-mx-master-3",
+    "title": "Logitech MX Master 3",
+    "description": "Un ratón inalámbrico avanzado con seguimiento preciso y personalización de botones, ideal para profesionales creativos.",
+    "price": 99.99,
+    "inStock": 60,
+    "qualification": 4.8,
+    "brand": "Logitech",
+    "category": "technology",
+    "colors": ["#000000", "#FFFFFF"],
+    "images": [
+      "https://m.media-amazon.com/images/I/51ENcaVkvxL.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "https://m.media-amazon.com/images/I/71hBJaJYtJL._AC_SX522_.jpg"
+    ]
+  },
+  {
+    "_id": "asus-rog-strix-g15",
+    "title": "ASUS ROG Strix G15",
+    "description": "Una laptop gaming potente con pantalla de alta frecuencia de actualización y diseño llamativo.",
+    "price": 1499.99,
+    "inStock": 25,
+    "qualification": 4.7,
+    "brand": "ASUS",
+    "category": "technology",
+    "colors": ["#000000", "#797575"],
+    "images": [
+      "https://m.media-amazon.com/images/I/71dwsA3KsfL._AC_SX679_.jpg",
+      "rog_strix_g15_2.jpg"
+    ]
+  },
+  {
+    "_id": "canon-eos-r5",
+    "title": "Canon EOS R5",
+    "description": "Una cámara mirrorless profesional con resolución ultra alta y capacidades de video 8K.",
+    "price": 3899.99,
+    "inStock": 15,
+    "qualification": 4.9,
+    "brand": "Canon",
+    "category": "technology",
+    "colors": ["#000000", "#FFFFFF"],
+    "images": [
+      "https://m.media-amazon.com/images/I/61JsvnAD-NL.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "https://m.media-amazon.com/images/I/61RfWVtNmfL._AC_SX522_.jpg",
+      "https://m.media-amazon.com/images/I/61gy5HZbT3L._AC_SX522_.jpg",
+      "https://m.media-amazon.com/images/I/61JGOHxbodL._AC_SX522_.jpg"
+    ]
+  },
+  {
+    "_id": "hp-spectre-x360",
+    "title": "HP Spectre x360",
+    "description": "Una laptop convertible premium con diseño elegante y rendimiento excepcional.",
+    "price": 1299.99,
+    "inStock": 35,
+    "qualification": 4.6,
+    "brand": "HP",
+    "category": "technology",
+    "colors": ["#000000", "#FFFFFF", "#1E90FF"],
+    "images": ["https://m.media-amazon.com/images/I/61L7vD2L4lL._AC_SX522_.jpg"]
+  },
+  {
+    "_id": "ikea-malm-bed",
+    "title": "Cama Malm",
+    "description": "Cama de estilo moderno y minimalista con almacenamiento integrado.",
+    "price": 199.99,
+    "inStock": 50,
+    "qualification": 4.5,
+    "brand": "IKEA",
+    "category": "home",
+    "colors": ["#FFFFFF", "#000000"],
+    "images": [
+      "https://m.media-amazon.com/images/I/912Ihx2sD9L.__AC_SX300_SY300_QL70_ML2_.jpg"
+    ]
+  },
+  {
+    "_id": "dyson-v11-vacuum",
+    "title": "Aspiradora Dyson V11",
+    "description": "Aspiradora inalámbrica con potencia de succión potente y autonomía extendida.",
+    "price": 599.99,
+    "inStock": 30,
+    "qualification": 4.8,
+    "brand": "Dyson",
+    "category": "home",
+    "colors": ["#000000", "#F9A825"],
+    "images": [
+      "https://m.media-amazon.com/images/I/81FQ-qjjHKL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81gfwRkasbL._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "_id": "philips-hue-starter-kit",
+    "title": "Kit de inicio Philips Hue",
+    "description": "Sistema de iluminación inteligente con bombillas LED y puente para control remoto.",
+    "price": 149.99,
+    "inStock": 40,
+    "qualification": 4.7,
+    "brand": "Philips",
+    "category": "home",
+    "colors": ["#FFFFFF"],
+    "images": [
+      "https://m.media-amazon.com/images/I/71CmSByvShL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71TM42kp+3L._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "_id": "le-creuset-dutch-oven",
+    "title": "Olla holandesa Le Creuset",
+    "description": "Olla de hierro fundido esmaltado para cocinar guisos y platos al horno con estilo.",
+    "price": 349.99,
+    "inStock": 20,
+    "qualification": 4.9,
+    "brand": "Le Creuset",
+    "category": "home",
+    "colors": ["#ff6f00", "#2681b9"],
+    "images": [
+      "https://m.media-amazon.com/images/I/71qPloNyihL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71prZxckArL._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "_id": "roomba-robot-vacuum",
+    "title": "Aspiradora robot Roomba",
+    "description": "Aspiradora autónoma que limpia automáticamente su hogar con navegación inteligente.",
+    "price": 399.99,
+    "inStock": 25,
+    "qualification": 4.6,
+    "brand": "iRobot",
+    "category": "home",
+    "colors": ["#000000", "#FFFFFF"],
+    "images": [
+      "https://m.media-amazon.com/images/I/71b1+HyxfjL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81+yzxONIML._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "_id": "nest-thermostat",
+    "title": "Termostato Nest",
+    "description": "Termostato inteligente que aprende tus preferencias y ahorra energía.",
+    "price": 249.99,
+    "inStock": 35,
+    "qualification": 4.7,
+    "brand": "Google",
+    "category": "home",
+    "colors": ["#FFFFFF", "#FFD700"],
+    "images": [
+      "https://m.media-amazon.com/images/I/71PColv3+YL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81Nm1ol5zUL._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "_id": "tuft-and-needle-mattress",
+    "title": "Colchón Tuft & Needle",
+    "description": "Colchón de espuma con memoria adaptativa y soporte de alta calidad para un sueño reparador.",
+    "price": 699.99,
+    "inStock": 15,
+    "qualification": 4.8,
+    "brand": "Tuft & Needle",
+    "category": "home",
+    "colors": ["#FFFFFF"],
+    "images": [
+      "https://m.media-amazon.com/images/I/91hJYO8enCS._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81IJIqo5MYS._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/91JzemBIk3S._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "_id": "kitchenaid-stand-mixer",
+    "title": "Batidora de pie KitchenAid",
+    "description": "Batidora de pie con diseño retro y potencia para mezclar, batir y amasar ingredientes con facilidad.",
+    "price": 299.99,
+    "inStock": 40,
+    "qualification": 4.6,
+    "brand": "KitchenAid",
+    "category": "home",
+    "colors": ["#FFFFFF", "#FF0000", "#0000FF", "#FFFF00", "#00FF00"],
+    "images": [
+      "https://m.media-amazon.com/images/I/711fcF6OfnL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71JzwhnxLTL._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "_id": "sonos-one-speaker",
+    "title": "Altavoz Sonos One",
+    "description": "Altavoz inteligente con calidad de sonido superior y control por voz, perfecto para música y más.",
+    "price": 199.99,
+    "inStock": 50,
+    "qualification": 4.7,
+    "brand": "Sonos",
+    "category": "home",
+    "colors": ["#000000", "#FFFFFF"],
+    "images": [
+      "https://m.media-amazon.com/images/I/617ggmXddpL._AC_SX522_.jpg",
+      "https://m.media-amazon.com/images/I/71FW592kYlL._AC_SX522_.jpg"
+    ]
+  },
+  {
+    "_id": "hario-v60-coffee-maker",
+    "title": "Cafetera Hario V60",
+    "description": "Cafetera de goteo manual para preparar café con un sabor rico y equilibrado.",
+    "price": 29.99,
+    "inStock": 60,
+    "qualification": 4.5,
+    "brand": "Hario",
+    "category": "home",
+    "colors": ["#cf1c1c", "#000000"],
+    "images": [
+      "https://m.media-amazon.com/images/I/61AXRgUofJL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/51Uku8N9t-L._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61-3y5bqxfL._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "_id": "philips-sonicare-diamondclean",
+    "title": "Philips Sonicare DiamondClean",
+    "description": "Cepillo de dientes eléctrico con tecnología sónica para una limpieza profunda y blanqueamiento dental.",
+    "price": 199.99,
+    "inStock": 50,
+    "qualification": 4.7,
+    "brand": "Philips",
+    "category": "health",
+    "colors": ["#FFFFFF", "#000000", "#F9A825", "#FF0000"],
+    " images": [
+      "https://www.philips.es/c-dam/b2c/es_ES/experience/pe/etb-campaign/philips-sonicare-protectiveclean-6100-black.png"
+    ]
+  },
+  {
+    "_id": "crest-3d-white-toothpaste",
+    "title": "Pasta de dientes Crest 3D White",
+    "description": "Pasta de dientes blanqueadora que elimina las manchas superficiales y fortalece el esmalte dental.",
+    "price": 6.99,
+    "inStock": 100,
+    "qualification": 4.6,
+    "brand": "Crest",
+    "category": "health",
+    "colors": ["#FFFFFF"],
+    "images": ["https://m.media-amazon.com/images/I/71Yi9f78rmL._AC_SX679_.jpg"]
+  },
+  {
+    "_id": "head-shoulders-shampoo",
+    "title": "Shampoo Head & Shoulders",
+    "description": "Shampoo anticaspa que limpia el cuero cabelludo y deja el cabello suave y sin caspa.",
+    "price": 8.99,
+    "inStock": 80,
+    "qualification": 4.5,
+    "brand": "Head & Shoulders",
+    "category": "health",
+    "colors": ["#FFFFFF"],
+    "images": [
+      "https://m.media-amazon.com/images/I/6194wszixfL.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "https://m.media-amazon.com/images/I/71CrOfinXrL._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "_id": "dove-body-wash",
+    "title": "Gel de baño Dove",
+    "description": "Gel de baño nutritivo con fórmula suave que deja la piel suave, hidratada y con un aroma fresco.",
+    "price": 5.99,
+    "inStock": 70,
+    "qualification": 4.7,
+    "brand": "Dove",
+    "category": "health",
+    "colors": ["#FFFFFF", "#F9A825"],
+    " images": [
+      "https://m.media-amazon.com/images/I/61ur2l0C6IL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71GhBbebgPL._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "_id": "neutrogena-hydro-boost-moisturizer",
+    "title": "Neutrogena Hydro Boost Moisturizer",
+    "description": "Hidratante facial con ácido hialurónico que proporciona una hidratación intensa y duradera.",
+    "price": 14.99,
+    "inStock": 60,
+    "qualification": 4.6,
+    "brand": "Neutrogena",
+    "category": "health and personal care",
+    "colors": ["#FFFFFF"],
+    "images": ["https://m.media-amazon.com/images/I/61Sj12U+OuL._AC_SX522_.jpg"]
+  },
+  {
+    "_id": "olay-regenerist-retinol-24",
+    "title": "Olay Regenerist Retinol 24",
+    "description": "Crema facial con retinol que reduce visiblemente las arrugas y mejora la textura de la piel durante la noche.",
+    "price": 28.99,
+    "inStock": 45,
+    "qualification": 4.8,
+    "brand": "Olay",
+    "category": "health and personal care",
+    "colors": ["#FFFFFF"],
+    "images": ["https://m.media-amazon.com/images/I/71pZz+sdnVL._AC_SX522_.jpg"]
+  },
+  {
+    "_id": "axe-body-spray",
+    "title": "Axe Body Spray",
+    "description": "Fragancia en spray corporal para hombres con un aroma fresco y duradero.",
+    "price": 4.99,
+    "inStock": 55,
+    "qualification": 4.5,
+    "brand": "Axe",
+    "category": "health and personal care",
+    "colors": ["#000000"],
+    "images": ["https://m.media-amazon.com/images/I/51NdOoHqELL._AC_SX679_.jpg"]
+  },
+  {
+    "_id": "colgate-total-mouthwash",
+    "title": "Enjuague bucal Colgate Total",
+    "description": "Enjuague bucal antibacteriano que combate el mal aliento y protege contra las caries y la placa dental.",
+    "price": 7.99,
+    "inStock": 65,
+    "qualification": 4.7,
+    "brand": "Colgate",
+    "category": "health and personal care",
+    "colors": ["#FFFFFF"],
+    "images": ["https://m.media-amazon.com/images/I/71icZm6sjvL._AC_SX679_.jpg"]
+  },
+  {
+    "_id": "schick-hydro-razor",
+    "title": "Maquinilla de afeitar Schick Hydro",
+    "description": "Maquinilla de afeitar con cuchillas ultra deslizantes y gel hidratante para un afeitado suave y sin irritaciones.",
+    "price": 9.99,
+    "inStock": 75,
+    "qualification": 4.6,
+    "brand": "Schick",
+    "category": "health and personal care",
+    "colors": ["#FFFFFF"],
+    "images": [
+      "https://m.media-amazon.com/images/I/71KjvO2BP2L._AC_SX522_.jpg",
+      "https://m.media-amazon.com/images/I/51OmIGetzeL._AC_SX522_.jpg"
+    ]
+  },
+  {
+    "_id": "old-spice-deodorant",
+    "title": "Desodorante Old Spice",
+    "description": "Desodorante en barra con una fragancia fresca y duradera que protege contra el olor corporal durante todo el día.",
+    "price": 5.49,
+    "inStock": 90,
+    "qualification": 4.7,
+    "brand": "Old Spice",
+    "category": "health and personal care",
+    "colors": ["#b71a1a"],
+    "images": [
+      "https://m.media-amazon.com/images/I/51qO8dVWZWL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/618Q2HZyBVL._AC_SX679_.jpg"
+    ]
+  }
+]

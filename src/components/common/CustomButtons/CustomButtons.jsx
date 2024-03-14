@@ -11,9 +11,10 @@ export const CustomButtons = ({
 }) => {
   // Definir estilos de variantes para las clases de color CSS de Tailwind
   const variantToColor = {
-    contained: "bg-yellow hover:bg-yellow text-white tracking-wider font-light px-8 ",
+    contained:
+      "bg-yellow hover:bg-yellow text-white tracking-wider font-normal px-8 normal-case ",
     outlined:
-      "border-solid border-black text-black font-normal tracking-wider px-8 hover:border-black",
+      "border-solid border-black text-black font-normal tracking-wider px-8 hover:border-black normal-case ",
   };
 
   //Obtener la clase de color CSS Tailwind correspondiente según la variante
@@ -21,18 +22,16 @@ export const CustomButtons = ({
 
   return (
     <>
-      <div className="px-5 py-3">
-        <Button
-          className={colorClass}
-          endIcon={icon}
-          onClick={onClick}
-          variant={variant}
-          type={type}
-          disabled={disabled}
-        >
-          {title}
-        </Button>
-      </div>
+      <Button
+        className={colorClass}
+        endIcon={icon}
+        onClick={onClick}
+        variant={variant}
+        type={type}
+        disabled={disabled}
+      >
+        {title}
+      </Button>
     </>
   );
 };
