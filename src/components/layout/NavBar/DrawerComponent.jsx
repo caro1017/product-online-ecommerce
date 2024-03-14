@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 
 import { SearchComponent } from "../../common/SearchComponent/SearchComponent";
+import { Images } from "../../images/Images";
 
 /* Funciones para determinar cada propiedad de los items  */
 const menuItems = [
@@ -62,6 +63,10 @@ const generateListItems = (items) =>
 // eslint-disable-next-line react/prop-types
 const DrawerComponent = ({ open, onClose }) => (
   <Drawer open={open} onClose={onClose} className="lg:hidden">
+    <div className=" h-auto">
+      <img src={Images.logoBN} alt="logo" className="absolute w-44 mx-12 mt-5" />
+      <img src={Images.drawerVector} alt="vector"/>
+    </div>
     <div className="p-2">
       <SearchComponent />
     </div>

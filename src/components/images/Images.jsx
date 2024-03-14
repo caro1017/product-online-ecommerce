@@ -1,5 +1,9 @@
 // Ruta logo
 import logo from "../../../public/logo/Logo.svg";
+import logoBN from "../../../public/logo/LogoBN.svg";
+// Otros
+import drawerVector from "../../../public/img/drawerVector.png";
+
 // Imagenes Banner Header
 import iphoneImage from "../../../public/img/iphoneImage.png";
 import healthImage from "../../../public/img/healthImage.png";
@@ -11,6 +15,9 @@ import homeImage from "../../../public/img/homeImage.png";
 
 export const Images = {
   logo,
+  logoBN,
+
+  drawerVector,
 
   iphoneImage,
   healthImage,
