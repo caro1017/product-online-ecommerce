@@ -2,6 +2,8 @@ import { BannerHeader } from "./Sections/BannerHeader";
 import { NavBar } from "../../layout/NavBar/NavBar";
 import { SearchCategory } from "./Sections/SearchCategory";
 import { TabsHome } from "./Sections/TabsHome";
+import { FooterBar } from "../../layout/FooterBar/FooterBar";
+import { PopularProduct } from "./Sections/PopularProduct";
 
 export const HomePage = () => {
   return (
@@ -11,7 +13,9 @@ export const HomePage = () => {
         <BannerHeader />
         <SearchCategory />
         <TabsHome />
+        <PopularProduct />
       </div>
+      <FooterBar />
     </>
   );
 };
