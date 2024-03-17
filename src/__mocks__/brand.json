@@ -1,0 +1,110 @@
+[
+  {
+    "category": "fashion",
+    "name": "Nike",
+    "description": "Nike es una empresa estadounidense de ropa, calzado y equipamiento deportivo fundada en 1964 por Bill Bowerman y Phil Knight.",
+    "images": [
+      "https://images.unsplash.com/photo-1577641074792-3c3bd9aad58f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1622831617330-bc799d6236b4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "category": "fashion",
+    "name": "Adidas",
+    "description": "Adidas es una empresa alemana de ropa, calzado y equipamiento deportivo fundada en 1949 por Adolf Dassler.",
+    "images": [
+      "https://images.unsplash.com/photo-1608551279839-84c7ca889b80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1580902394857-0b40c534dc71?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "category": "fashion",
+    "name": "Zara",
+    "description": "Zara es una cadena española de tiendas de moda fundada en 1975 por Amancio Ortega y Rosalía Mera.",
+    "images": [
+      "https://images.unsplash.com/photo-1572615208281-3c9a9a9fb41c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1641745921155-6e62d2cd4131?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "category": "technology",
+    "name": "Apple",
+    "description": "Apple es una empresa estadounidense que diseña y fabrica productos electrónicos, software y servicios en línea.",
+    "images": [
+      "https://images.unsplash.com/photo-1685392485351-f7d93de2231e?q=80&w=1895&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1534802046520-4f27db7f3ae5?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "category": "technology",
+    "name": "Samsung",
+    "description": "Samsung es una empresa surcoreana que fabrica una amplia gama de productos electrónicos, incluyendo teléfonos inteligentes, televisores y electrodomésticos.",
+    "images": [
+      "https://images.unsplash.com/photo-1661347998423-b15d37d6f61e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1620288650879-20db0eb38c05?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "category": "technology",
+    "name": "Huawei",
+    "description": "Huawei Technologies Co., Ltd. es una empresa multinacional china de tecnología que diseña, desarrolla y vende equipos de telecomunicaciones, productos electrónicos de consumo y servicios.",
+    "images": [
+      "https://images.unsplash.com/photo-1652156751807-ebd3dba692f8?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1592434134753-a70baf7979d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "category": "home",
+    "name": "IKEA",
+    "description": "IKEA es una empresa multinacional sueca especializada en el diseño y venta de muebles, accesorios para el hogar y artículos de decoración.",
+    "images": [
+      "https://images.unsplash.com/photo-1629921976897-b4ce6795e560?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1605774337664-7a846e9cdf17?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "category": "home",
+    "name": "Dyson",
+    "description": "Dyson es una empresa británica que se especializa en el diseño y fabricación de productos para el hogar, con un enfoque particular en tecnología de aspiración y limpieza.",
+    "images": [
+      "https://images.unsplash.com/photo-1681965823525-b684fb97e9fe?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1598954560342-c12d399743a5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "category": "home",
+    "name": "Philips",
+    "description": "Philips es una empresa neerlandesa que produce una variedad de productos para el hogar, incluyendo iluminación, electrodomésticos y equipos de cuidado personal.",
+    "images": [
+      "https://images.unsplash.com/photo-1660792713815-390b17a48a1c?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1695089028114-ce28248f0ab9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "category": "health",
+    "name": "L'Oréal",
+    "description": "L'Oréal es una empresa multinacional francesa líder en el sector de la belleza y la cosmética, ofreciendo una amplia gama de productos para el cuidado del cabello, cuidado de la piel, maquillaje, fragancias y productos de cuidado personal.",
+    "images": [
+      "https://images.unsplash.com/photo-1688569896581-500f8e6a4833?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1646341743728-091844fe665c?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "category": "health",
+    "name": "Clinique",
+    "description": "Clinique es una marca de cosméticos y productos para el cuidado de la piel fundada en 1968 por la esteticista Carol Phillips y el dermatólogo Norman Orentreich. Es conocida por su enfoque en la dermatología.",
+    "images": [
+      "https://images.unsplash.com/photo-1619352519115-1845ce53638e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1687160897014-bdc8b8160815?q=80&w=1895&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "category": "health",
+    "name": "Nivea",
+    "description": "Nivea es una marca alemana conocida por sus productos para el cuidado de la piel, incluyendo cremas hidratantes, lociones corporales, productos de limpieza facial y protección solar.",
+    "images": [
+      "https://images.unsplash.com/photo-1603923054647-887b2d34a2ee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1603923054647-887b2d34a2ee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  }
+]

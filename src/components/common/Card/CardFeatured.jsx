@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import {
   Card,
   CardActionArea,
@@ -6,28 +7,32 @@ import {
   Typography,
 } from "@mui/material";
 import { CustomButtons } from "../CustomButtons/CustomButtons";
-export const CardFeatured = () => {
+
+export const CardFeatured = ({ name, description, image }) => {
   return (
     <>
-      <Card className="relative lg:w-[500px]">
+      <Card className="relative mx-3 md:w-[375px] lg:w-[500px] ">
         <div className="w-full h-80 flex justify-center items-center overflow-hidden  ">
           <CardActionArea>
             <CardMedia
               component="img"
               height="140"
-              image="https://images.unsplash.com/photo-1702289613007-8b830e2520b0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="green iguana"
-              className="transform transition-transform duration-300 hover:scale-110"
+              image={image}
+              alt={name}
+              className="transform transition-transform duration-300 hover:scale-110 h-96"
             />
           </CardActionArea>
         </div>
-        <CardContent>
+        <CardContent className="h-20">
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            {name}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            className="truncate"
+          >
+            {description}
           </Typography>
         </CardContent>
         <div className="p-5">

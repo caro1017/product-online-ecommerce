@@ -32,41 +32,39 @@ export const CarouselComponent = ({ items }) => {
 
   return (
     <>
-      <div className="mb-20"> 
-        <Carousel
-          additionalTransfrom={0}
-          arrows
-          autoPlay
-          autoPlaySpeed={3000}
-          centerMode={false}
-          className=""
-          containerClass="container-with-dots"
-          dotListClass=""
-          draggable
-          focusOnSelect={false}
-          infinite
-          itemClass=""
-          keyBoardControl
-          minimumTouchDrag={80}
-          pauseOnHover
-          renderArrowsWhenDisabled={false}
-          renderButtonGroupOutside={false}
-          renderDotsOutside={false}
-          responsive={responsive}
-          rewind={false}
-          rewindWithAnimation={false}
-          rtl={false}
-          shouldResetAutoplay
-          showDots
-          sliderClass=""
-          slidesToSlide={1}
-          swipeable
-        >
-          {items.map((item, index) => (
-            <div key={index}>{item}</div>
-          ))}
-        </Carousel>
-      </div>
+      <Carousel
+        additionalTransfrom={0}
+        arrows
+        autoPlay
+        autoPlaySpeed={3000}
+        centerMode={false}
+        className=""
+        containerClass="container-with-dots"
+        dotListClass=""
+        draggable
+        focusOnSelect={false}
+        infinite
+        itemClass=""
+        keyBoardControl
+        minimumTouchDrag={80}
+        pauseOnHover
+        renderArrowsWhenDisabled={false}
+        renderButtonGroupOutside={false}
+        renderDotsOutside
+        responsive={responsive}
+        rewind={false}
+        rewindWithAnimation={false}
+        rtl={false}
+        shouldResetAutoplay
+        showDots
+        sliderClass=""
+        slidesToSlide={1}
+        swipeable
+      >
+        {items.map((item, index) => (
+          <div key={index}>{item}</div>
+        ))}
+      </Carousel>
     </>
   );
 };
