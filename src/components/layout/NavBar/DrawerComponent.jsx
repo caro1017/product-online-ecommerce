@@ -9,7 +9,7 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-
+import { Link } from "react-router-dom";
 import { SearchComponent } from "../../common/SearchComponent/SearchComponent";
 import { Images } from "../../images/Images";
 
@@ -18,10 +18,23 @@ const menuItems = [
   {
     title: "Inicio",
     icon: <i className="bx bx-home-alt text-xl" />,
+    path: "/",
   },
-  { title: "Productos", icon: <i className="bx bx-list-ul text-xl" /> },
-  { title: "Categorias", icon: <i className="bx bx-category text-xl" /> },
-  { title: "Iniciar Sesión", icon: <i className="bx bx-log-in text-xl" /> },
+  {
+    title: "Productos",
+    icon: <i className="bx bx-list-ul text-xl" />,
+    path: "/",
+  },
+  {
+    title: "Categorias",
+    icon: <i className="bx bx-category text-xl" />,
+    path: "/",
+  },
+  {
+    title: "Iniciar Sesión",
+    icon: <i className="bx bx-log-in text-xl" />,
+    path: "/registeredPage",
+  },
 ];
 
 const categoriesItems = [
@@ -46,16 +59,18 @@ const generateListItems = (items) =>
   items.map((item) => (
     <ListItem key={item.title} disablePadding>
       <ListItemButton className="h-10 text-grey hover:text-salmon">
-        <ListItemIcon className="ml-5">{item.icon}</ListItemIcon>
-        <ListItemText primary={item.title} className="text-sm font-light" />
-        {item.cartCount !== undefined && (
-          <Badge
-            color="error"
-            badgeContent={item.cartCount}
-            overlap="circular"
-            className="-left-44 -top-2"
-          />
-        )}
+        <Link to={item.path} className="flex">
+          <ListItemIcon className="ml-5">{item.icon}</ListItemIcon>
+          <ListItemText primary={item.title} className="text-sm font-light" />
+          {item.cartCount !== undefined && (
+            <Badge
+              color="error"
+              badgeContent={item.cartCount}
+              overlap="circular"
+              className="-left-[150px]"
+            />
+          )}
+        </Link>
       </ListItemButton>
     </ListItem>
   ));
@@ -64,8 +79,12 @@ const generateListItems = (items) =>
 const DrawerComponent = ({ open, onClose }) => (
   <Drawer open={open} onClose={onClose} className="lg:hidden">
     <div className=" h-auto">
-      <img src={Images.logoBN} alt="logo" className="absolute w-44 mx-12 mt-5" />
-      <img src={Images.drawerVector} alt="vector"/>
+      <img
+        src={Images.logoBN}
+        alt="logo"
+        className="absolute w-44 mx-12 mt-5"
+      />
+      <img src={Images.drawerVector} alt="vector" />
     </div>
     <div className="p-2">
       <SearchComponent />

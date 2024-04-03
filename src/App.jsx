@@ -1,9 +1,12 @@
+import { Router } from "./routes/Router";
 import { HomePage } from "./components/pages/HomePage/HomePage";
 
 function App() {
   return (
     <>
-      <HomePage />
+      <Router>
+        <HomePage />
+      </Router>
     </>
   );
 }

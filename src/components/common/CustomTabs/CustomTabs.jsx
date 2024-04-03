@@ -10,14 +10,7 @@ const AntTabs = styled(Tabs)({
   },
 });
 
-export const CustomTabs = ({
-  titleTab1,
-  titleTab2,
-  titleTab3,
-  content1,
-  content2,
-  content3,
-}) => {
+export const CustomTabs = ({ tabs }) => {
   /* Estado para cambiar de valor de cada tab */
   const [value, setValue] = useState(0);
 
@@ -35,25 +28,25 @@ export const CustomTabs = ({
             aria-label="Custom Tabs"
             textColor="inherit"
           >
-            <Tab
-              label={titleTab1}
-              className="text-salmon normal-case text-[14px] md:text-base font-normal"
-            />
-            <Tab
-              label={titleTab2}
-              className="text-salmon normal-case text-[14px] md:text-base font-normal"
-            />
-            <Tab
-              label={titleTab3}
-              className="text-salmon normal-case text-[14px] md:text-base font-normal"
-            />
+            {tabs.map((tab, index) => (
+              <Tab
+                key={index}
+                label={tab.title}
+                className="text-salmon normal-case text-[14px] md:text-base font-normal"
+              />
+            ))}
           </AntTabs>
         </div>
         {/* Contenido de las pestañas */}
         <div className="lg:w-[900px] mx-auto">
-          {value === 0 && <div>{content1}</div>}
-          {value === 1 && <div>{content2}</div>}
-          {value === 2 && <div>{content3}</div>}
+          {tabs.map((tab, index) => (
+            <div
+              key={index}
+              style={{ display: value === index ? "block" : "none" }}
+            >
+              {tab.content}
+            </div>
+          ))}
         </div>
       </div>
     </>

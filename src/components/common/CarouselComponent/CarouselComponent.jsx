@@ -36,7 +36,7 @@ export const CarouselComponent = ({ items }) => {
         additionalTransfrom={0}
         arrows
         autoPlay
-        autoPlaySpeed={3000}
+        autoPlaySpeed={2000}
         centerMode={false}
         className=""
         containerClass="container-with-dots"
@@ -56,7 +56,6 @@ export const CarouselComponent = ({ items }) => {
         rewindWithAnimation={false}
         rtl={false}
         shouldResetAutoplay
-        showDots
         sliderClass=""
         slidesToSlide={1}
         swipeable

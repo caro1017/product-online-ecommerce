@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 import { Badge, IconButton, MenuItem } from "@mui/material";
 import { SearchComponent } from "../../common/SearchComponent/SearchComponent";
 
 /* Funciones para determinar cada propiedad de los items  */
 const menuItems = [
-  { title: "Inicio" },
-  { title: "Productos" },
-  { title: "Categorias" },
-  { title: "Iniciar Sesión" },
+  { title: "Inicio", path: "/" },
+  { title: "Productos", path: "/" },
+  { title: "Categorias", path: "/" },
+  { title: "Iniciar Sesión", path: "/registeredPage" },
 ];
 
 const userIcon = [
@@ -29,11 +30,8 @@ export const NavBarDesktop = () => {
       <div className="hidden lg:flex ">
         <div className="flex mx-10">
           {menuItems.map((menuItem, index) => (
-            <MenuItem
-              key={index}
-              className=" text-grey hover:text-yellow "
-            >
-              {menuItem.title}
+            <MenuItem key={index} className=" text-grey hover:text-yellow ">
+              <Link to={menuItem.path}>{menuItem.title}</Link>
             </MenuItem>
           ))}
         </div>
