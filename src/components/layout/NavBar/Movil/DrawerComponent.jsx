@@ -10,8 +10,8 @@ import {
   ListItemText,
 } from "@mui/material";
 import { Link } from "react-router-dom";
-import { SearchComponent } from "../../common/SearchComponent/SearchComponent";
-import { Images } from "../../images/Images";
+import { SearchComponent } from "../../../common/SearchComponent/SearchComponent";
+import { Images } from "../../../images/Images";
 
 /* Funciones para determinar cada propiedad de los items  */
 const menuItems = [
@@ -28,7 +28,7 @@ const menuItems = [
   {
     title: "Categorias",
     icon: <i className="bx bx-category text-xl" />,
-    path: "/",
+    path: "/categoryPage",
   },
   {
     title: "Iniciar Sesión",

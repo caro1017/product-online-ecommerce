@@ -31,6 +31,16 @@ export const SearchComponent = () => {
               </IconButton>
             </InputAdornment>
           ),
+          style: {
+            fontWeight: 300,
+          },
+        }}
+        InputLabelProps={{
+          style: {
+            color: "#434043",
+            fontSize: "14px",
+            fontWeight: 400,
+          },
         }}
       />
     </>

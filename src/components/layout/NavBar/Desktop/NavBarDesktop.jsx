@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { Badge, IconButton, MenuItem } from "@mui/material";
-import { SearchComponent } from "../../common/SearchComponent/SearchComponent";
+import { SearchComponent } from "../../../common/SearchComponent/SearchComponent";
 
 /* Funciones para determinar cada propiedad de los items  */
 const menuItems = [
   { title: "Inicio", path: "/" },
   { title: "Productos", path: "/" },
-  { title: "Categorias", path: "/" },
+  { title: "Categorias", path: "/categoryPage" },
   { title: "Iniciar Sesión", path: "/registeredPage" },
 ];
 
