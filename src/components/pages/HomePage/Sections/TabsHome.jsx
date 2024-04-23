@@ -4,13 +4,14 @@ import product from "../../../../__mocks__/product.json";
 
 export const TabsHome = () => {
   // Filtrar productos con calificación de 4.6 o superior
-  const filteredProductsbestseller = product.filter(
-    (item) => item.qualification >= 4.7
-  );
+  const filteredProductsbestseller = product
+    .filter((item) => item.qualification >= 4.7)
+    .slice(0, 12); // Limitar a 12 productos
+
   // Filtrar productos con calificación de 4.8 o superior
-  const filteredProductsfeatured = product.filter(
-    (item) => item.qualification >= 4.9
-  );
+  const filteredProductsfeatured = product
+    .filter((item) => item.qualification >= 4.9)
+    .slice(0, 12); // Limitar a 12 productos
 
   // Define la estructura de las pestañas
   const tabs = [
@@ -18,7 +19,7 @@ export const TabsHome = () => {
       title: "Nuevos Productos",
       content: (
         <div className="md:mx-4 mx-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
-          {product.map((item) => (
+          {product.slice(0, 12).map((item) => (
             <CardProduct
               key={item._id}
               images={

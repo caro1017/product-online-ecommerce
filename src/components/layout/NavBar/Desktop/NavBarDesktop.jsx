@@ -5,8 +5,7 @@ import { SearchComponent } from "../../../common/SearchComponent/SearchComponent
 /* Funciones para determinar cada propiedad de los items  */
 const menuItems = [
   { title: "Inicio", path: "/" },
-  { title: "Productos", path: "/" },
-  { title: "Categorias", path: "/categoryPage" },
+  { title: "Productos", path: "/productPage" },
   { title: "Iniciar Sesión", path: "/registeredPage" },
 ];
 

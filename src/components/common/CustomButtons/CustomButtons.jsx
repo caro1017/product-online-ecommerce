@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export const CustomButtons = ({
   title,
@@ -8,6 +9,7 @@ export const CustomButtons = ({
   variant,
   type,
   disabled,
+  link,
 }) => {
   // Definir estilos de variantes para las clases de color CSS de Tailwind
   const variantToColor = {
@@ -22,16 +24,18 @@ export const CustomButtons = ({
 
   return (
     <>
-      <Button
-        className={colorClass}
-        endIcon={icon}
-        onClick={onClick}
-        variant={variant}
-        type={type}
-        disabled={disabled}
-      >
-        {title}
-      </Button>
+      <Link to={link}>
+        <Button
+          className={colorClass}
+          endIcon={icon}
+          onClick={onClick}
+          variant={variant}
+          type={type}
+          disabled={disabled}
+        >
+          {title}
+        </Button>
+      </Link>
     </>
   );
 };

@@ -1,17 +1,18 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 
-export const CustomSelect = ({ menuItems, initialValue }) => {
-  const [value, setValue] = useState("");
-
+export const CustomSelect = ({ menuItems, initialValue, onChange }) => {
   const handleChange = (event) => {
-    setValue(event.target.value);
+    onChange(event.target.value);
   };
 
   return (
     <div>
-      <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
+      <FormControl
+        variant="standard"
+        className="lg:min-w-48 min-w-40"
+        sx={{ m: 1 }}
+      >
         <InputLabel
           id="demo-simple-select-standard-label"
           className="text-grey"
@@ -22,7 +23,6 @@ export const CustomSelect = ({ menuItems, initialValue }) => {
         <Select
           labelId="demo-simple-select-standard-label"
           id="demo-simple-select-standard"
-          value={value}
           onChange={handleChange}
           label="Age"
           color="error"

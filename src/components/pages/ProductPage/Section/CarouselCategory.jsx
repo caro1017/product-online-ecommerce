@@ -8,7 +8,7 @@ export const CarouselCategory = () => {
       key={index}
       src={item.images[1]}
       alt={item.name}
-      className=" h-[29rem] w-[35rem]"
+      className=" md:h-[26rem] h-[20rem] w-full"
     />
   ));
 

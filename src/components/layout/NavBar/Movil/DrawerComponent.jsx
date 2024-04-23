@@ -23,12 +23,7 @@ const menuItems = [
   {
     title: "Productos",
     icon: <i className="bx bx-list-ul text-xl" />,
-    path: "/",
-  },
-  {
-    title: "Categorias",
-    icon: <i className="bx bx-category text-xl" />,
-    path: "/categoryPage",
+    path: "/productPage",
   },
   {
     title: "Iniciar Sesión",

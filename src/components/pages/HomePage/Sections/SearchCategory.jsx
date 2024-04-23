@@ -11,7 +11,7 @@ export const SearchCategory = () => {
   return (
     <>
       <div className="w-full h-full py-2 bg-[#FAFAFA]">
-        <h2 className="text-center text-2xl py-8">Buscar por categoría</h2>
+        <h2 className="text-center text-2xl py-8">Categorías</h2>
         <div className="flex flex-wrap justify-center pb-8">
           {categoriesItems.map((categoriesItems, index) => (
             <div key={index} className="py-2 px-0 md:px-1">
