@@ -3,9 +3,10 @@ import { useState } from "react";
 import { Card, CardContent, CardMedia, IconButton } from "@mui/material";
 import { CustomButtons } from "../CustomButtons/CustomButtons";
 
-export const CardProduct = ({ images, title, price }) => {
+export const CardProduct = ({ id, images, title, price }) => {
   // Estado inicial
   const [liked, setLiked] = useState(false);
+
   //Cambiar de estado
   const handleLikeToggle = () => {
     setLiked(!liked);
@@ -36,7 +37,11 @@ export const CardProduct = ({ images, title, price }) => {
           <h4 className="text-sm">{title}</h4>
           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
             <p className="font-extrabold text-lg mb-1">$ {price}</p>
-            <CustomButtons title="Comprar" variant="contained"/>
+            <CustomButtons
+              title="Comprar"
+              variant="contained"
+              link={`/productDetailsPage/${id}`}
+            />
           </div>
         </CardContent>
       </Card>

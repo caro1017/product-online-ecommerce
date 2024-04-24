@@ -33,7 +33,11 @@ export const CustomSelect = ({ menuItems, initialValue, onChange }) => {
           }}
         >
           {menuItems.map((item) => (
-            <MenuItem key={item.value} value={item.value}>
+            <MenuItem
+              key={item.value}
+              value={item.value}
+              className="capitalize"
+            >
               {item.label}
             </MenuItem>
           ))}

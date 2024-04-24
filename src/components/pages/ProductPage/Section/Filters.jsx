@@ -78,6 +78,7 @@ export const Filters = () => {
     return filteredProducts.map((product) => (
       <CardProduct
         key={product._id}
+        id={product._id}
         images={
           product.images && product.images.length > 0 ? product.images[0] : null
         }
@@ -126,7 +127,7 @@ export const Filters = () => {
   return (
     <>
       {/* Selector de filtro de precio */}
-      <div className="lg:m-10 md:flex md:justify-end ml-2 mb-8">
+      <div className="lg:m-10 lg:flex lg:justify-end lg:px-28 ml-2 mb-8">
         <p className="text-grey mt-8 px-2 font-semibold"> Ordenar por </p>
         <CustomSelect
           initialValue="Seleccionar"

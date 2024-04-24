@@ -29,7 +29,11 @@ export const BannerHeader = () => {
                 </p>
               </div>
               <div className="text-center md:text-left ">
-                <CustomButtons title="Comprar" variant="outlined" />
+                <CustomButtons
+                  title="Comprar"
+                  variant="outlined"
+                  link="/productPage"
+                />
               </div>
             </div>
             <div className="overflow-hidden">
@@ -133,7 +137,11 @@ export const BannerHeader = () => {
                 mejorar tu salud y calidad de vida.
               </p>
               <div className="absolute text-center md:text-left">
-                <CustomButtons title="Comprar" variant="outlined" />
+                <CustomButtons
+                  title="Comprar"
+                  variant="outlined"
+                  link="/productPage"
+                />
               </div>
             </div>
 
