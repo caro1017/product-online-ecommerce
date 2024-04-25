@@ -22,6 +22,7 @@ export const ProductInfo = ({
       <div className="md:flex">
         {/* Imagenes  */}
         <div className="flex md:mt-4">
+          {/* Imagenes pequeñas */}
           <div className="w-16">
             {productData.images.map((image, index) => (
               <img
@@ -51,7 +52,7 @@ export const ProductInfo = ({
         </div>
 
         {/* Descripcion */}
-        <div className="lg:mt-10 py-5 px-1 md:px-6 lg:px-12 text-black">
+        <div className="mt-5 px-1 md:px-6 lg:px-12 text-black">
           {/* Titulo - marca - precio */}
           <h2 className="font-extrabold uppercase text-lg  ">
             {productData.title}
@@ -66,7 +67,7 @@ export const ProductInfo = ({
               style={{ backgroundColor: color }}
             ></span>
           ))}
-
+          {/* Genero - Categoria */}
           <div className="flex space-x-4 mb-5">
             <div className="bg-[#F4F4F4] rounded w-36 flex p-2">
               <i className="bx bx-user text-2xl px-2 mt-1" />
@@ -84,7 +85,7 @@ export const ProductInfo = ({
               </div>
             </div>
           </div>
-
+          {/* Descripcion - Boton Compra */}
           <p className="w-60 lg:mb-8 mb-5 lg:text-base text-sm">
             {productData.description}
           </p>
