@@ -1,16 +1,27 @@
+/**
+ * Componente SearchComponent renderiza un campo de búsqueda con funcionalidad de búsqueda.
+ *
+ * @returns {React.ReactNode} El componente SearchComponent renderizado.
+ *
+ * Documentado por: Carolina Uribe Botero
+ * Fecha de documentación: 25 de abril de 2024
+ * Paquetes utilizados: Material-UI (Mui) TextField, IconButton, InputAdornment
+ */
 import { useState } from "react";
 import { IconButton, InputAdornment, TextField } from "@mui/material";
 
 export const SearchComponent = () => {
-  /* Estado para controslar la informacion de la busqueda */
+  //Estado para controlar la información de la búsqueda
   const [searchTerm, setSearchTerm] = useState("");
-  /* Funcion que maneja la ligica de la busqueda */
+
+  // Función que maneja la lógica de la búsqueda
   const handleSearch = () => {
     console.log("Realizar búsqueda con término:", searchTerm);
   };
 
   return (
     <>
+      {/* Campo de texto de búsqueda */}
       <TextField
         label="Buscar"
         variant="filled"

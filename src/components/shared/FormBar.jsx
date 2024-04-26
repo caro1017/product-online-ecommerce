@@ -1,4 +1,16 @@
 /* eslint-disable react/prop-types */
+/**
+ * El componente `FormBar` renderiza un formulario con los campos especificados.
+ *
+ * @param {object} props - Las props del componente.
+ * @param {Array} props.fields - Los campos del formulario.
+ * @param {Function} props.onSubmit - La función que maneja el envío del formulario.
+ * @param {string} props.titleButton - El título del botón de envío del formulario.
+ * @returns {JSX.Element} El componente FormBar renderizado.
+ *
+ * Documentado por: Carolina Uribe Botero
+ * Fecha de documentación: 25 de abril de 2024
+ */
 import { useForm } from "react-hook-form";
 import { IconButton, InputAdornment, TextField } from "@mui/material";
 import { CustomButtons } from "../common/CustomButtons/CustomButtons";
@@ -12,12 +24,17 @@ export const FormBar = ({ fields, onSubmit, titleButton }) => {
     reset, // Método para resetear el formulario
   } = useForm();
 
+  /**
+   * Función para manejar el envío del formulario.
+   * @param {object} data - Los datos del formulario.
+   */
   const handleFormSubmit = (data) => {
-    onSubmit(data);
-    reset(); 
+    onSubmit(data); // Llama a la función onSubmit pasando los datos del formulario
+    reset(); // Resetea el formulario después del envío
   };
   return (
     <form onSubmit={handleSubmit(handleFormSubmit)}>
+      {/* Renderiza cada campo del formulario */}
       {fields.map((field, index) => (
         <TextField
           key={index}
@@ -61,6 +78,7 @@ export const FormBar = ({ fields, onSubmit, titleButton }) => {
         />
       ))}
       <div className="py-5">
+        {/* Renderiza el botón de envío del formulario */}
         <CustomButtons type="submit" variant="contained" title={titleButton} />
       </div>
     </form>

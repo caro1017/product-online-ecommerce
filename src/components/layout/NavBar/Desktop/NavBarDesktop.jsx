@@ -1,3 +1,12 @@
+/**
+ * Componente NavBarDesktop renderiza la barra de navegación para pantallas de escritorio.
+ *
+ * @returns {React.ReactNode} El componente NavBarDesktop renderizado.
+ *
+ * Documentado por: Carolina Uribe Botero
+ * Fecha de documentación: 25 de abril de 2024
+ * Bibliotecas utilizadas: react-router-dom, Material-UI (Mui)
+ */
 import { Link } from "react-router-dom";
 import { Badge, IconButton, MenuItem } from "@mui/material";
 import { SearchComponent } from "../../../common/SearchComponent/SearchComponent";
@@ -22,10 +31,12 @@ const userIcon = [
 export const NavBarDesktop = () => {
   return (
     <>
+      {/* Barra de búsqueda en la parte izquierda */}
       <div className="hidden lg:flex w-full ml-24">
         <SearchComponent />
       </div>
 
+      {/* Menú de navegación y elementos del usuario en la parte derecha */}
       <div className="hidden lg:flex ">
         <div className="flex mx-10">
           {menuItems.map((menuItem, index) => (
@@ -35,10 +46,12 @@ export const NavBarDesktop = () => {
           ))}
         </div>
 
+        {/* Íconos del usuario */}
         <div className="flex">
           {userIcon.map((userIcon, index) => (
             <IconButton key={index} className="text-grey hover:text-yellow">
               {userIcon.icon}
+              {/* Contador del carrito de compras si está definido */}
               {userIcon.cartCount !== undefined && (
                 <Badge
                   color="error"

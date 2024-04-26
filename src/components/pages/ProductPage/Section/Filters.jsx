@@ -1,3 +1,11 @@
+/**
+ * El componente `Filters` proporciona filtros para ordenar y filtrar productos.
+ *
+ * @returns {JSX.Element} El componente Filters renderizado.
+ *
+ * Documentado por: Carolina Uribe Botero
+ * Fecha de documentación: 25 de abril de 2024
+ */
 import { useState } from "react";
 import { CustomSelect } from "../../../common/CustomSelect/CustomSelect";
 import { CardProduct } from "../../../common/Card/CardProduct";
@@ -17,7 +25,6 @@ export const Filters = () => {
   const handlePriceFilterChange = (value) => {
     setSelectedPriceFilter(value);
   };
-
   // Función para manejar el cambio de filtro de marca
   const handleBrandFilterChange = (value) => {
     setSelectedBrandFilter(value);
@@ -56,14 +63,12 @@ export const Filters = () => {
         (item) => item.category === selectedCategoryFilter
       );
     }
-
     return filteredProducts;
   };
 
   // Función para renderizar los productos filtrados
   const renderFilteredProducts = () => {
     const filteredProducts = filterProducts();
-
     // Verificar si no hay productos filtrados
     if (filteredProducts.length === 0) {
       return (
@@ -154,7 +159,7 @@ export const Filters = () => {
           </div>
         </div>
 
-        {/* Div para mostrar los productos filtrados */}
+        {/* Mostrar los productos filtrados */}
         <div className="md:mx-4 mx-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
           {renderFilteredProducts()}
         </div>

@@ -1,3 +1,15 @@
+/**
+ * Componente DrawerComponent renderiza un componente Drawer para dispositivos móviles.
+ *
+ * @param {Object} props - Propiedades del componente DrawerComponent.
+ * @param {boolean} props.open - Indica si el Drawer está abierto o cerrado.
+ * @param {function} props.onClose - Función para cerrar el Drawer.
+ * @returns {React.ReactNode} El componente DrawerComponent renderizado.
+ *
+ * Documentado por: Carolina Uribe Botero
+ * Fecha de documentación: 25 de abril de 2024
+ * Bibliotecas utilizadas: Material-UI (Mui), react-router-dom
+ */
 import {
   Badge,
   Box,
@@ -13,7 +25,7 @@ import { Link } from "react-router-dom";
 import { SearchComponent } from "../../../common/SearchComponent/SearchComponent";
 import { Images } from "../../../images/Images";
 
-/* Funciones para determinar cada propiedad de los items  */
+// Ítems del menú de navegación principal
 const menuItems = [
   {
     title: "Inicio",
@@ -32,6 +44,7 @@ const menuItems = [
   },
 ];
 
+// Ítems de categorías
 const categoriesItems = [
   { title: "Moda", icon: <i className="bx bx-closet text-xl" /> },
   { title: "Tecnologia", icon: <i className="bx bx-laptop text-xl" /> },
@@ -39,6 +52,7 @@ const categoriesItems = [
   { title: "Salud", icon: <i className="bx bx-spa text-xl" /> },
 ];
 
+// Ítems del usuario
 const userItems = [
   { title: "Favoritos", icon: <i className="bx bx-heart text-xl" /> },
   { title: "Perfil", icon: <i className="bx bx-user text-xl" /> },
@@ -49,7 +63,7 @@ const userItems = [
   },
 ];
 
-/* Funcion para generar los items del menu */
+// Función para generar los ítems de la lista
 const generateListItems = (items) =>
   items.map((item) => (
     <ListItem key={item.title} disablePadding>

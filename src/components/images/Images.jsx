@@ -1,6 +1,13 @@
+/**
+ * Objeto Images contiene las rutas de las imágenes utilizadas en la aplicación.
+ *
+ * Documentado por: Carolina Uribe Botero
+ * Fecha de documentación: 25 de abril de 2024
+ */
 // Ruta logo
 import logo from "../../../public/logo/Logo.svg";
 import logoBN from "../../../public/logo/LogoBN.svg";
+
 // Otros
 import drawerVector from "../../../public/img/drawerVector.png";
 

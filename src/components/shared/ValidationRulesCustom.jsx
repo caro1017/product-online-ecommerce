@@ -1,9 +1,19 @@
+/**
+ * La función `ValidationRulesCustom` genera reglas de validación personalizadas para diferentes tipos de campos.
+ *
+ * @param {string} type - El tipo de campo para el cual se generarán las reglas de validación.
+ * @returns {object} Un objeto que contiene las reglas de validación para el tipo de campo especificado.
+ *
+ * Documentado por: Carolina Uribe Botero
+ * Fecha de documentación: 25 de abril de 2024
+ */
 const ValidationRulesCustom = (type) => {
-    
+  // Objeto que contendrá las reglas de validación
   const validationRules = {
     required: true,
   };
 
+  // Seleccionar reglas de validación según el tipo especificado
   switch (type) {
     case "email":
       validationRules.pattern = {

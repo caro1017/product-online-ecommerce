@@ -1,8 +1,18 @@
+/**
+ * Componente TabsHome renderiza pestañas con diferentes tipos de productos.
+ * Incluye pestañas para nuevos productos, productos mejor vendidos y productos destacados.
+ *
+ * @returns {React.ReactNode} El componente TabsHome renderizado.
+ *
+ * Documentado por: Carolina Uribe Botero
+ * Fecha de documentación: 25 de abril de 2024
+ */
 import { CardProduct } from "../../../common/Card/CardProduct";
 import { CustomTabs } from "../../../common/CustomTabs/CustomTabs";
 import product from "../../../../__mocks__/product.json";
 
 export const TabsHome = () => {
+  
   // Filtrar productos con calificación de 4.6 o superior
   const filteredProductsbestseller = product
     .filter((item) => item.qualification >= 4.7)

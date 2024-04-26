@@ -1,8 +1,20 @@
 /* eslint-disable react/prop-types */
+/**
+ * Componente CarouselComponent renderiza un carrusel de elementos con el paquete react-multi-carousel.
+ *
+ * @param {Object} props - Los props del componente.
+ * @param {React.ReactNode[]} props.items - Los elementos a mostrar en el carrusel.
+ * @returns {React.ReactNode} El componente CarouselComponent renderizado.
+ *
+ * Documentado por: Carolina Uribe Botero
+ * Fecha de documentación: 25 de abril de 2024
+ * Paquete utilizado: react-multi-carousel
+ */
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 export const CarouselComponent = ({ items }) => {
+  // Configuración de la respuesta del carrusel
   const responsive = {
     desktop: {
       breakpoint: {
@@ -60,6 +72,7 @@ export const CarouselComponent = ({ items }) => {
         slidesToSlide={1}
         swipeable
       >
+        {/* Renderizado de los elementos del carrusel */}
         {items.map((item, index) => (
           <div key={index}>{item}</div>
         ))}

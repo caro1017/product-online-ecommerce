@@ -1,4 +1,18 @@
 /* eslint-disable react/prop-types */
+/**
+ * El componente `ProductInfo` muestra la información detallada de un producto,
+ * incluyendo imágenes, descripción, precio, colores disponibles, género, categoría,
+ * disponibilidad en stock, calificación y garantía.
+ *
+ * @param {object} props - Las propiedades del componente.
+ * @param {object} props.productData - Los datos del producto a mostrar.
+ * @param {string} props.selectedImage - La URL de la imagen seleccionada.
+ * @param {Function} props.setSelectedImage - La función para establecer la imagen seleccionada.
+ * @returns {JSX.Element} El componente ProductInfo renderizado.
+ *
+ * Documentado por: Carolina Uribe Botero
+ * Fecha de documentación: 25 de abril de 2024
+ */
 import { useState } from "react";
 import { CustomButtons } from "../../../common/CustomButtons/CustomButtons";
 
@@ -7,16 +21,18 @@ export const ProductInfo = ({
   selectedImage,
   setSelectedImage,
 }) => {
-  /* Estado inicial de la imagen central */
+  // Estado inicial de la imagen central
   const [zoomLevel, setZoomLevel] = useState(1);
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  /* Funcion para poder recorrer la imagen */
+
+  // Función para manejar el movimiento del mouse sobre la imagen
   const handleMouseMove = (e) => {
     const { left, top, width, height } = e.target.getBoundingClientRect();
     const x = (e.pageX - left) / width;
     const y = (e.pageY - top) / height;
     setPosition({ x, y });
   };
+
   return (
     <>
       <div className="md:flex">
@@ -67,6 +83,7 @@ export const ProductInfo = ({
               style={{ backgroundColor: color }}
             ></span>
           ))}
+
           {/* Genero - Categoria */}
           <div className="flex space-x-4 mb-5">
             <div className="bg-[#F4F4F4] rounded w-36 flex p-2">
@@ -85,6 +102,7 @@ export const ProductInfo = ({
               </div>
             </div>
           </div>
+
           {/* Descripcion - Boton Compra */}
           <p className="w-60 lg:mb-8 mb-5 lg:text-base text-sm">
             {productData.description}

@@ -1,17 +1,28 @@
+/**
+ * Componente BannerHeader renderiza el banner principal de la página de inicio.
+ * Incluye imágenes y contenido promocional.
+ *
+ * @returns {React.ReactNode} El componente BannerHeader renderizado.
+ *
+ * Documentado por: Carolina Uribe Botero
+ * Fecha de documentación: 25 de abril de 2024
+ */
 import { Grid } from "@mui/material";
 import { CustomButtons } from "../../../common/CustomButtons/CustomButtons";
 import { Images } from "../../../images/Images";
 
-// Obtener la imagen segun el tamaño de la pantalla
+// Obtener la ruta de la imagen de ropa según el tamaño de la pantalla
 const clothesImagePath =
   window.innerWidth >= 500 ? Images.clothesImage : Images.clothesImageMovil;
 
+// Obtener la ruta de la imagen de tecnología según el tamaño de la pantalla
 const tecnologyImagePath =
   window.innerWidth >= 500 ? Images.airPods : Images.airPodsMovil;
 
 export const BannerHeader = () => {
   return (
     <>
+      {/* Contenedor principal */}
       <Grid container spacing={0}>
         {/* Imagen en la parte superior */}
         <Grid item xs={12}>
@@ -49,7 +60,7 @@ export const BannerHeader = () => {
         {/* Galería Inferior */}
         <Grid item md={6} xs={12}>
           <Grid container spacing={0}>
-            {/* Imagen en la parte superior */}
+            {/* Contenido y imagen en la parte superior */}
             <Grid item xs={12}>
               <div
                 elevation={3}
@@ -122,7 +133,7 @@ export const BannerHeader = () => {
           </Grid>
         </Grid>
 
-        {/* Imagen en el lado derecho */}
+        {/* Imagen y contenido en el lado derecho */}
         <Grid item md={6} xs={12}>
           <div
             elevation={3}

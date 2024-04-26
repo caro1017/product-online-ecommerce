@@ -1,3 +1,12 @@
+/**
+ * El componente `Login` renderiza un formulario de inicio de sesión con campos para correo electrónico y contraseña,
+ * y también muestra opciones para registrarse utilizando redes sociales.
+ *
+ * @returns {JSX.Element} El componente Login renderizado.
+ *
+ * Documentado por: Carolina Uribe Botero
+ * Fecha de documentación: 25 de abril de 2024
+ */
 import { IconButton } from "@mui/material";
 import { FormBar } from "../../../shared/FormBar";
 
@@ -19,13 +28,15 @@ export const Login = () => {
       icon: <i className="bx bx-lock-alt" />,
     },
   ];
-  // Iconos paraa registrar por otro medio
+
+  // Iconos para registrar por otro medio
   const iconSocialMedia = [
     { title: "Facebook", icon: <i className="bx bxl-facebook" /> },
     { title: "Instagram", icon: <i className="bx bxl-instagram" /> },
     { title: "Google", icon: <i className="bx bxl-google" /> },
   ];
 
+  // Función que se ejecuta al enviar el formulario
   const onSubmit = (data) => {
     // Lógica para enviar datos del formulario
     console.log("Formulario enviado con éxito", data);
@@ -35,6 +46,7 @@ export const Login = () => {
     <>
       <div className="flex flex-col w-72 m-auto">
         <div className="flex space-x-5 m-auto mb-2">
+          {/* Renderiza los iconos para registrar por otro medio */}
           {iconSocialMedia.map((iconSocialMedia, index) => (
             <div key={index} className="py-3">
               <IconButton aria-label="delete" className="p-3 text-salmon">
@@ -44,6 +56,7 @@ export const Login = () => {
           ))}
         </div>
         <div className="text-center pt-2">
+          {/* Renderiza el formulario de inicio de sesión */}
           <FormBar
             fields={fields}
             onSubmit={onSubmit}

@@ -1,3 +1,12 @@
+/**
+ * La página `ProductDetailsPage` muestra los detalles de un producto específico,
+ * incluyendo su información detallada y comentarios de los usuarios.
+ *
+ * @returns {JSX.Element} El componente ProductDetailsPage renderizado.
+ *
+ * Documentado por: Carolina Uribe Botero
+ * Fecha de documentación: 25 de abril de 2024
+ */
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Breadcrumbs, Link } from "@mui/material";
@@ -7,7 +16,10 @@ import { ProductInfo } from "./Section/ProductInfo";
 import { Comments } from "./Section/Comments";
 
 export const ProductDetailsPage = () => {
+  // Obtener el ID del producto de los parámetros de la URL
   const { productId } = useParams();
+
+  // Estado para gestionar la imagen seleccionada del producto
   const [selectedImage, setSelectedImage] = useState(null);
 
   // Buscar el producto por ID en el JSON
@@ -29,7 +41,7 @@ export const ProductDetailsPage = () => {
       <NavBar />
       <div className="mt-14 md:mt-16 lg:mt-[6.2rem]">
         <div className="flex px-5 md:px-8 lg:px-[320px] md:pt-5 text-black text-xs">
-          {/* breadcrumb */}
+          {/* Pasos */}
           <Breadcrumbs
             separator={<i className="bx bx-chevron-right" />}
             aria-label="breadcrumb"
