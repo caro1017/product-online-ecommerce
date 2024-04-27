@@ -40,7 +40,7 @@ export const ProductDetailsPage = () => {
     <>
       <NavBar />
       <div className="mt-14 md:mt-16 lg:mt-[6.2rem]">
-        <div className="flex px-5 md:px-8 lg:px-[320px] md:pt-5 text-black text-xs">
+        <div className="flex px-5 md:px-8 lg:px-[260px] md:pt-5 text-black text-xs">
           {/* Pasos */}
           <Breadcrumbs
             separator={<i className="bx bx-chevron-right" />}
@@ -67,8 +67,12 @@ export const ProductDetailsPage = () => {
           />
         </div>
 
-        <div className="py-8">
-          <Comments />
+        <div>
+          <Comments productData={productData} />
+        </div>
+
+        <div>
+          Productos relacionados
         </div>
       </div>
     </>

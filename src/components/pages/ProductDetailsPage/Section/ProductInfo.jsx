@@ -10,11 +10,14 @@
  * @param {Function} props.setSelectedImage - La función para establecer la imagen seleccionada.
  * @returns {JSX.Element} El componente ProductInfo renderizado.
  *
+ * Paquetes utilizados: Material-UI (Mui)
  * Documentado por: Carolina Uribe Botero
  * Fecha de documentación: 25 de abril de 2024
  */
 import { useState } from "react";
+import { Button, ButtonGroup } from "@mui/material";
 import { CustomButtons } from "../../../common/CustomButtons/CustomButtons";
+import { calculateAverageRating } from "../../../../utils/calculateAverageRating";
 
 export const ProductInfo = ({
   productData,
@@ -33,9 +36,11 @@ export const ProductInfo = ({
     setPosition({ x, y });
   };
 
+  
+
   return (
     <>
-      <div className="md:flex">
+      <div className="lg:flex">
         {/* Imagenes  */}
         <div className="flex md:mt-4">
           {/* Imagenes pequeñas */}
@@ -68,24 +73,48 @@ export const ProductInfo = ({
         </div>
 
         {/* Descripcion */}
-        <div className="mt-5 px-1 md:px-6 lg:px-12 text-black">
+        <div className="mt-3 px-1 md:px-6 lg:px-12 text-black">
           {/* Titulo - marca - precio */}
           <h2 className="font-extrabold uppercase text-lg  ">
             {productData.title}
           </h2>
           <p className="mb-3">{productData.brand}</p>
-          <p className="text-lg mb-3">${productData.price}</p>
+          <p className="text-xl mb-3 font-medium">${productData.price}</p>
+
           {/* Colores */}
-          {productData.colors.map((color, index) => (
-            <span
-              key={index}
-              className="inline-block w-7 h-7 rounded-full mr-2 mb-4 border-[1px] border-grey"
-              style={{ backgroundColor: color }}
-            ></span>
-          ))}
+          <div className="flex">
+            <p className="pr-5">Colores</p>
+            {productData.colors.map((color, index) => (
+              <span
+                key={index}
+                className="inline-block w-7 h-7 rounded-full mr-2 mb-4 border-[1px] border-grey cursor-pointer"
+                style={{ backgroundColor: color }}
+              ></span>
+            ))}
+          </div>
+
+          {/* Tallas */}
+          <div className="mb-5 flex">
+            <p className="pr-5">Tallas</p>
+            <ButtonGroup
+              variant="outlined"
+              aria-label="Basic button group"
+              size="small"
+              className="h-7"
+            >
+              {productData.sizes.map((size, index) => (
+                <Button
+                  key={index}
+                  className="border-solid border-black text-black hover:border-black normal-case"
+                >
+                  {size}
+                </Button>
+              ))}
+            </ButtonGroup>
+          </div>
 
           {/* Genero - Categoria */}
-          <div className="flex space-x-4 mb-5">
+          <div className="flex space-x-4 mb-6 md:mb-4">
             <div className="bg-[#F4F4F4] rounded w-36 flex p-2">
               <i className="bx bx-user text-2xl px-2 mt-1" />
               <div className="inline-block text-sm">
@@ -104,10 +133,11 @@ export const ProductInfo = ({
           </div>
 
           {/* Descripcion - Boton Compra */}
-          <p className="w-60 lg:mb-8 mb-5 lg:text-base text-sm">
+          <p className=" lg:w-96 lg:mb-5 mb-5 lg:text-base text-sm">
             {productData.description}
           </p>
-          <div className="mb-8">
+
+          <div className="mb-6">
             <CustomButtons title="Añadir al carrito" variant="contained" />
           </div>
 
@@ -128,7 +158,7 @@ export const ProductInfo = ({
               </div>
               <div className="inline-block text-xs text-grey">
                 <p>Calificación</p>
-                <p>{productData.qualification}</p>
+                <p>{calculateAverageRating(productData.comments, productData.qualification)}</p>
               </div>
             </div>
 

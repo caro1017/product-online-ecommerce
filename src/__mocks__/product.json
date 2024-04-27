@@ -6,6 +6,7 @@
     "price": 39.99,
     "inStock": 50,
     "qualification": 4.5,
+    "sizes": ["S", "M", "L", "XL"],
     "brand": "Zara",
     "gender": "female",
     "category": "fashion",
@@ -14,6 +15,50 @@
       "https://static.zara.net/assets/public/20d2/1765/c102442da272/01f4273f6555/02737839070-a1/02737839070-a1.jpg?ts=1709571039453&w=563",
       "https://static.zara.net/assets/public/333d/2a83/061e46748a81/beff230dfc5d/02737839070-a3/02737839070-a3.jpg?ts=1709571037696&w=563",
       "https://static.zara.net/assets/public/d2ca/5ede/3fd746d4aa03/2eaa712a4298/02737839070-e1/02737839070-e1.jpg?ts=1709736524622&w=563"
+    ],
+    "comments": [
+      {
+        "user": "Ana123",
+        "comment": "Excelente producto, cumplió con todas mis expectativas. Lo recomiendo totalmente.",
+        "qualification": 4,
+        "date": "2024-03-14",
+        "avatar": "https://plus.unsplash.com/premium_photo-1658527049634-15142565537a?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "user": "FashionQueen22",
+        "comment": "¡Me encanta este vestido! La tela es ligera y fresca, perfecta para el verano. Además, los colores son vibrantes y el estampado floral es simplemente hermoso.",
+        "qualification": 4.8,
+        "date": "2024-04-10",
+        "avatar": "https://randomuser.me/api/portraits/women/1.jpg"
+      },
+      {
+        "user": "SummerVibes",
+        "comment": "El vestido es exactamente como se muestra en las imágenes. La calidad es excelente y se ajusta perfectamente. ¡Definitivamente una compra que vale la pena!",
+        "qualification": 4.3,
+        "date": "2024-04-15",
+        "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
+      },
+      {
+        "user": "StylishChic",
+        "comment": "Este vestido es una joya. Lo pedí hace una semana y ya lo he usado tres veces. Recibo muchos cumplidos cada vez que lo uso. ¡Definitivamente una compra acertada!",
+        "qualification": 4.9,
+        "date": "2024-04-20",
+        "avatar": "https://randomuser.me/api/portraits/women/3.jpg"
+      },
+      {
+        "user": "FashionistaForever",
+        "comment": "¡Este vestido es mi nuevo favorito en mi armario! La tela es suave y cómoda, y el ajuste es perfecto. Lo he usado en varias ocasiones y siempre me hace sentir fabulosa.",
+        "qualification": 5,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/4.jpg"
+      },
+      {
+        "user": "TrendyGal",
+        "comment": "No puedo dejar de recibir elogios cuando uso este vestido. Es tan versátil; puedo usarlo para una salida informal durante el día o incluso para una ocasión especial por la noche. ¡Simplemente encantador!",
+        "qualification": 4.7,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/women/5.jpg"
+      }
     ]
   },
   {
@@ -22,7 +67,8 @@
     "description": "Zapatillas deportivas con tecnología Air Max para mayor comodidad y estilo.",
     "price": 129.99,
     "inStock": 30,
-    "qualification": 4.7,
+    "qualification": 5,
+    "sizes": ["34", "35", "36", "37", "38", "39", "40"],
     "brand": "Nike",
     "gender": "male",
     "category": "fashion",
@@ -32,6 +78,43 @@
       "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9f9573bd-1a94-4466-85e6-a32661d5b013/air-max-90-gore-tex-zapatillas-fQjC4b.png",
       "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/776c9567-f6d6-49fd-91c5-ed8225a2d26c/air-max-90-gore-tex-zapatillas-fQjC4b.png",
       "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0f495e92-9ff3-4ca6-804d-40a1a43242b1/air-max-90-gore-tex-zapatillas-fQjC4b.png"
+    ],
+    "comments": [
+      {
+        "user": "AmanteDeLasZapatillas87",
+        "comment": "¡Estas zapatillas Air Max son un cambio de juego! Súper cómodas y con estilo, perfectas para ir al gimnasio o pasear por la ciudad. Definitivamente un must-have en la colección de cualquier amante de las zapatillas.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/20.jpg"
+      },
+      {
+        "user": "Activo23",
+        "comment": "¡Acabo de conseguir mi par de Nike Air Max y estoy impresionado por el nivel de comodidad! La tecnología Air Max realmente hace maravillas. Además, lucen geniales en negro. No puedo esperar para lucirlas en mi próxima carrera.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/21.jpg"
+      },
+      {
+        "user": "AdictoALaModa",
+        "comment": "Estas zapatillas Air Max son la epitome de estilo y funcionalidad. Me encanta cómo se integran perfectamente con cualquier atuendo, ya sea que me esté vistiendo elegante o manteniéndome casual. ¡Además, el acento rojo añade un toque de color que es simplemente 🔥!",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/34.jpg"
+      },
+      {
+        "user": "RatónDeGimnasio101",
+        "comment": "Como alguien que prácticamente vive en el gimnasio, no puedo enfatizar lo suficiente la importancia de un buen calzado. Estos zapatos Nike Air Max no solo brindan una comodidad de primera clase, sino también soporte durante esos entrenamientos intensos. ¡Definitivamente valen cada centavo!",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/22.jpg"
+      },
+      {
+        "user": "EntusiastaDeLasZapatillas23",
+        "comment": "¡Finalmente conseguí mis manos en estas zapatillas Air Max, y superaron mis expectativas! El material Gore-Tex las hace perfectas para cualquier condición climática, y la variedad de tallas garantiza un ajuste cómodo para todos. ¡No puedo esperar para presumirlas!",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/26.jpg"
+      }
     ]
   },
   {
@@ -41,6 +124,7 @@
     "price": 49.99,
     "inStock": 20,
     "qualification": 4.3,
+    "sizes": ["30", "32", "34", "36"],
     "brand": "Levi's",
     "gender": "male",
     "category": "fashion",
@@ -48,6 +132,43 @@
     "images": [
       "https://exitocol.vteximg.com.br/arquivos/ids/20658771/JEAN-LEVIS-198295-1731806_a.jpg?v=638385417486800000",
       "https://exitocol.vteximg.com.br/arquivos/ids/20658773/JEAN-LEVIS-198295-1731806_c.jpg?v=638385417492300000"
+    ],
+    "comments": [
+      {
+        "user": "Juan86",
+        "comment": "Estos jeans slim fit son perfectos para un look moderno y cómodo. ¡Los recomiendo totalmente!",
+        "qualification": 4.5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/6.jpg"
+      },
+      {
+        "user": "CarlosFashion",
+        "comment": "Los jeans de Levi's siempre cumplen y estos no son la excepción. La calidad es excelente y el corte slim fit es justo lo que buscaba.",
+        "qualification": 4.8,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/7.jpg"
+      },
+      {
+        "user": "PedroEstilo",
+        "comment": "En la 2da lavada se rompieron",
+        "qualification": 1,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/8.jpg"
+      },
+      {
+        "user": "AlejandroCool",
+        "comment": "Estos jeans Levi's son muy incomodos no me puedo mover bien.",
+        "qualification": 2,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/9.jpg"
+      },
+      {
+        "user": "LuisFashionista",
+        "comment": "¡Los jeans de Levi's son siempre mi go-to! Estos slim fit son cómodos y se ven geniales. ¡Totalmente recomendados!",
+        "qualification": 5,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/10.jpg"
+      }
     ]
   },
   {
@@ -57,6 +178,7 @@
     "price": 29.99,
     "inStock": 40,
     "qualification": 4.6,
+    "sizes": ["S", "M", "L", "XL"],
     "brand": "H&M",
     "gender": "female",
     "category": "fashion",
@@ -64,6 +186,43 @@
     "images": [
       "https://hmcolombia.vtexassets.com/arquivos/ids/3510865/Blusa-en-mezcla-de-lino---Blanco-Floral-azul---H-M-CO.jpg?v=638442742878770000",
       "https://hmcolombia.vtexassets.com/arquivos/ids/3510866/Blusa-en-mezcla-de-lino---Blanco-Floral-azul---H-M-CO.jpg?v=638442742883130000"
+    ],
+    "comments": [
+      {
+        "user": "Maria_92",
+        "comment": "Me encanta esta blusa, el estampado es perfecto para la primavera.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/women/61.jpg"
+      },
+      {
+        "user": "Fashionista22",
+        "comment": "La calidad de la tela es excelente, además de ser muy cómoda de llevar.",
+        "qualification": 4.8,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/women/60.jpg"
+      },
+      {
+        "user": "EstiloConClase",
+        "comment": "¡Increíble diseño! La combinación de colores es simplemente cautivadora.",
+        "qualification": 4.7,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/women/59.jpg"
+      },
+      {
+        "user": "ModaParaTodos",
+        "comment": "¡Una opción versátil para cualquier ocasión! La recomendaría sin dudarlo.",
+        "qualification": 4.5,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/women/58.jpg"
+      },
+      {
+        "user": "EleganciaTotal",
+        "comment": "La blusa se ajusta perfectamente a la descripción, estoy muy satisfecha con mi compra.",
+        "qualification": 4.9,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/57.jpg"
+      }
     ]
   },
   {
@@ -73,6 +232,7 @@
     "price": 59.99,
     "inStock": 25,
     "qualification": 4.4,
+    "sizes": ["S", "M", "L", "XL"],
     "brand": "Adidas",
     "gender": "unisex",
     "category": "fashion",
@@ -81,6 +241,43 @@
       "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78d3d0d93f58461d950480729342a8f3_9366/Buzo_Deportivo_con_Capucha_Z.N.E._Premium_Turquesa_IN5087_21_model.jpg",
       "https://assets.adidas.com/images/c_crop,f_auto,fl_lossy,g_north,h_840,q_auto,y_40/h_840/4229045a0ed54f9caf07b039484cfbbe_9366/Buzo_Deportivo_con_Capucha_Z.N.E._Premium_Turquesa_IN5087_01_laydown.jpg",
       "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/218ba2cbe810443786012af1e6ddb7e0_9366/Buzo_Deportivo_con_Capucha_Z.N.E._Premium_Turquesa_IN5087_42_detail.jpg"
+    ],
+    "comments": [
+      {
+        "user": "FashionLover23",
+        "comment": "Esta chaqueta es perfecta para un estilo urbano, ¡me encanta!",
+        "qualification": 4.7,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/women/7.jpg"
+      },
+      {
+        "user": "StreetStyleKing",
+        "comment": "La calidad de esta chaqueta es insuperable, y el diseño es muy moderno.",
+        "qualification": 4.5,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/women/8.jpg"
+      },
+      {
+        "user": "AdidasFanatic",
+        "comment": "¡Esta chaqueta es un must-have para cualquier amante de la moda urbana!",
+        "qualification": 4.8,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/7.jpg"
+      },
+      {
+        "user": "CasualChic",
+        "comment": "Me encanta cómo esta chaqueta complementa cualquier outfit casual.",
+        "qualification": 4.3,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/9.jpg"
+      },
+      {
+        "user": "TrendyVibes",
+        "comment": "La chaqueta es tan versátil y cómoda, definitivamente una excelente compra.",
+        "qualification": 4.6,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/10.jpg"
+      }
     ]
   },
   {
@@ -90,13 +287,52 @@
     "price": 89.99,
     "inStock": 15,
     "qualification": 4.8,
+    "sizes": ["S", "M", "L", "XL"],
     "brand": "Calvin Klein",
     "gender": "female",
     "category": "fashion",
-    "colors": ["#000000", "#FF0000", "#FFFFFF"],
+    "colors": ["#104898", "#FF0000", "#FFFFFF"],
     "images": [
-      "https://calvincolombia.vteximg.com.br/arquivos/ids/212473-650-709/J20J221156_BEH_1.jpg?v=638249169151070000",
-      "https://calvincolombia.vteximg.com.br/arquivos/ids/212475-650-709/J20J221156_BEH_16.jpg?v=638249169167200000"
+      "https://m.media-amazon.com/images/I/61t6Y2YXTNL._AC_SY550_.jpg",
+      "https://m.media-amazon.com/images/I/61HhHGENHaL._AC_SY550_.jpg",
+      "https://m.media-amazon.com/images/I/51RoQ8YMs8L._AC_SX425_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "GlamourQueen",
+        "comment": "¡Este vestido es simplemente deslumbrante! Perfecto para una noche especial.",
+        "qualification": 4.9,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/women/20.jpg"
+      },
+      {
+        "user": "FashionistaForever",
+        "comment": "Me encanta el diseño de este vestido, es muy elegante y sofisticado.",
+        "qualification": 4.7,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/women/21.jpg"
+      },
+      {
+        "user": "ChicAndClassy",
+        "comment": "La calidad del material es excepcional, y el ajuste es perfecto.",
+        "qualification": 4.8,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/women/22.jpg"
+      },
+      {
+        "user": "TrendSetter101",
+        "comment": "Este vestido es una obra maestra de la moda, definitivamente una pieza única.",
+        "qualification": 4.9,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/women/23.jpg"
+      },
+      {
+        "user": "NightOutDiva",
+        "comment": "¡Me siento como una estrella de cine con este vestido! Simplemente espectacular.",
+        "qualification": 4.8,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/25.jpg"
+      }
     ]
   },
   {
@@ -106,6 +342,7 @@
     "price": 34.99,
     "inStock": 35,
     "qualification": 4.2,
+    "sizes": ["S", "M", "L", "XL"],
     "brand": "Mango",
     "gender": "male",
     "category": "fashion",
@@ -114,6 +351,43 @@
       "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57080618_01.jpg?ts=1678174641606&imwidth=502&imdensity=2",
       "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57080618_01_R.jpg?ts=1678174641606&imwidth=502&imdensity=2",
       "https://st.mngbcn.com/rcs/pics/static/T5/fotos/S20/57080618_01_D1.jpg?ts=1678174641606&imwidth=502&imdensity=2"
+    ],
+    "comments": [
+      {
+        "user": "Arian",
+        "comment": "Esta camisa es perfecta para los días calurosos, ¡el lino la hace muy fresca!",
+        "qualification": 4.5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/25.jpg"
+      },
+      {
+        "user": "FashionConnoisseur",
+        "comment": "La calidad del lino es excelente, y el diseño es muy elegante.",
+        "qualification": 4.3,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/26.jpg"
+      },
+      {
+        "user": "Misael",
+        "comment": "La camisa es bonita, pero esperaba una mejor calidad por el precio.",
+        "qualification": 3.8,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/27.jpg"
+      },
+      {
+        "user": "Brayan",
+        "comment": "No estoy satisfecho con la compra, la camisa se arruga fácilmente y el ajuste no es el mejor.",
+        "qualification": 2.5,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/28.jpg"
+      },
+      {
+        "user": "Samuel",
+        "comment": "Esperaba más de esta camisa de lino, la calidad no está a la altura de las expectativas.",
+        "qualification": 3.0,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/29.jpg"
+      }
     ]
   },
   {
@@ -123,6 +397,7 @@
     "price": 44.99,
     "inStock": 30,
     "qualification": 4.5,
+    "sizes": ["30", "32", "34", "36"],
     "brand": "Gap",
     "gender": "male",
     "category": "fashion",
@@ -130,6 +405,43 @@
     "images": [
       "https://www.gapcolombia.com.co/images/large/gapcolombia/Gap_Modern_Khakis_in_Slim_Fit_Kaki_YNX-YNXLV-0961_4_ZOOM.jpg",
       "https://www.gapcolombia.com.co/images/large/gapcolombia/Gap_Modern_Khakis_in_Slim_Fit_Kaki_YNX-YNXLV-0961_3_ZOOM.jpg"
+    ],
+    "comments": [
+      {
+        "user": "CasualStyleGuy",
+        "comment": "Estos pantalones chinos son muy versátiles y cómodos, ¡perfectos para cualquier ocasión!",
+        "qualification": 4.7,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/30.jpg"
+      },
+      {
+        "user": "FashionForward",
+        "comment": "Me encanta el ajuste de estos pantalones chinos, se ven muy elegantes y modernos.",
+        "qualification": 4.6,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/31.jpg"
+      },
+      {
+        "user": "Rengifo456",
+        "comment": "No es mi estilo preferido de pantalones, pero debo admitir que se ven bien hechos.",
+        "qualification": 3.8,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/32.jpg"
+      },
+      {
+        "user": "Jhon78",
+        "comment": "Aunque el estilo es genial, encuentro que la talla es un poco ajustada para mí.",
+        "qualification": 4.2,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/33.jpg"
+      },
+      {
+        "user": "Roger548",
+        "comment": "Esperaba una mejor calidad de tela para el precio, pero en general son unos buenos pantalones.",
+        "qualification": 4.0,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/34.jpg"
+      }
     ]
   },
   {
@@ -139,6 +451,7 @@
     "price": 54.99,
     "inStock": 20,
     "qualification": 4.6,
+    "sizes": ["S", "M", "L", "XL"],
     "brand": "Ralph Lauren",
     "gender": "unisex",
     "category": "fashion",
@@ -147,6 +460,43 @@
       "https://www.optimized-rlmedia.io/is/image/PoloGSI/s7-1450592_alternate10?$rl_df_pdp_5_7_a10$",
       "https://www.optimized-rlmedia.io/is/image/PoloGSI/s7-1450592_alternate6?$rl_df_pdp_5_7$",
       "https://www.optimized-rlmedia.io/is/image/PoloGSI/s7-1450592_alternate5?$rl_df_pdp_5_7$"
+    ],
+    "comments": [
+      {
+        "user": "CozyFashionista",
+        "comment": "Este jersey de punto es tan suave y cálido, ¡perfecto para los días fríos de invierno!",
+        "qualification": 4.8,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/40.jpg"
+      },
+      {
+        "user": "WinterEssentials",
+        "comment": "Me encanta la calidad de este jersey, y los colores son muy vibrantes.",
+        "qualification": 4.7,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/41.jpg"
+      },
+      {
+        "user": "Mary123",
+        "comment": "Esperaba que fuera más grueso para el precio, pero sigue siendo un buen jersey.",
+        "qualification": 4.0,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/women/40.jpg"
+      },
+      {
+        "user": "WarmAndStylish",
+        "comment": "El ajuste de este jersey es perfecto, y se siente muy cómodo de llevar.",
+        "qualification": 4.9,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/women/45.jpg"
+      },
+      {
+        "user": "ExpectedMore456",
+        "comment": "Me hubiera gustado que fuera un poco más grueso, pero en general estoy contento con la compra.",
+        "qualification": 4.5,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/46.jpg"
+      }
     ]
   },
   {
@@ -156,13 +506,52 @@
     "price": 39.99,
     "inStock": 25,
     "qualification": 4.3,
+    "sizes": ["S", "M", "L", "XL"],
     "brand": "Tommy Hilfiger",
     "gender": "male",
     "category": "fashion",
-    "colors": ["#0000FF", "#12d81c", "#FFD700"],
+    "colors": ["#FFFFF", "#12d81c", "#FFD700"],
     "images": [
-      "https://tommycolombia.vteximg.com.br/arquivos/ids/359446-1040-1387/UM0UM02846_0IG_1.jpg?v=638357017553130000",
-      "https://tommycolombia.vteximg.com.br/arquivos/ids/359451-1040-1387/UM0UM02846_0IG_3.jpg?v=638357017621630000"
+      "https://m.media-amazon.com/images/I/81oY2ciVt2L._AC_SY550_.jpg",
+      "https://m.media-amazon.com/images/I/71K1VzrulTL._AC_SY550_.jpg",
+      "https://m.media-amazon.com/images/I/71Wy+C1+BkL._AC_SY550_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "BeachLover123",
+        "comment": "¡Este bañador es genial para unas vacaciones en la playa! Me encanta el estampado tropical.",
+        "qualification": 4.5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/47.jpg"
+      },
+      {
+        "user": "Simmon458",
+        "comment": "El diseño de este bañador es muy fresco y veraniego, perfecto para la temporada.",
+        "qualification": 4.4,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/48.jpg"
+      },
+      {
+        "user": "Nicolas852",
+        "comment": "La calidad del material no es tan buena como esperaba, pero el diseño es bonito.",
+        "qualification": 3.8,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/49.jpg"
+      },
+      {
+        "user": "Brayan8792",
+        "comment": "El bañador se ajusta perfectamente y es muy cómodo de llevar, ¡lo recomendaría!",
+        "qualification": 4.6,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/50.jpg"
+      },
+      {
+        "user": "VictorP56",
+        "comment": "Me encanta la variedad de colores disponibles, ¡este bañador es todo lo que necesito para mis vacaciones!",
+        "qualification": 4.7,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/51.jpg"
+      }
     ]
   },
   {
@@ -172,13 +561,52 @@
     "price": 999.99,
     "inStock": 100,
     "qualification": 4.8,
+    "sizes": ["unica"],
     "brand": "Apple",
+    "gender": "unisex",
     "category": "technology",
     "colors": ["#000000", "#FFFFFF", "#506e52"],
     "images": [
       "https://mac-center.com/cdn/shop/files/iPhone_13_Pro_Max_Green_PDP_Image_Position-2_CLCO_666b1536-0ac3-40cc-8acc-f51449a0ef79_823x.jpg?v=1700293207",
       "https://mac-center.com/cdn/shop/files/iPhone_13_Pro_Max_Green_PDP_Image_Position-3_CLCO_9b67c6aa-bec7-49fc-a5ee-99eb40e16096_823x.jpg?v=1700293216",
       "https://mac-center.com/cdn/shop/files/iPhone_13_Pro_Max_Green_PDP_Image_Position-4_CLCO_10638e41-2f25-4985-a729-fee2e82201be_823x.jpg?v=1700293224"
+    ],
+    "comments": [
+      {
+        "user": "AppleFanatic",
+        "comment": "El iPhone 13 Pro es una maravilla de la tecnología, la cámara es increíblemente potente.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/52.jpg"
+      },
+      {
+        "user": "TechEnthusiast",
+        "comment": "El rendimiento de este iPhone es excepcional, ¡sin duda vale la pena el precio!",
+        "qualification": 4.9,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/53.jpg"
+      },
+      {
+        "user": "Techie",
+        "comment": "Aunque el iPhone 13 Pro tiene buenas características, esperaba más innovación por parte de Apple.",
+        "qualification": 4.0,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/54.jpg"
+      },
+      {
+        "user": "Customer",
+        "comment": "El diseño y la funcionalidad del iPhone 13 Pro son simplemente impecables, ¡estoy encantado con mi compra!",
+        "qualification": 4.8,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/women/52.jpg"
+      },
+      {
+        "user": "TechGuru",
+        "comment": "Apple ha hecho un gran trabajo con el iPhone 13 Pro, la experiencia de uso es fluida y satisfactoria.",
+        "qualification": 4.7,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/53.jpg"
+      }
     ]
   },
   {
@@ -188,13 +616,52 @@
     "price": 649.99,
     "inStock": 50,
     "qualification": 4.7,
+    "sizes": ["unica"],
     "brand": "Samsung",
+    "gender": "unisex",
     "category": "technology",
     "colors": ["#000000", "#F9A825", "#FFFFFF"],
     "images": [
       "https://http2.mlstatic.com/D_NQ_NP_2X_700548-MLU72854905380_112023-F.webp",
       "https://http2.mlstatic.com/D_NQ_NP_2X_980952-MLU73414949317_122023-F.webp",
       "https://http2.mlstatic.com/D_NQ_NP_2X_975686-MLU74972630803_032024-F.webp"
+    ],
+    "comments": [
+      {
+        "user": "TabletEnthusiast",
+        "comment": "La Samsung Galaxy Tab S7 es una tablet increíblemente potente, perfecta para la productividad y el entretenimiento.",
+        "qualification": 4.9,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/women/54.jpg"
+      },
+      {
+        "user": "TechSavvyUser",
+        "comment": "Me encanta la calidad de la pantalla AMOLED de esta tablet, las imágenes se ven impresionantes.",
+        "qualification": 4.8,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/women/55.jpg"
+      },
+      {
+        "user": "NotImpressedTechie2",
+        "comment": "Aunque la Samsung Galaxy Tab S7 tiene buenas características, el precio podría ser un poco elevado para algunos usuarios.",
+        "qualification": 4.2,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/women/56.jpg"
+      },
+      {
+        "user": "HappyCustomer123",
+        "comment": "Esta tablet ha superado mis expectativas, la velocidad y el rendimiento son excepcionales.",
+        "qualification": 4.9,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/53.jpg"
+      },
+      {
+        "user": "TechLover789",
+        "comment": "La Samsung Galaxy Tab S7 es una excelente opción para aquellos que buscan una tablet versátil y de alta calidad.",
+        "qualification": 4.7,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/54.jpg"
+      }
     ]
   },
   {
@@ -204,12 +671,51 @@
     "price": 1299.99,
     "inStock": 30,
     "qualification": 4.9,
+    "sizes": ["unica"],
     "brand": "Dell",
+    "gender": "unisex",
     "category": "technology",
     "colors": ["#000000", "#FFFFFF", "#007DB8"],
     "images": [
       "https://http2.mlstatic.com/D_NQ_NP_2X_909223-MCO51406066346_092022-F.webp",
       "https://http2.mlstatic.com/D_NQ_NP_2X_715915-MCO51406096196_092022-F.webp"
+    ],
+    "comments": [
+      {
+        "user": "MobileProfessional",
+        "comment": "La Dell XPS 13 es la compañera perfecta para trabajar sobre la marcha, su diseño ultradelgado es impresionante.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/55.jpg"
+      },
+      {
+        "user": "TechGuru456",
+        "comment": "Me encanta la calidad de la pantalla InfinityEdge de esta laptop, las imágenes son nítidas y vibrantes.",
+        "qualification": 4.8,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/56.jpg"
+      },
+      {
+        "user": "NotImpressedTechie3",
+        "comment": "El precio de la Dell XPS 13 podría ser un obstáculo para algunos, pero la calidad y el rendimiento hacen que valga la pena.",
+        "qualification": 4.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/women/1.jpg"
+      },
+      {
+        "user": "HappyCustomer234",
+        "comment": "¡Esta laptop es simplemente increíble! Rápida, potente y con un diseño elegante.",
+        "qualification": 5,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
+      },
+      {
+        "user": "TechEnthusiast789",
+        "comment": "La Dell XPS 13 es una de las mejores laptops del mercado, no puedo recomendarla lo suficiente.",
+        "qualification": 4.9,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/3.jpg"
+      }
     ]
   },
   {
@@ -219,10 +725,51 @@
     "price": 499.99,
     "inStock": 70,
     "qualification": 4.8,
+    "sizes": ["unica"],
     "brand": "Sony",
+    "gender": "unisex",
     "category": "technology",
-    "colors": ["#000000", "#FFFFFF"],
-    "images": ["https://m.media-amazon.com/images/I/51fM0CKG+HL._AC_SX679_.jpg"]
+    "colors": ["#FFFFFF"],
+    "images": [
+      "https://m.media-amazon.com/images/I/51fM0CKG+HL._AC_SX679_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "GamingFanatic",
+        "comment": "La Sony PlayStation 5 es una consola impresionante, los gráficos son increíbles y la experiencia de juego es totalmente inmersiva.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/3.jpg"
+      },
+      {
+        "user": "ConsoleGamer123",
+        "comment": "Estoy asombrado por la potencia de esta consola, cada juego se ve y se siente increíble en la PS5.",
+        "qualification": 4.9,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/4.jpg"
+      },
+      {
+        "user": "NotImpressedGamer",
+        "comment": "Si bien la PS5 tiene buenos gráficos, esperaba más innovación en cuanto a la jugabilidad.",
+        "qualification": 4.3,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/5.jpg"
+      },
+      {
+        "user": "HappyPS5Owner",
+        "comment": "¡La PS5 es la mejor compra que he hecho en mucho tiempo! Estoy completamente enamorado de ella.",
+        "qualification": 5,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/7.jpg"
+      },
+      {
+        "user": "GamingCommunity",
+        "comment": "La PS5 eleva el listón de las consolas de videojuegos, cada detalle ha sido cuidadosamente diseñado para ofrecer la mejor experiencia de juego.",
+        "qualification": 4.8,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/5.jpg"
+      }
+    ]
   },
   {
     "_id": "microsoft-surface-pro-8",
@@ -231,13 +778,52 @@
     "price": 1099.99,
     "inStock": 40,
     "qualification": 4.6,
+    "sizes": ["unica"],
     "brand": "Microsoft",
+    "gender": "unisex",
     "category": "technology",
     "colors": ["#000000", "#FFFFFF", "#008080"],
     "images": [
       "https://m.media-amazon.com/images/I/616CxWZF5OL.__AC_SY300_SX300_QL70_ML2_.jpg",
       "https://m.media-amazon.com/images/I/61ejNxB9poL._AC_SY879_.jpg",
       "https://m.media-amazon.com/images/I/51lI7zKegrL._AC_SX522_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "CreativeProfessional",
+        "comment": "La Microsoft Surface Pro 8 es una herramienta increíblemente versátil para trabajar y crear contenido, ¡me encanta su diseño!",
+        "qualification": 4.8,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/women/6.jpg"
+      },
+      {
+        "user": "TechEnthusiast456",
+        "comment": "La potencia de esta tablet convertible es impresionante, puedo realizar cualquier tarea sin problemas.",
+        "qualification": 4.7,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/women/7.jpg"
+      },
+      {
+        "user": "NotAsExpectedUser",
+        "comment": "Si bien la Microsoft Surface Pro 8 tiene buenas características, esperaba una mejor duración de la batería.",
+        "qualification": 4.2,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/women/8.jpg"
+      },
+      {
+        "user": "SatisfiedCustomer567",
+        "comment": "Estoy muy contento con mi compra, la Surface Pro 8 ha superado mis expectativas en términos de rendimiento y portabilidad.",
+        "qualification": 4.9,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/9.jpg"
+      },
+      {
+        "user": "TechGuru987",
+        "comment": "La Microsoft Surface Pro 8 es una excelente opción para aquellos que buscan una combinación perfecta entre una laptop y una tablet.",
+        "qualification": 4.8,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/10.jpg"
+      }
     ]
   },
   {
@@ -247,13 +833,51 @@
     "price": 1499.99,
     "inStock": 20,
     "qualification": 4.7,
+    "sizes": ["unica"],
     "brand": "LG",
+    "gender": "unisex",
     "category": "technology",
     "colors": ["#000000", "#837d7d"],
     "images": [
       "https://m.media-amazon.com/images/I/71UXvut9ZPL._AC_SX522_.jpg",
       "https://m.media-amazon.com/images/I/71RZZuoVrWL._AC_SX522_.jpg",
       "https://m.media-amazon.com/images/I/71+9KnZ4jcL._AC_SX522_.jpg"
+    ],"comments": [
+      {
+        "user": "HomeCinemaEnthusiast",
+        "comment": "Este televisor OLED de LG es impresionante, los colores son vibrantes y los negros son profundos, ¡perfecto para una experiencia cinematográfica en casa!",
+        "qualification": 4.9,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/11.jpg"
+      },
+      {
+        "user": "TechGeek123",
+        "comment": "La calidad de imagen de este televisor es excepcional, cada detalle se ve increíblemente claro en la pantalla OLED.",
+        "qualification": 4.8,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/12.jpg"
+      },
+      {
+        "user": "NotSatisfiedCustomer",
+        "comment": "Aunque la calidad de imagen es buena, el sonido podría ser mejor en este televisor.",
+        "qualification": 4.0,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/13.jpg"
+      },
+      {
+        "user": "HappyTVOwner789",
+        "comment": "Estoy muy feliz con mi compra, este televisor de LG ha transformado por completo mi experiencia de ver televisión en casa.",
+        "qualification": 4.9,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/women/11.jpg"
+      },
+      {
+        "user": "Cinephile456",
+        "comment": "Recomendaría este televisor OLED de LG a cualquier amante del cine, la calidad de imagen es impresionante.",
+        "qualification": 4.7,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/12.jpg"
+      }
     ]
   },
   {
@@ -263,7 +887,9 @@
     "price": 99.99,
     "inStock": 60,
     "qualification": 4.8,
+    "sizes": ["unica"],
     "brand": "Logitech",
+    "gender": "unisex",
     "category": "technology",
     "colors": ["#000000", "#FFFFFF"],
     "images": [
@@ -278,7 +904,9 @@
     "price": 1499.99,
     "inStock": 25,
     "qualification": 4.7,
+    "sizes": ["unica"],
     "brand": "ASUS",
+    "gender": "unisex",
     "category": "technology",
     "colors": ["#000000", "#797575"],
     "images": [
@@ -293,7 +921,9 @@
     "price": 3899.99,
     "inStock": 15,
     "qualification": 4.9,
+    "sizes": ["unica"],
     "brand": "Canon",
+    "gender": "unisex",
     "category": "technology",
     "colors": ["#000000", "#FFFFFF"],
     "images": [
@@ -310,7 +940,9 @@
     "price": 1299.99,
     "inStock": 35,
     "qualification": 4.6,
+    "sizes": ["unica"],
     "brand": "HP",
+    "gender": "unisex",
     "category": "technology",
     "colors": ["#000000", "#FFFFFF", "#1E90FF"],
     "images": ["https://m.media-amazon.com/images/I/61L7vD2L4lL._AC_SX522_.jpg"]
@@ -322,7 +954,9 @@
     "price": 199.99,
     "inStock": 50,
     "qualification": 4.5,
+    "sizes": ["unica"],
     "brand": "IKEA",
+    "gender": "unisex",
     "category": "home",
     "colors": ["#FFFFFF", "#000000"],
     "images": [
@@ -336,7 +970,9 @@
     "price": 599.99,
     "inStock": 30,
     "qualification": 4.8,
+    "sizes": ["unica"],
     "brand": "Dyson",
+    "gender": "unisex",
     "category": "home",
     "colors": ["#000000", "#F9A825"],
     "images": [
@@ -351,7 +987,9 @@
     "price": 149.99,
     "inStock": 40,
     "qualification": 4.7,
+    "sizes": ["unica"],
     "brand": "Philips",
+    "gender": "unisex",
     "category": "home",
     "colors": ["#FFFFFF"],
     "images": [
@@ -366,7 +1004,9 @@
     "price": 349.99,
     "inStock": 20,
     "qualification": 4.9,
+    "sizes": ["unica"],
     "brand": "Le Creuset",
+    "gender": "unisex",
     "category": "home",
     "colors": ["#ff6f00", "#2681b9"],
     "images": [
@@ -381,7 +1021,9 @@
     "price": 399.99,
     "inStock": 25,
     "qualification": 4.6,
+    "sizes": ["unica"],
     "brand": "iRobot",
+    "gender": "unisex",
     "category": "home",
     "colors": ["#000000", "#FFFFFF"],
     "images": [
@@ -396,7 +1038,9 @@
     "price": 249.99,
     "inStock": 35,
     "qualification": 4.7,
+    "sizes": ["unica"],
     "brand": "Google",
+    "gender": "unisex",
     "category": "home",
     "colors": ["#FFFFFF", "#FFD700"],
     "images": [
@@ -411,7 +1055,9 @@
     "price": 699.99,
     "inStock": 15,
     "qualification": 4.8,
+    "sizes": ["unica"],
     "brand": "Tuft & Needle",
+    "gender": "unisex",
     "category": "home",
     "colors": ["#FFFFFF"],
     "images": [
@@ -427,7 +1073,9 @@
     "price": 299.99,
     "inStock": 40,
     "qualification": 4.6,
+    "sizes": ["unica"],
     "brand": "KitchenAid",
+    "gender": "unisex",
     "category": "home",
     "colors": ["#FFFFFF", "#FF0000", "#0000FF", "#FFFF00", "#00FF00"],
     "images": [
@@ -442,7 +1090,9 @@
     "price": 199.99,
     "inStock": 50,
     "qualification": 4.7,
+    "sizes": ["unica"],
     "brand": "Sonos",
+    "gender": "unisex",
     "category": "home",
     "colors": ["#000000", "#FFFFFF"],
     "images": [
@@ -457,7 +1107,9 @@
     "price": 29.99,
     "inStock": 60,
     "qualification": 4.5,
+    "sizes": ["unica"],
     "brand": "Hario",
+    "gender": "unisex",
     "category": "home",
     "colors": ["#cf1c1c", "#000000"],
     "images": [
@@ -473,7 +1125,9 @@
     "price": 199.99,
     "inStock": 50,
     "qualification": 4.7,
+    "sizes": ["unica"],
     "brand": "Philips",
+    "gender": "unisex",
     "category": "health",
     "colors": ["#FFFFFF", "#000000", "#F9A825", "#FF0000"],
     " images": [
@@ -487,7 +1141,9 @@
     "price": 6.99,
     "inStock": 100,
     "qualification": 4.6,
+    "sizes": ["unica"],
     "brand": "Crest",
+    "gender": "unisex",
     "category": "health",
     "colors": ["#FFFFFF"],
     "images": ["https://m.media-amazon.com/images/I/71Yi9f78rmL._AC_SX679_.jpg"]
@@ -499,7 +1155,9 @@
     "price": 8.99,
     "inStock": 80,
     "qualification": 4.5,
+    "sizes": ["unica"],
     "brand": "Head & Shoulders",
+    "gender": "unisex",
     "category": "health",
     "colors": ["#FFFFFF"],
     "images": [
@@ -514,7 +1172,9 @@
     "price": 5.99,
     "inStock": 70,
     "qualification": 4.7,
+    "sizes": ["unica"],
     "brand": "Dove",
+    "gender": "unisex",
     "category": "health",
     "colors": ["#FFFFFF", "#F9A825"],
     " images": [
@@ -529,7 +1189,9 @@
     "price": 14.99,
     "inStock": 60,
     "qualification": 4.6,
+    "sizes": ["unica"],
     "brand": "Neutrogena",
+    "gender": "unisex",
     "category": "health and personal care",
     "colors": ["#FFFFFF"],
     "images": ["https://m.media-amazon.com/images/I/61Sj12U+OuL._AC_SX522_.jpg"]
@@ -541,7 +1203,9 @@
     "price": 28.99,
     "inStock": 45,
     "qualification": 4.8,
+    "sizes": ["unica"],
     "brand": "Olay",
+    "gender": "unisex",
     "category": "health and personal care",
     "colors": ["#FFFFFF"],
     "images": ["https://m.media-amazon.com/images/I/71pZz+sdnVL._AC_SX522_.jpg"]
@@ -553,7 +1217,9 @@
     "price": 4.99,
     "inStock": 55,
     "qualification": 4.5,
+    "sizes": ["unica"],
     "brand": "Axe",
+    "gender": "male",
     "category": "health and personal care",
     "colors": ["#000000"],
     "images": ["https://m.media-amazon.com/images/I/51NdOoHqELL._AC_SX679_.jpg"]
@@ -565,7 +1231,9 @@
     "price": 7.99,
     "inStock": 65,
     "qualification": 4.7,
+    "sizes": ["unica"],
     "brand": "Colgate",
+    "gender": "unisex",
     "category": "health and personal care",
     "colors": ["#FFFFFF"],
     "images": ["https://m.media-amazon.com/images/I/71icZm6sjvL._AC_SX679_.jpg"]
@@ -577,7 +1245,9 @@
     "price": 9.99,
     "inStock": 75,
     "qualification": 4.6,
+    "sizes": ["unica"],
     "brand": "Schick",
+    "gender": "unisex",
     "category": "health and personal care",
     "colors": ["#FFFFFF"],
     "images": [
@@ -592,7 +1262,9 @@
     "price": 5.49,
     "inStock": 90,
     "qualification": 4.7,
+    "sizes": ["unica"],
     "brand": "Old Spice",
+    "gender": "male",
     "category": "health and personal care",
     "colors": ["#b71a1a"],
     "images": [

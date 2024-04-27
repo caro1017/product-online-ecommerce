@@ -3,60 +3,70 @@
     "user": "Ana123",
     "comments": "Excelente producto, cumplió con todas mis expectativas. Lo recomiendo totalmente.",
     "qualification": 5,
-    "date": "2024-03-14"
+    "date": "2024-03-14",
+    "avatar": "https://plus.unsplash.com/premium_photo-1658527049634-15142565537a?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "user": "Carlos_88",
     "comments": "El envío fue rápido y el producto llegó en perfectas condiciones. Muy satisfecho con mi compra.",
     "qualification": 4,
-    "date": "2024-03-13"
+    "date": "2024-03-13",
+    "avatar": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "user": "Elena789",
     "comments": "Buena calidad y precio justo. Volveré a comprar en este sitio sin duda.",
     "qualification": 5,
-    "date": "2024-03-12"
+    "date": "2024-03-12",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "user": "LuisPerez",
     "comments": "El producto no era exactamente lo que esperaba, pero el servicio de atención al cliente fue excelente y me ayudaron a resolver mi problema.",
     "qualification": 3,
-    "date": "2024-03-11"
+    "date": "2024-03-11",
+    "avatar": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "user": "MariaGomez",
     "comments": "Increíble servicio al cliente. Me ayudaron con todas mis dudas antes de hacer la compra.",
     "qualification": 5,
-    "date": "2024-03-10"
+    "date": "2024-03-10",
+    "avatar": "https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "user": "Pedro_22",
     "comments": "El producto llegó tarde y en mal estado. No estoy satisfecho en absoluto.",
     "qualification": 2,
-    "date": "2024-03-09"
+    "date": "2024-03-09",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "user": "Sara_87",
     "comments": "Buena relación calidad-precio. Recomiendo este producto.",
     "qualification": 4,
-    "date": "2024-03-08"
+    "date": "2024-03-08",
+    "avatar": "https://plus.unsplash.com/premium_photo-1670884441012-c5cf195c062a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "user": "David654",
     "comments": "Producto de buena calidad, pero el tiempo de envío fue más largo de lo esperado.",
     "qualification": 3,
-    "date": "2024-03-07"
+    "date": "2024-03-07",
+    "avatar": "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "user": "Laura_33",
     "comments": "No estoy muy contento con el producto, no era lo que esperaba. La próxima vez compraré en otro sitio.",
     "qualification": 2,
-    "date": "2024-03-06"
+    "date": "2024-03-06",
+    "avatar": "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "user": "Juanito23",
     "comments": "El producto cumplió con mis expectativas. Buena calidad y entrega rápida.",
     "qualification": 4,
-    "date": "2024-03-05"
+    "date": "2024-03-05",
+    "avatar": "https://images.unsplash.com/photo-1654110455429-cf322b40a906?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ]
