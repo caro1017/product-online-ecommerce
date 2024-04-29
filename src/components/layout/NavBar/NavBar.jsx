@@ -12,6 +12,7 @@ import { Images } from "../../images/Images";
 import { NavBarDesktop } from "./Desktop/NavBarDesktop";
 import { NavBarMovil } from "./Movil/NavBarMovil";
 import { NavBanner } from "./Desktop/NavBanner";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
@@ -19,7 +20,9 @@ export const NavBar = () => {
       {/* Barra de navegación */}
       <AppBar className="bg-white fixed top-0 w-full">
         <Toolbar className="flex justify-between lgmx-10">
-          <img src={Images.logo} alt="logo" className="w-36 md:w-40" />
+          <Link to="/">
+            <img src={Images.logo} alt="logo" className="w-36 lg:w-96" />
+          </Link>
           {/* Menu solo para Escritorio */}
           <NavBarDesktop />
           {/* Menu solo para Moviles */}

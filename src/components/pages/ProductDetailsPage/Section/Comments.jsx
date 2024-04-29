@@ -1,4 +1,14 @@
 /* eslint-disable react/prop-types */
+/**
+ * Componente para mostrar los comentarios y calificaciones de un producto.
+ *
+ *
+ * @param {Object} productData - Los datos del producto que incluyen comentarios y calificación.
+ * @returns {JSX.Element|null} - El JSX que muestra los comentarios y calificaciones del producto, o null si no hay datos suficientes.
+ *
+ * Documentado por: Carolina Uribe Botero
+ * Fecha de documentación: 29 de abril de 2024
+ */
 import { LinearProgress, Rating, Stack } from "@mui/material";
 import { CardComment } from "../../../common/Card/CardComment";
 import { CustomButtons } from "../../../common/CustomButtons/CustomButtons";
@@ -10,6 +20,11 @@ export const Comments = ({ productData }) => {
     return null; // Devuelve null si productData no está definido o no tiene qualification
   }
 
+  /**
+   * Determina el nivel de calificación basado en la calificación dada.
+   * @param {number} qualification - La calificación del producto.
+   * @returns {string} - El nivel de calificación correspondiente.
+   */
   const qualificationLevels = [
     { level: "Excelente", threshold: { min: 4.7, max: 5 }, percentage: 100 },
     { level: "Bueno", threshold: { min: 4, max: 4.6 }, percentage: 80 },
@@ -41,17 +56,21 @@ export const Comments = ({ productData }) => {
 
   return (
     <>
-      <div className="text-black mt-10 lg:mt-16">
+      {/* Encabezado de la sección de comentarios */}
+      <div className="text-black mt-10 lg:mt-14">
         <h2 className="font-semibold px-4 md:px-16 lg:px-52 mb-4">Reseñas</h2>
         <div className="md:flex px-4 md:px-16 lg:px-52">
+          {/* Visualización de la calificación promedio */}
           <div className="bg-[#F4F4F4] w-40 rounded p-5 mb-5">
             <h2 className="text-4xl font-semibold text-center">
+              {/* Llama a la función para calcular la calificación promedio */}
               {calculateAverageRating(
                 productData.comments,
                 productData.qualification
               )}
             </h2>
             <div className="flex justify-center">
+              {/* Visualización de la calificación en forma de estrellas */}
               <Stack spacing={1}>
                 <Rating
                   name="half-rating"
@@ -67,6 +86,7 @@ export const Comments = ({ productData }) => {
             </div>
           </div>
 
+          {/* Visualización de los niveles de calificación */}
           <div className="md:ml-5 text-sm flex-grow">
             {qualificationLevels.map((levelObj, index) => (
               <div key={index} className="flex items-center mt-1">
@@ -91,6 +111,7 @@ export const Comments = ({ productData }) => {
                     style={{ backgroundColor: "#cccacaa7" }}
                   />
                 )}
+                {/* Muestra el nombre del nivel */}
                 <p className="text-xs ml-8">{levelObj.percentage}%</p>
               </div>
             ))}
@@ -98,6 +119,7 @@ export const Comments = ({ productData }) => {
         </div>
       </div>
 
+      {/* Renderiza los comentarios */}
       <div className="px-3 md:px-16 lg:px-52 mt-5">
         {productData.comments.map((comment, index) => (
           <CardComment
@@ -111,6 +133,7 @@ export const Comments = ({ productData }) => {
         ))}
       </div>
 
+      {/* Botón para agregar un comentario */}
       <div className="px-3 md:px-16 lg:px-52 my-10">
         <CustomButtons title="Añadir comentario" variant="contained" />
       </div>

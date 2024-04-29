@@ -16,7 +16,7 @@ import { useState } from "react";
 import { Card, CardContent, CardMedia, IconButton } from "@mui/material";
 import { CustomButtons } from "../CustomButtons/CustomButtons";
 
-export const CardProduct = ({ id, images, title, price }) => {
+export const CardProduct = ({ id, images, title, price, onClick }) => {
   // Estado inicial para el botón de "Me gusta"
   const [liked, setLiked] = useState(false);
 
@@ -65,6 +65,7 @@ export const CardProduct = ({ id, images, title, price }) => {
               title="Comprar"
               variant="contained"
               link={`/productDetailsPage/${id}`}
+              onClick={onClick}
             />
           </div>
         </CardContent>

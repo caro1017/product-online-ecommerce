@@ -20,6 +20,7 @@ const generateCarouselItems = () => {
       name={item.name}
       description={item.description}
       image={item.images}
+      link="/productPage"
     />
   ));
 };

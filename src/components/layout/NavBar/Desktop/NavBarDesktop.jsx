@@ -29,6 +29,7 @@ const userIcon = [
 ];
 
 export const NavBarDesktop = () => {
+  
   return (
     <>
       {/* Barra de búsqueda en la parte izquierda */}

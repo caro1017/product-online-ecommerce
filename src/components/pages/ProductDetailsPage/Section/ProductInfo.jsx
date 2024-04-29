@@ -73,7 +73,7 @@ export const ProductInfo = ({
         </div>
 
         {/* Descripcion */}
-        <div className="mt-3 px-1 md:px-6 lg:px-12 text-black">
+        <div className="mt-3 md:px-6 lg:px-12 text-black">
           {/* Titulo - marca - precio */}
           <h2 className="font-extrabold uppercase text-lg  ">
             {productData.title}

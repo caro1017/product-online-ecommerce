@@ -20,7 +20,7 @@ import {
 } from "@mui/material";
 import { CustomButtons } from "../CustomButtons/CustomButtons";
 
-export const CardFeatured = ({ name, description, image }) => {
+export const CardFeatured = ({ name, description, image, link }) => {
   return (
     <>
       {/* Tarjeta con imagen */}
@@ -53,7 +53,7 @@ export const CardFeatured = ({ name, description, image }) => {
         </CardContent>
         {/* Botón de compra */}
         <div className="p-5">
-          <CustomButtons title="Comprar" variant="outlined" />
+          <CustomButtons title="Comprar" variant="outlined" link={link} />
         </div>
       </Card>
     </>

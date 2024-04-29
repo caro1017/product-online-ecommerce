@@ -842,7 +842,8 @@
       "https://m.media-amazon.com/images/I/71UXvut9ZPL._AC_SX522_.jpg",
       "https://m.media-amazon.com/images/I/71RZZuoVrWL._AC_SX522_.jpg",
       "https://m.media-amazon.com/images/I/71+9KnZ4jcL._AC_SX522_.jpg"
-    ],"comments": [
+    ],
+    "comments": [
       {
         "user": "HomeCinemaEnthusiast",
         "comment": "Este televisor OLED de LG es impresionante, los colores son vibrantes y los negros son profundos, ¡perfecto para una experiencia cinematográfica en casa!",
@@ -895,6 +896,43 @@
     "images": [
       "https://m.media-amazon.com/images/I/51ENcaVkvxL.__AC_SX300_SY300_QL70_ML2_.jpg",
       "https://m.media-amazon.com/images/I/71hBJaJYtJL._AC_SX522_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "CreativeProfessional",
+        "comment": "El Logitech MX Master 3 es el mejor ratón que he usado para mi trabajo creativo, la personalización de botones es increíblemente útil.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/women/13.jpg"
+      },
+      {
+        "user": "TechEnthusiast456",
+        "comment": "Me encanta la precisión del seguimiento de este ratón, es perfecto para tareas detalladas.",
+        "qualification": 4.8,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/women/14.jpg"
+      },
+      {
+        "user": "NotAsExpectedUser",
+        "comment": "Esperaba que la duración de la batería fuera mejor en el Logitech MX Master 3, se agota más rápido de lo que esperaba.",
+        "qualification": 3.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/15.jpg"
+      },
+      {
+        "user": "HappyCustomer789",
+        "comment": "Este ratón ha mejorado mi productividad de forma significativa, ¡no puedo imaginar trabajar sin él!",
+        "qualification": 4.9,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/16.jpg"
+      },
+      {
+        "user": "DisappointedUser123",
+        "comment": "Aunque la personalización de botones es genial, he experimentado algunos problemas de conectividad intermitente con este ratón.",
+        "qualification": 3.0,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/18.jpg"
+      }
     ]
   },
   {
@@ -911,7 +949,46 @@
     "colors": ["#000000", "#797575"],
     "images": [
       "https://m.media-amazon.com/images/I/71dwsA3KsfL._AC_SX679_.jpg",
-      "rog_strix_g15_2.jpg"
+      "https://m.media-amazon.com/images/I/81lPntA1ANL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/91Mh-qmfhxL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/91ATaW1EYVL._AC_SX679_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "GamingEnthusiast123",
+        "comment": "La ASUS ROG Strix G15 es una bestia en cuanto a rendimiento, los juegos se ejecutan suavemente y sin problemas.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/19.jpg"
+      },
+      {
+        "user": "TechGuru456",
+        "comment": "Me encanta el diseño llamativo de esta laptop, es perfecta para los gamers que quieren destacar.",
+        "qualification": 4.8,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/20.jpg"
+      },
+      {
+        "user": "NotSatisfiedGamer",
+        "comment": "Aunque el rendimiento es bueno, la ASUS ROG Strix G15 tiende a calentarse mucho durante sesiones de juego prolongadas.",
+        "qualification": 3.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/21.jpg"
+      },
+      {
+        "user": "HappyGamingCustomer789",
+        "comment": "Esta laptop ha mejorado mi experiencia de juego en todos los sentidos, ¡no puedo estar más feliz con mi compra!",
+        "qualification": 4.9,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/women/18.jpg"
+      },
+      {
+        "user": "DisappointedGamer123",
+        "comment": "Me decepcionó un poco la duración de la batería de esta laptop, esperaba que fuera mejor considerando su precio.",
+        "qualification": 3.0,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/19.jpg"
+      }
     ]
   },
   {
@@ -931,6 +1008,43 @@
       "https://m.media-amazon.com/images/I/61RfWVtNmfL._AC_SX522_.jpg",
       "https://m.media-amazon.com/images/I/61gy5HZbT3L._AC_SX522_.jpg",
       "https://m.media-amazon.com/images/I/61JGOHxbodL._AC_SX522_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "ProfessionalPhotographer",
+        "comment": "La Canon EOS R5 es una maravilla tecnológica, la calidad de imagen que ofrece es excepcional, tanto en fotografía como en video.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/women/20.jpg"
+      },
+      {
+        "user": "TechEnthusiast456",
+        "comment": "Estoy impresionado por las capacidades de video 8K de esta cámara, es perfecta para profesionales que buscan lo mejor.",
+        "qualification": 4.8,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/women/21.jpg"
+      },
+      {
+        "user": "NotSatisfiedPhotographer",
+        "comment": "Aunque la calidad de imagen es excelente, el tamaño de los archivos de video 8K puede ser un desafío para el almacenamiento y la edición.",
+        "qualification": 3.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/women/22.jpg"
+      },
+      {
+        "user": "HappyCustomer789",
+        "comment": "¡Esta cámara ha llevado mi fotografía al siguiente nivel! La resolución ultra alta y las capacidades de video son impresionantes.",
+        "qualification": 5,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/20.jpg"
+      },
+      {
+        "user": "DisappointedPhotographer123",
+        "comment": "Me decepcionó un poco la duración de la batería de esta cámara, esperaba que durara más durante sesiones de fotografía intensivas.",
+        "qualification": 3.0,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/21.jpg"
+      }
     ]
   },
   {
@@ -945,12 +1059,53 @@
     "gender": "unisex",
     "category": "technology",
     "colors": ["#000000", "#FFFFFF", "#1E90FF"],
-    "images": ["https://m.media-amazon.com/images/I/61L7vD2L4lL._AC_SX522_.jpg"]
+    "images": [
+      "https://m.media-amazon.com/images/I/61L7vD2L4lL._AC_SX522_.jpg",
+      "https://m.media-amazon.com/images/I/61rzi-+iGZL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71S83kmqIkL._AC_SX679_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "TechEnthusiast123",
+        "comment": "La HP Spectre x360 es una laptop impresionante, su diseño elegante y su rendimiento excepcional la convierten en una excelente opción para profesionales y estudiantes.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/22.jpg"
+      },
+      {
+        "user": "StylishTechUser",
+        "comment": "Me encanta el diseño elegante de esta laptop, es perfecta para llevarla a cualquier lugar y trabajar con estilo.",
+        "qualification": 4.7,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/23.jpg"
+      },
+      {
+        "user": "NotAsExpectedBuyer",
+        "comment": "Aunque el rendimiento es bueno, esperaba una mejor duración de la batería en la HP Spectre x360.",
+        "qualification": 3.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/24.jpg"
+      },
+      {
+        "user": "SatisfiedCustomer789",
+        "comment": "Estoy muy contento con mi compra, esta laptop ha superado todas mis expectativas en términos de rendimiento y portabilidad.",
+        "qualification": 4.9,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/21.jpg"
+      },
+      {
+        "user": "DisappointedUser123",
+        "comment": "Me decepcionó un poco la calidad de la pantalla de esta laptop, esperaba que fuera mejor considerando su precio.",
+        "qualification": 3.0,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/22.jpg"
+      }
+    ]
   },
   {
     "_id": "ikea-malm-bed",
     "title": "Cama Malm",
-    "description": "Cama de estilo moderno y minimalista con almacenamiento integrado.",
+    "description": "Base de cama Queen con cabecera capitoné de lujo con ala y almacenamiento, base de cama Queen con estación de carga, soporte de listones de madera resistente, sin ruido, fácil montaje, negro",
     "price": 199.99,
     "inStock": 50,
     "qualification": 4.5,
@@ -960,7 +1115,47 @@
     "category": "home",
     "colors": ["#FFFFFF", "#000000"],
     "images": [
-      "https://m.media-amazon.com/images/I/912Ihx2sD9L.__AC_SX300_SY300_QL70_ML2_.jpg"
+      "https://m.media-amazon.com/images/I/814apv5Ub0L._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71Zbs9DfniL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81gxM7VdhxL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81fbJhOQIVL._AC_SX679_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "ModernLivingEnthusiast",
+        "comment": "La cama Malm de IKEA es perfecta para espacios modernos y minimalistas, su diseño limpio y almacenamiento integrado la hacen muy funcional.",
+        "qualification": 4.8,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/women/23.jpg"
+      },
+      {
+        "user": "MinimalistHomeOwner",
+        "comment": "Estoy muy contento con mi compra, esta cama se adapta perfectamente al estilo de mi hogar y el almacenamiento integrado es muy conveniente.",
+        "qualification": 4.7,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/women/24.jpg"
+      },
+      {
+        "user": "NotSatisfiedBuyer",
+        "comment": "La calidad del material de la cama Malm de IKEA no es la mejor, esperaba algo más resistente considerando su precio.",
+        "qualification": 3.0,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/22.jpg"
+      },
+      {
+        "user": "HappyCustomer789",
+        "comment": "¡Esta cama es increíble! Fácil de montar, diseño elegante y el espacio de almacenamiento es muy práctico.",
+        "qualification": 4.9,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/23.jpg"
+      },
+      {
+        "user": "DisappointedUser123",
+        "comment": "Me decepcionó un poco la falta de opciones de color para esta cama, me habría gustado tener más variedad.",
+        "qualification": 3.5,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/24.jpg"
+      }
     ]
   },
   {
@@ -976,8 +1171,45 @@
     "category": "home",
     "colors": ["#000000", "#F9A825"],
     "images": [
-      "https://m.media-amazon.com/images/I/81FQ-qjjHKL._AC_SX679_.jpg",
-      "https://m.media-amazon.com/images/I/81gfwRkasbL._AC_SX679_.jpg"
+      "https://m.media-amazon.com/images/I/81gfwRkasbL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81FQ-qjjHKL._AC_SX679_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "CleanFreak123",
+        "comment": "¡La Dyson V11 es increíble! La potencia de succión es impresionante y la capacidad de limpieza es excelente, ¡la recomiendo totalmente!",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/25.jpg"
+      },
+      {
+        "user": "HouseholdHelper456",
+        "comment": "Esta aspiradora ha hecho mi vida mucho más fácil, la capacidad de limpieza y la autonomía extendida son exactamente lo que necesitaba.",
+        "qualification": 4.9,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/26.jpg"
+      },
+      {
+        "user": "NotSatisfiedBuyer",
+        "comment": "Me esperaba un poco más de durabilidad en la batería de la Dyson V11, se agota un poco más rápido de lo que esperaba.",
+        "qualification": 3.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/women/24.jpg"
+      },
+      {
+        "user": "HappyCustomer789",
+        "comment": "Estoy muy contento con mi compra, la Dyson V11 es muy conveniente y fácil de usar, ¡la recomendaría a cualquiera!",
+        "qualification": 4.8,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/28.jpg"
+      },
+      {
+        "user": "DisappointedUser123",
+        "comment": "Aunque la potencia de succión es buena, encuentro que el peso de la Dyson V11 puede ser un poco incómodo durante largas sesiones de limpieza.",
+        "qualification": 3.7,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/26.jpg"
+      }
     ]
   },
   {
@@ -995,6 +1227,43 @@
     "images": [
       "https://m.media-amazon.com/images/I/71CmSByvShL._AC_SX679_.jpg",
       "https://m.media-amazon.com/images/I/71TM42kp+3L._AC_SX679_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "SmartHomeEnthusiast",
+        "comment": "El kit de inicio Philips Hue es excelente, la configuración es muy sencilla y la capacidad de control remoto es muy conveniente.",
+        "qualification": 4.8,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/women/27.jpg"
+      },
+      {
+        "user": "LightingFan456",
+        "comment": "Estoy muy impresionado con la calidad de las bombillas LED de Philips Hue, la iluminación es brillante y se puede ajustar fácilmente según mis necesidades.",
+        "qualification": 4.9,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/27.jpg"
+      },
+      {
+        "user": "NotSatisfiedBuyer",
+        "comment": "Me gustaría que el kit incluyera más bombillas LED por el precio que tiene, siento que es un poco caro para lo que ofrece.",
+        "qualification": 3.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/women/28.jpg"
+      },
+      {
+        "user": "HappyCustomer789",
+        "comment": "¡Este kit ha transformado completamente mi hogar! La capacidad de control remoto y la calidad de la iluminación son excepcionales.",
+        "qualification": 4.8,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/women/29.jpg"
+      },
+      {
+        "user": "DisappointedUser123",
+        "comment": "Tuve algunos problemas para configurar el puente en mi red doméstica, la experiencia no fue tan fácil como esperaba.",
+        "qualification": 3.7,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/29.jpg"
+      }
     ]
   },
   {
@@ -1012,23 +1281,98 @@
     "images": [
       "https://m.media-amazon.com/images/I/71qPloNyihL._AC_SX679_.jpg",
       "https://m.media-amazon.com/images/I/71prZxckArL._AC_SX679_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "CookingEnthusiast123",
+        "comment": "¡La olla holandesa Le Creuset es increíble! La calidad del hierro fundido esmaltado garantiza una cocción uniforme y los platos quedan deliciosos.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/30.jpg"
+      },
+      {
+        "user": "ChefInTraining456",
+        "comment": "Estoy impresionado con el rendimiento de esta olla, es perfecta para cocinar guisos y platos al horno. Además, su diseño elegante añade un toque de estilo a mi cocina.",
+        "qualification": 4.9,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/31.jpg"
+      },
+      {
+        "user": "NotSatisfiedBuyer",
+        "comment": "Me decepcionó un poco el peso de la olla, es un poco más pesada de lo que esperaba, lo que dificulta su manejo en la cocina.",
+        "qualification": 3.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/32.jpg"
+      },
+      {
+        "user": "HappyCustomer789",
+        "comment": "¡Esta olla es una joya en mi cocina! La he estado usando para preparar una variedad de platos y los resultados siempre son fantásticos.",
+        "qualification": 4.9,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/women/32.jpg"
+      },
+      {
+        "user": "DisappointedUser123",
+        "comment": "Aunque la olla funciona bien, el precio es un poco elevado en mi opinión. Me hubiera gustado que fuera más asequible.",
+        "qualification": 3.8,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/33.jpg"
+      }
     ]
   },
   {
     "_id": "roomba-robot-vacuum",
-    "title": "Aspiradora robot Roomba",
-    "description": "Aspiradora autónoma que limpia automáticamente su hogar con navegación inteligente.",
+    "title": "Robot aspirador",
+    "description": "Robot aspirador con succión ciclónica de 3000 Pa, aplicación/voz/control remoto, aspiradora robótica automática de carga automática, limpieza programada, ideal para pelo de mascotas, suelo",
     "price": 399.99,
     "inStock": 25,
     "qualification": 4.6,
     "sizes": ["unica"],
-    "brand": "iRobot",
+    "brand": "ROPVACNIC",
     "gender": "unisex",
     "category": "home",
     "colors": ["#000000", "#FFFFFF"],
     "images": [
-      "https://m.media-amazon.com/images/I/71b1+HyxfjL._AC_SX679_.jpg",
-      "https://m.media-amazon.com/images/I/81+yzxONIML._AC_SX679_.jpg"
+      "https://m.media-amazon.com/images/I/612sEwvUfVL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71fk24wgUvL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71ppNITtxhL._AC_SX679_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "TechFanatic123",
+        "comment": "¡Este robot aspirador es asombroso! La succión ciclónica es potente y la capacidad de programar la limpieza a través de la aplicación es muy conveniente.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/women/34.jpg"
+      },
+      {
+        "user": "CleanFreak456",
+        "comment": "Me encanta lo fácil que es usar este robot aspirador. La limpieza programada me ahorra mucho tiempo y la succión potente garantiza una limpieza profunda.",
+        "qualification": 4.8,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/women/35.jpg"
+      },
+      {
+        "user": "NotSatisfiedBuyer",
+        "comment": "Tuve algunos problemas con la aplicación de control, a veces no se conecta correctamente al robot aspirador. Esperaba una experiencia más fluida.",
+        "qualification": 3.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/33.jpg"
+      },
+      {
+        "user": "HappyCustomer789",
+        "comment": "Aunque inicialmente tuve dudas sobre la efectividad de un robot aspirador, este producto ha superado mis expectativas. ¡Mi casa nunca ha estado tan limpia y ordenada!",
+        "qualification": 4.9,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/34.jpg"
+      },
+      {
+        "user": "DisappointedUser123",
+        "comment": "La succión del robot aspirador no es tan potente como esperaba, especialmente en alfombras gruesas. Además, la duración de la batería podría ser mejor.",
+        "qualification": 3.7,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/35.jpg"
+      }
     ]
   },
   {
@@ -1046,6 +1390,43 @@
     "images": [
       "https://m.media-amazon.com/images/I/71PColv3+YL._AC_SX679_.jpg",
       "https://m.media-amazon.com/images/I/81Nm1ol5zUL._AC_SX679_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "EnergySaver123",
+        "comment": "El termostato Nest ha sido una excelente adición a mi hogar. Me encanta cómo aprende mis hábitos de temperatura y me ayuda a ahorrar energía de manera inteligente.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/36.jpg"
+      },
+      {
+        "user": "SmartHomeEnthusiast456",
+        "comment": "Este termostato es muy fácil de instalar y configurar. Además, la interfaz de usuario es intuitiva y la capacidad de controlarlo desde mi teléfono es genial.",
+        "qualification": 4.8,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/37.jpg"
+      },
+      {
+        "user": "NotSatisfiedBuyer",
+        "comment": "Me decepcionó un poco la precisión del termostato Nest. A veces la temperatura ambiente no coincide con lo que muestra en la pantalla, lo que puede ser frustrante.",
+        "qualification": 3.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/women/35.jpg"
+      },
+      {
+        "user": "HappyCustomer789",
+        "comment": "¡Mi experiencia con el termostato Nest ha sido maravillosa! No solo me ayuda a mantener mi hogar cómodo, sino que también me ha ayudado a reducir mis facturas de energía.",
+        "qualification": 4.9,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/women/36.jpg"
+      },
+      {
+        "user": "DisappointedUser123",
+        "comment": "Aunque el termostato Nest tiene muchas características interesantes, siento que el precio es un poco elevado en comparación con otros termostatos inteligentes disponibles en el mercado.",
+        "qualification": 3.7,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/37.jpg"
+      }
     ]
   },
   {
@@ -1064,6 +1445,43 @@
       "https://m.media-amazon.com/images/I/91hJYO8enCS._AC_SX679_.jpg",
       "https://m.media-amazon.com/images/I/81IJIqo5MYS._AC_SX679_.jpg",
       "https://m.media-amazon.com/images/I/91JzemBIk3S._AC_SX679_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "Sleepyhead123",
+        "comment": "¡Este colchón es increíble! Me ha proporcionado el mejor sueño de mi vida. La espuma con memoria se adapta perfectamente a mi cuerpo y me brinda un apoyo excepcional.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/women/38.jpg"
+      },
+      {
+        "user": "ComfortSeeker456",
+        "comment": "Estoy muy impresionado con la calidad de este colchón. La espuma con memoria es realmente cómoda y el soporte es excelente. ¡Definitivamente recomendaría este producto!",
+        "qualification": 4.8,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/women/39.jpg"
+      },
+      {
+        "user": "BackPainSufferer789",
+        "comment": "Aunque el colchón es cómodo, siento que podría proporcionar un poco más de soporte para mi dolor de espalda. Desearía que fuera un poco más firme.",
+        "qualification": 4,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/women/40.jpg"
+      },
+      {
+        "user": "HappyCustomer123",
+        "comment": "Este colchón ha superado mis expectativas. Es cómodo, de alta calidad y el precio es justo. ¡Definitivamente volvería a comprarlo!",
+        "qualification": 4.9,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/38.jpg"
+      },
+      {
+        "user": "QualityConscious456",
+        "comment": "Aunque el colchón es cómodo, noté un olor químico persistente durante los primeros días de uso. Esperaba que desapareciera más rápido.",
+        "qualification": 4.2,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/39.jpg"
+      }
     ]
   },
   {
@@ -1079,8 +1497,45 @@
     "category": "home",
     "colors": ["#FFFFFF", "#FF0000", "#0000FF", "#FFFF00", "#00FF00"],
     "images": [
-      "https://m.media-amazon.com/images/I/711fcF6OfnL._AC_SX679_.jpg",
-      "https://m.media-amazon.com/images/I/71JzwhnxLTL._AC_SX679_.jpg"
+      "https://m.media-amazon.com/images/I/71JzwhnxLTL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/711fcF6OfnL._AC_SX679_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "BakerExtraordinaire123",
+        "comment": "¡Esta batidora de pie es una maravilla! Su potencia y versatilidad la hacen perfecta para preparar todo tipo de recetas. Además, el diseño retro es encantador.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/40.jpg"
+      },
+      {
+        "user": "KitchenEnthusiast456",
+        "comment": "Estoy muy satisfecho con mi compra. Esta batidora de pie hace que cocinar sea mucho más fácil y divertido. ¡La recomendaría a cualquier amante de la cocina!",
+        "qualification": 4.8,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/41.jpg"
+      },
+      {
+        "user": "DisappointedChef789",
+        "comment": "La batidora es potente, pero noté que el mecanismo de mezcla tiende a atascarse con ingredientes más densos. No es tan eficiente como esperaba en ese aspecto.",
+        "qualification": 3.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/42.jpg"
+      },
+      {
+        "user": "HappyHomemaker123",
+        "comment": "Me encanta esta batidora de pie. Es robusta, fácil de limpiar y viene en una variedad de colores hermosos. ¡Es el complemento perfecto para mi cocina!",
+        "qualification": 4.9,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/women/39.jpg"
+      },
+      {
+        "user": "OccasionalBaker456",
+        "comment": "Si bien la batidora hace un buen trabajo en la mayoría de las tareas, siento que el precio es un poco elevado para lo que ofrece. Esperaba más características por este precio.",
+        "qualification": 3.8,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/40.jpg"
+      }
     ]
   },
   {
@@ -1098,6 +1553,43 @@
     "images": [
       "https://m.media-amazon.com/images/I/617ggmXddpL._AC_SX522_.jpg",
       "https://m.media-amazon.com/images/I/71FW592kYlL._AC_SX522_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "Audiophile123",
+        "comment": "El Sonos One es simplemente asombroso. La calidad de sonido es excepcional y el control por voz funciona a la perfección. ¡Lo recomendaría sin dudarlo!",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/women/41.jpg"
+      },
+      {
+        "user": "MusicLover456",
+        "comment": "Estoy muy contento con mi altavoz Sonos One. La música suena increíblemente clara y nítida, y el control por voz hace que sea muy conveniente de usar.",
+        "qualification": 4.8,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/42.jpg"
+      },
+      {
+        "user": "BassEnthusiast789",
+        "comment": "El Sonos One ofrece un sonido impresionante, pero a veces parece faltar un poco de profundidad en los graves. Sin embargo, sigue siendo una excelente opción para los amantes de la música.",
+        "qualification": 4.2,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/women/42.jpg"
+      },
+      {
+        "user": "TechSavvyMom123",
+        "comment": "El altavoz Sonos One ha mejorado significativamente mi experiencia musical en casa. El control por voz es muy útil, especialmente cuando tienes las manos ocupadas.",
+        "qualification": 4.9,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/44.jpg"
+      },
+      {
+        "user": "DisappointedListener456",
+        "comment": "Esperaba más del Sonos One. Si bien el sonido es decente, he experimentado algunos problemas de conectividad y la configuración inicial fue un poco complicada.",
+        "qualification": 3.5,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/45.jpg"
+      }
     ]
   },
   {
@@ -1116,22 +1608,43 @@
       "https://m.media-amazon.com/images/I/61AXRgUofJL._AC_SX679_.jpg",
       "https://m.media-amazon.com/images/I/51Uku8N9t-L._AC_SX679_.jpg",
       "https://m.media-amazon.com/images/I/61-3y5bqxfL._AC_SX679_.jpg"
-    ]
-  },
-  {
-    "_id": "philips-sonicare-diamondclean",
-    "title": "Philips Sonicare DiamondClean",
-    "description": "Cepillo de dientes eléctrico con tecnología sónica para una limpieza profunda y blanqueamiento dental.",
-    "price": 199.99,
-    "inStock": 50,
-    "qualification": 4.7,
-    "sizes": ["unica"],
-    "brand": "Philips",
-    "gender": "unisex",
-    "category": "health",
-    "colors": ["#FFFFFF", "#000000", "#F9A825", "#FF0000"],
-    " images": [
-      "https://http2.mlstatic.com/D_NQ_NP_2X_735869-CBT50861584534_072022-F.webp"
+    ],
+    "comments": [
+      {
+        "user": "CoffeeConnoisseur123",
+        "comment": "La cafetera Hario V60 es simplemente excelente. Permite un control total sobre el proceso de preparación del café, lo que resulta en una taza con un sabor increíblemente rico y equilibrado. ¡Altamente recomendado!",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/45.jpg"
+      },
+      {
+        "user": "MorningCoffeeLover456",
+        "comment": "Estoy muy feliz con mi compra de la cafetera Hario V60. Es fácil de usar y produce café delicioso. Además, su diseño elegante se ve genial en mi cocina.",
+        "qualification": 4.8,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/46.jpg"
+      },
+      {
+        "user": "BitterBrewDisliker789",
+        "comment": "A pesar de seguir cuidadosamente las instrucciones, no logré obtener un buen café con esta cafetera. El sabor era bastante amargo y no era lo que esperaba.",
+        "qualification": 2.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/47.jpg"
+      },
+      {
+        "user": "CoffeeFanaticMom123",
+        "comment": "La Hario V60 ha cambiado mi experiencia matutina con el café. Si bien lleva un poco de práctica dominarla, una vez que lo haces, el café que produce es simplemente delicioso.",
+        "qualification": 4.7,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/women/45.jpg"
+      },
+      {
+        "user": "DisappointedCaffeineAddict456",
+        "comment": "Tuve problemas para conseguir el goteo correcto con esta cafetera, lo que resultó en un café demasiado aguado. La calidad de construcción también podría ser mejor.",
+        "qualification": 3.2,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/46.jpg"
+      }
     ]
   },
   {
@@ -1146,7 +1659,48 @@
     "gender": "unisex",
     "category": "health",
     "colors": ["#FFFFFF"],
-    "images": ["https://m.media-amazon.com/images/I/71Yi9f78rmL._AC_SX679_.jpg"]
+    "images": [
+      "https://m.media-amazon.com/images/I/414VWUZJYvL._SX300_SY300_QL70_FMwebp_.jpg",
+      "https://m.media-amazon.com/images/I/61qBYt8+tPL._SX466_.jpg",
+      "https://m.media-amazon.com/images/I/61HFYArJ9vL._SX466_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "SmileEnthusiast123",
+        "comment": "¡La pasta de dientes Crest 3D White realmente funciona! He notado una diferencia significativa en el brillo de mis dientes después de usarla durante solo unos días. ¡Definitivamente la recomendaría!",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/women/47.jpg"
+      },
+      {
+        "user": "WhiteTeethFan456",
+        "comment": "Esta pasta de dientes es excelente para mantener mis dientes blancos y brillantes. El sabor es agradable y deja una sensación de limpieza en la boca. ¡Definitivamente la compraré de nuevo!",
+        "qualification": 4.8,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/women/48.jpg"
+      },
+      {
+        "user": "SensitiveGums789",
+        "comment": "Me gusta cómo blanquea mis dientes, pero he notado que me causa sensibilidad en las encías después de un uso prolongado. Sería genial si tuviera una fórmula más suave para las encías sensibles.",
+        "qualification": 3.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/48.jpg"
+      },
+      {
+        "user": "DentalHygieneGuruMom123",
+        "comment": "He estado usando la pasta de dientes Crest 3D White durante años y siempre estoy satisfecho con los resultados. Ayuda a mantener mis dientes limpios y blancos sin dañar el esmalte.",
+        "qualification": 4.7,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/49.jpg"
+      },
+      {
+        "user": "StainFighter456",
+        "comment": "Es una buena pasta de dientes para eliminar manchas superficiales, pero me gustaría que el efecto blanqueador fuera un poco más duradero. Aún así, es un producto decente en general.",
+        "qualification": 4.0,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/50.jpg"
+      }
+    ]
   },
   {
     "_id": "head-shoulders-shampoo",
@@ -1161,25 +1715,46 @@
     "category": "health",
     "colors": ["#FFFFFF"],
     "images": [
-      "https://m.media-amazon.com/images/I/6194wszixfL.__AC_SX300_SY300_QL70_ML2_.jpg",
-      "https://m.media-amazon.com/images/I/71CrOfinXrL._AC_SX679_.jpg"
-    ]
-  },
-  {
-    "_id": "dove-body-wash",
-    "title": "Gel de baño Dove",
-    "description": "Gel de baño nutritivo con fórmula suave que deja la piel suave, hidratada y con un aroma fresco.",
-    "price": 5.99,
-    "inStock": 70,
-    "qualification": 4.7,
-    "sizes": ["unica"],
-    "brand": "Dove",
-    "gender": "unisex",
-    "category": "health",
-    "colors": ["#FFFFFF", "#F9A825"],
-    " images": [
-      "https://m.media-amazon.com/images/I/61ur2l0C6IL._AC_SX679_.jpg",
-      "https://m.media-amazon.com/images/I/71GhBbebgPL._AC_SX679_.jpg"
+      "https://m.media-amazon.com/images/I/718g1HNHh7L._SX466_.jpg",
+      "https://m.media-amazon.com/images/I/71SLyJKZ3ML._SX466_.jpg",
+      "https://m.media-amazon.com/images/I/61YH1dAGe6L._SX466_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "DandruffFree123",
+        "comment": "¡Este shampoo es increíble! Ha eliminado por completo mi caspa y deja mi cabello suave y con un aroma fresco. Lo recomendaría a cualquiera que busque un shampoo anticaspa efectivo.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/51.jpg"
+      },
+      {
+        "user": "SmoothHairLover456",
+        "comment": "Me encanta cómo este shampoo deja mi cabello suave y manejable. Además, ha reducido significativamente la caspa en mi cuero cabelludo. ¡Definitivamente mi shampoo favorito!",
+        "qualification": 4.8,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/women/49.jpg"
+      },
+      {
+        "user": "SensitivityIssues789",
+        "comment": "Aunque este shampoo funciona bien para controlar la caspa, he notado que puede causar sequedad en mi cuero cabelludo si lo uso con demasiada frecuencia. Sería ideal si tuviera una fórmula más suave.",
+        "qualification": 3.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/52.jpg"
+      },
+      {
+        "user": "HealthyScalpGuruMom123",
+        "comment": "Head & Shoulders es mi opción confiable para mantener mi cuero cabelludo libre de caspa y mi cabello suave. He estado usando este shampoo durante años y siempre estoy satisfecha con los resultados.",
+        "qualification": 4.7,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/54.jpg"
+      },
+      {
+        "user": "FrequentWasher456",
+        "comment": "Es un buen shampoo para controlar la caspa, pero encuentro que necesito usarlo con bastante frecuencia para mantener los resultados. Aún así, funciona mejor que otros que he probado.",
+        "qualification": 4.0,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/50.jpg"
+      }
     ]
   },
   {
@@ -1194,7 +1769,48 @@
     "gender": "unisex",
     "category": "health and personal care",
     "colors": ["#FFFFFF"],
-    "images": ["https://m.media-amazon.com/images/I/61Sj12U+OuL._AC_SX522_.jpg"]
+    "images": [
+      "https://m.media-amazon.com/images/I/41xeBXzU1DL._SX300_SY300_QL70_FMwebp_.jpg",
+      "https://m.media-amazon.com/images/I/81euySjhmVL._SX466_.jpg",
+      "https://m.media-amazon.com/images/I/81ZdS2FY1XL._SX466_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "GlowingSkinFanatic123",
+        "comment": "¡Este hidratante es increíble! Realmente siento la diferencia en mi piel después de usarlo. Se siente suave, hidratada y con un aspecto radiante. Definitivamente lo recomendaría a cualquiera que busque un impulso de hidratación para su piel.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/women/51.jpg"
+      },
+      {
+        "user": "HealthySkinEnthusiast456",
+        "comment": "Me encanta cómo este hidratante absorbe rápidamente en mi piel y la deja sintiéndose fresca e hidratada todo el día. Además, el ácido hialurónico realmente hace maravillas para mantener mi piel suave y flexible. ¡Definitivamente un producto imprescindible en mi rutina de cuidado de la piel!",
+        "qualification": 4.8,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/women/52.jpg"
+      },
+      {
+        "user": "SensitiveSkinIssues789",
+        "comment": "Si bien este hidratante es efectivo para hidratar la piel, he notado que puede causar un ligero enrojecimiento en mi piel sensible. Sería genial si Neutrogena lanzara una versión aún más suave para personas con piel sensible.",
+        "qualification": 3.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/women/53.jpg"
+      },
+      {
+        "user": "RadiantComplexionLover123",
+        "comment": "Neutrogena Hydro Boost Moisturizer es mi producto favorito para mantener mi piel hidratada y con un aspecto radiante. Lo uso todas las mañanas y noches, y ha hecho maravillas para mi piel. ¡Lo recomendaría a cualquiera!",
+        "qualification": 4.7,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/women/54.jpg"
+      },
+      {
+        "user": "DrySkinStruggles456",
+        "comment": "Es un buen hidratante, pero si tienes piel muy seca como la mía, es posible que necesites aplicar una capa adicional o combinarlo con un aceite facial para obtener la hidratación adecuada. Aún así, me ha ayudado a mantener mi piel menos reseca durante el día.",
+        "qualification": 4.0,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/55.jpg"
+      }
+    ]
   },
   {
     "_id": "olay-regenerist-retinol-24",
@@ -1208,7 +1824,48 @@
     "gender": "unisex",
     "category": "health and personal care",
     "colors": ["#FFFFFF"],
-    "images": ["https://m.media-amazon.com/images/I/71pZz+sdnVL._AC_SX522_.jpg"]
+    "images": [
+      "https://m.media-amazon.com/images/I/71My+d6CjQL._SX466_.jpg",
+      "https://m.media-amazon.com/images/I/71Pv989xzUL._SX466_.jpg",
+      "https://m.media-amazon.com/images/I/91j9D2WP3qL._SX466_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "YouthfulGlowFanatic123",
+        "comment": "¡Esta crema es increíble! Desde que empecé a usarla, he notado una mejora significativa en la textura de mi piel y una reducción en la apariencia de mis arrugas. Se absorbe rápidamente y no deja sensación grasosa. ¡Definitivamente la recomendaría!",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/women/56.jpg"
+      },
+      {
+        "user": "SkinCareLover456",
+        "comment": "Me encanta cómo esta crema hace que mi piel se sienta suave y nutrida durante toda la noche. He notado una reducción en la apariencia de mis líneas finas y arrugas desde que comencé a usarla. ¡Un producto imprescindible en mi rutina nocturna de cuidado de la piel!",
+        "qualification": 4.7,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/women/57.jpg"
+      },
+      {
+        "user": "SensitiveSkinStruggles789",
+        "comment": "Aunque esta crema es efectiva para reducir las arrugas, me ha causado irritación en la piel después de unos días de uso. Si tienes piel sensible, te recomendaría probarla en una pequeña área primero.",
+        "qualification": 3.0,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/women/58.jpg"
+      },
+      {
+        "user": "SmoothSkinDreamer123",
+        "comment": "Olay Regenerist Retinol 24 es mi producto favorito para el cuidado de la piel nocturno. Despierto con una piel suave y renovada todas las mañanas. ¡Realmente ha mejorado la apariencia general de mi piel!",
+        "qualification": 4.9,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/women/59.jpg"
+      },
+      {
+        "user": "WrinkleWorrier456",
+        "comment": "Si bien he notado una mejora en la textura de mi piel desde que comencé a usar esta crema, he experimentado un ligero enrojecimiento en algunas áreas. Sin embargo, los resultados valen la pena. ¡Recomendaría probarla!",
+        "qualification": 4.3,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/60.jpg"
+      }
+    ]
   },
   {
     "_id": "axe-body-spray",
@@ -1222,7 +1879,48 @@
     "gender": "male",
     "category": "health and personal care",
     "colors": ["#000000"],
-    "images": ["https://m.media-amazon.com/images/I/51NdOoHqELL._AC_SX679_.jpg"]
+    "images": [
+      "https://m.media-amazon.com/images/I/717IyPcU2CL._AC_SY741_.jpg",
+      "https://m.media-amazon.com/images/I/81yvrmzUNxL._AC_SY550_.jpg",
+      "https://m.media-amazon.com/images/I/313oP1oPHkL._AC_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "FreshnessFanatic123",
+        "comment": "¡Este spray corporal Axe es mi favorito absoluto! Tiene un aroma fresco y masculino que dura todo el día. Si quieres sentirte fresco y seguro, este es el spray perfecto para ti.",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/56.jpg"
+      },
+      {
+        "user": "ScentSensation456",
+        "comment": "Me encanta la fragancia de este spray corporal Axe. Es refrescante y no abrumadora. Sin embargo, el aroma podría durar un poco más en mi piel.",
+        "qualification": 4.0,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/57.jpg"
+      },
+      {
+        "user": "DisappointedDude789",
+        "comment": "No estoy tan impresionado con este spray corporal Axe. Aunque el aroma es decente al principio, no dura tanto como esperaba. No lo compraría de nuevo.",
+        "qualification": 2.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/58.jpg"
+      },
+      {
+        "user": "LongLastingLad123",
+        "comment": "Este spray corporal Axe es genial. El aroma dura mucho tiempo y es perfecto para mantenerse fresco durante todo el día. Definitivamente lo recomendaría.",
+        "qualification": 4.8,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/59.jpg"
+      },
+      {
+        "user": "AromaAficionado456",
+        "comment": "No me gusta mucho el olor de este spray corporal Axe. Tiene un aroma muy fuerte y no es mi preferido. Prefiero algo más sutil y fresco.",
+        "qualification": 3.0,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/60.jpg"
+      }
+    ]
   },
   {
     "_id": "colgate-total-mouthwash",
@@ -1236,7 +1934,47 @@
     "gender": "unisex",
     "category": "health and personal care",
     "colors": ["#FFFFFF"],
-    "images": ["https://m.media-amazon.com/images/I/71icZm6sjvL._AC_SX679_.jpg"]
+    "images": [
+      "https://m.media-amazon.com/images/I/71mRmJloWSL._SX466_.jpg",
+      "https://m.media-amazon.com/images/I/81DeFK17geL._SX466_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "FreshBreathFanatic123",
+        "comment": "¡Este enjuague bucal Colgate Total es increíble! Deja mi aliento fresco durante horas y me hace sentir seguro. ¡Lo recomiendo encarecidamente!",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/61.jpg"
+      },
+      {
+        "user": "CavityFighter456",
+        "comment": "Me gusta cómo este enjuague bucal Colgate Total combate la placa y protege contra las caries. Sin embargo, el sabor es un poco fuerte para mi gusto.",
+        "qualification": 4.0,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/62.jpg"
+      },
+      {
+        "user": "DentalDisappointment789",
+        "comment": "No estoy muy impresionado con este enjuague bucal Colgate Total. No noté mucha diferencia en la frescura de mi aliento después de usarlo, y el sabor no es muy agradable.",
+        "qualification": 2.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/60.jpg"
+      },
+      {
+        "user": "CavityFree123",
+        "comment": "Este enjuague bucal Colgate Total es genial. Realmente siento que protege mis dientes y encías, y el sabor es refrescante pero no abrumador.",
+        "qualification": 4.8,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/women/61.jpg"
+      },
+      {
+        "user": "FlavorSensitivity456",
+        "comment": "No soy fanático del sabor de este enjuague bucal Colgate Total. Me gustaría que tuviera un sabor más suave y menos artificial.",
+        "qualification": 3.0,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/65.jpg"
+      }
+    ]
   },
   {
     "_id": "schick-hydro-razor",
@@ -1253,6 +1991,43 @@
     "images": [
       "https://m.media-amazon.com/images/I/71KjvO2BP2L._AC_SX522_.jpg",
       "https://m.media-amazon.com/images/I/51OmIGetzeL._AC_SX522_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "SmoothShaveEnthusiast123",
+        "comment": "¡La maquinilla de afeitar Schick Hydro es increíble! El gel hidratante hace que el afeitado sea suave y sin irritaciones. ¡Definitivamente la recomendaría!",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/women/65.jpg"
+      },
+      {
+        "user": "RazorBurnSufferer456",
+        "comment": "Estoy muy contento con la maquinilla de afeitar Schick Hydro. El gel hidratante realmente ayuda a reducir la irritación después del afeitado, pero siento que las cuchillas podrían ser un poco más duraderas.",
+        "qualification": 4.0,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/66.jpg"
+      },
+      {
+        "user": "NotSoHydroFan789",
+        "comment": "No quedé impresionado con la maquinilla de afeitar Schick Hydro. El gel hidratante se acabó rápidamente y las cuchillas parecían perder su nitidez después de algunos usos.",
+        "qualification": 2.5,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/women/66.jpg"
+      },
+      {
+        "user": "SilkySmoothShaver123",
+        "comment": "¡Me encanta la maquinilla de afeitar Schick Hydro! El gel hidratante hace que mi piel se sienta suave y nutrida después del afeitado, y las cuchillas son muy afiladas.",
+        "qualification": 4.8,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/67.jpg"
+      },
+      {
+        "user": "SensitiveSkinShaver456",
+        "comment": "La maquinilla de afeitar Schick Hydro es bastante buena, pero todavía noté algo de irritación en mi piel sensible después del afeitado. El gel hidratante ayudó un poco, pero no lo suficiente.",
+        "qualification": 3.5,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/women/68.jpg"
+      }
     ]
   },
   {
@@ -1268,8 +2043,46 @@
     "category": "health and personal care",
     "colors": ["#b71a1a"],
     "images": [
-      "https://m.media-amazon.com/images/I/51qO8dVWZWL._AC_SX679_.jpg",
-      "https://m.media-amazon.com/images/I/618Q2HZyBVL._AC_SX679_.jpg"
+      "https://m.media-amazon.com/images/I/71WHFyq4-hL._SX466_.jpg",
+      "https://m.media-amazon.com/images/I/81mG9YPveUL._SX466_.jpg",
+      "https://m.media-amazon.com/images/I/81-e0lz-XmL._SX466_.jpg"
+    ],
+    "comments": [
+      {
+        "user": "FreshnessFanatic123",
+        "comment": "¡El desodorante Old Spice es mi favorito absoluto! Su fragancia fresca dura todo el día y me mantiene sintiéndome fresco y seguro. ¡Altamente recomendado!",
+        "qualification": 5,
+        "date": "2024-04-26",
+        "avatar": "https://randomuser.me/api/portraits/men/68.jpg"
+      },
+      {
+        "user": "NotSoFresh456",
+        "comment": "El desodorante Old Spice tiene una fragancia agradable, pero no encontré que fuera tan duradero como esperaba. Después de algunas horas, el olor corporal comienza a regresar.",
+        "qualification": 3.0,
+        "date": "2024-04-25",
+        "avatar": "https://randomuser.me/api/portraits/men/69.jpg"
+      },
+      {
+        "user": "OdorFighter789",
+        "comment": "¡Este desodorante es genial! Mantiene el olor corporal a raya durante todo el día, incluso en condiciones de mucho calor. Definitivamente lo volveré a comprar.",
+        "qualification": 4.8,
+        "date": "2024-04-24",
+        "avatar": "https://randomuser.me/api/portraits/men/70.jpg"
+      },
+      {
+        "user": "SweatySteve456",
+        "comment": "El desodorante Old Spice tiene una fragancia agradable al principio, pero no encontré que fuera tan efectivo para controlar el olor durante todo el día, especialmente cuando estoy muy activo.",
+        "qualification": 3.5,
+        "date": "2024-04-23",
+        "avatar": "https://randomuser.me/api/portraits/men/71.jpg"
+      },
+      {
+        "user": "FreshAndDry789",
+        "comment": "Me gusta mucho el desodorante Old Spice. Su fragancia fresca es duradera y me mantiene seco y fresco todo el día. ¡Definitivamente lo recomendaría!",
+        "qualification": 4.9,
+        "date": "2024-04-22",
+        "avatar": "https://randomuser.me/api/portraits/men/72.jpg"
+      }
     ]
   }
 ]

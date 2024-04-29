@@ -32,6 +32,7 @@ export const TabsHome = () => {
           {product.slice(0, 12).map((item) => (
             <CardProduct
               key={item._id}
+              id={item._id}
               images={
                 item.images && item.images.length > 0 ? item.images[0] : null
               }
@@ -49,6 +50,7 @@ export const TabsHome = () => {
           {filteredProductsbestseller.map((item) => (
             <CardProduct
               key={item._id}
+              id={item._id}
               images={
                 item.images && item.images.length > 0 ? item.images[0] : null
               }
@@ -66,6 +68,7 @@ export const TabsHome = () => {
           {filteredProductsfeatured.map((item) => (
             <CardProduct
               key={item._id}
+              id={item._id}
               images={
                 item.images && item.images.length > 0 ? item.images[0] : null
               }
