@@ -22,22 +22,26 @@ import {
   ListItemText,
 } from "@mui/material";
 import { Link } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 import { SearchComponent } from "../../../common/SearchComponent/SearchComponent";
 import { Images } from "../../../images/Images";
 
 // Ítems del menú de navegación principal
 const menuItems = [
   {
+    id: uuidv4(),
     title: "Inicio",
     icon: <i className="bx bx-home-alt text-xl" />,
     path: "/",
   },
   {
+    id: uuidv4(),
     title: "Productos",
     icon: <i className="bx bx-list-ul text-xl" />,
     path: "/productPage",
   },
   {
+    id: uuidv4(),
     title: "Iniciar Sesión",
     icon: <i className="bx bx-log-in text-xl" />,
     path: "/registeredPage",
@@ -46,27 +50,47 @@ const menuItems = [
 
 // Ítems de categorías
 const categoriesItems = [
-  { title: "Moda", icon: <i className="bx bx-closet text-xl" /> },
-  { title: "Tecnologia", icon: <i className="bx bx-laptop text-xl" /> },
-  { title: "Hogar", icon: <i className="bx bx-home-smile text-xl" /> },
-  { title: "Salud", icon: <i className="bx bx-spa text-xl" /> },
+  { id: uuidv4(), title: "Moda", icon: <i className="bx bx-closet text-xl" /> },
+  {
+    id: uuidv4(),
+    title: "Tecnologia",
+    icon: <i className="bx bx-laptop text-xl" />,
+  },
+  {
+    id: uuidv4(),
+    title: "Hogar",
+    icon: <i className="bx bx-home-smile text-xl" />,
+  },
+  { id: uuidv4(), title: "Salud", icon: <i className="bx bx-spa text-xl" /> },
 ];
 
 // Ítems del usuario
 const userItems = [
-  { title: "Favoritos", icon: <i className="bx bx-heart text-xl" /> },
-  { title: "Perfil", icon: <i className="bx bx-user text-xl" /> },
   {
+    id: uuidv4(),
+    title: "Favoritos",
+    icon: <i className="bx bx-heart text-xl" />,
+    path: "/shoppingCartPage",
+  },
+  {
+    id: uuidv4(),
+    title: "Perfil",
+    icon: <i className="bx bx-user text-xl" />,
+    path: "/shoppingCartPage",
+  },
+  {
+    id: uuidv4(),
     title: "Carrito Compras",
     icon: <i className="bx bx-cart text-xl" />,
     cartCount: 3,
+    path: "/shoppingCartPage",
   },
 ];
 
 // Función para generar los ítems de la lista
 const generateListItems = (items) =>
   items.map((item) => (
-    <ListItem key={item.title} disablePadding>
+    <ListItem key={item.id || item.title} disablePadding>
       <ListItemButton className="h-10 text-grey hover:text-salmon">
         <Link to={item.path} className="flex">
           <ListItemIcon className="ml-5">{item.icon}</ListItemIcon>

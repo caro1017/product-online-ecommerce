@@ -16,6 +16,7 @@ import { HomePage } from "../components/pages/HomePage/HomePage";
 import { RegisteredPage } from "../components/pages/RegisteredPage/RegisteredPage";
 import { ProductPage } from "../components/pages/ProductPage/ProductPage";
 import { ProductDetailsPage } from "../components/pages/ProductDetailsPage/ProductDetailsPage";
+import { ShoppingCartPage } from "../components/pages/ShoppingCartPage/ShoppingCartPage";
 
 export const Router = () => {
   return (
@@ -32,6 +33,8 @@ export const Router = () => {
           path="/productDetailsPage/:productId"
           element={<ProductDetailsPage />}
         />
+        {/* Ruta para la pagina carrito de compras */}
+        <Route path="/shoppingCartPage" element={<ShoppingCartPage />} />
       </Routes>
     </BrowserRouter>
   );

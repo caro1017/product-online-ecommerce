@@ -9,7 +9,7 @@
  * Documentado por: Carolina Uribe Botero
  * Fecha de documentación: 29 de abril de 2024
  */
-import { LinearProgress, Rating, Stack } from "@mui/material";
+import { Card, LinearProgress, Rating, Stack } from "@mui/material";
 import { CardComment } from "../../../common/Card/CardComment";
 import { CustomButtons } from "../../../common/CustomButtons/CustomButtons";
 import { calculateAverageRating } from "../../../../utils/calculateAverageRating";
@@ -61,7 +61,7 @@ export const Comments = ({ productData }) => {
         <h2 className="font-semibold px-4 md:px-16 lg:px-52 mb-4">Reseñas</h2>
         <div className="md:flex px-4 md:px-16 lg:px-52">
           {/* Visualización de la calificación promedio */}
-          <div className="bg-[#F4F4F4] w-40 rounded p-5 mb-5">
+          <Card className="bg-[#F4F4F4] w-40 rounded p-5 mb-5">
             <h2 className="text-4xl font-semibold text-center">
               {/* Llama a la función para calcular la calificación promedio */}
               {calculateAverageRating(
@@ -84,7 +84,7 @@ export const Comments = ({ productData }) => {
                 />
               </Stack>
             </div>
-          </div>
+          </Card>
 
           {/* Visualización de los niveles de calificación */}
           <div className="md:ml-5 text-sm flex-grow">

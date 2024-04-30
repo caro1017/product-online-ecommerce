@@ -12,7 +12,7 @@ export const CardComment = ({
     <>
       <Card className="my-3">
         <CardContent className="bg-[#f4f4f489] flex relative text-black md:py-5">
-          <Avatar alt={user} src={avatar} />
+          <Avatar alt={user} src={avatar}/>
 
           <div className="ml-5">
             <h3 className="font-semibold">{user}</h3>

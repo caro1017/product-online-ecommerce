@@ -15,7 +15,7 @@
  * Fecha de documentación: 25 de abril de 2024
  */
 import { useState } from "react";
-import { Button, ButtonGroup } from "@mui/material";
+import { Button, ButtonGroup, Card } from "@mui/material";
 import { CustomButtons } from "../../../common/CustomButtons/CustomButtons";
 import { calculateAverageRating } from "../../../../utils/calculateAverageRating";
 
@@ -24,9 +24,8 @@ export const ProductInfo = ({
   selectedImage,
   setSelectedImage,
 }) => {
-  // Estado inicial de la imagen central
-  const [zoomLevel, setZoomLevel] = useState(1);
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [zoomLevel, setZoomLevel] = useState(1); // Estado zoom inicial imagen
+  const [position, setPosition] = useState({ x: 0, y: 0 }); // Estado posicion inicial imagen
 
   // Función para manejar el movimiento del mouse sobre la imagen
   const handleMouseMove = (e) => {
@@ -35,8 +34,6 @@ export const ProductInfo = ({
     const y = (e.pageY - top) / height;
     setPosition({ x, y });
   };
-
-  
 
   return (
     <>
@@ -47,7 +44,7 @@ export const ProductInfo = ({
           <div className="w-16">
             {productData.images.map((image, index) => (
               <img
-                key={index}
+                key={image.id || index}
                 src={image}
                 alt={`Product ${index}`}
                 onClick={() => setSelectedImage(image)}
@@ -115,21 +112,21 @@ export const ProductInfo = ({
 
           {/* Genero - Categoria */}
           <div className="flex space-x-4 mb-6 md:mb-4">
-            <div className="bg-[#F4F4F4] rounded w-36 flex p-2">
+            <Card className="bg-[#F4F4F4] rounded w-36 flex p-2">
               <i className="bx bx-user text-2xl px-2 mt-1" />
               <div className="inline-block text-sm">
                 <p className="text-grey">Género </p>
                 <p className="capitalize">{productData.gender}</p>
               </div>
-            </div>
+            </Card>
 
-            <div className="bg-[#F4F4F4] rounded w-36 flex p-2">
+            <Card className="bg-[#F4F4F4] rounded w-36 flex p-2">
               <i className="bx bx-category text-2xl px-2 mt-1" />
               <div className="inline-block text-sm">
                 <p className="text-grey">Categoría </p>
                 <p className="capitalize">{productData.category}</p>
               </div>
-            </div>
+            </Card>
           </div>
 
           {/* Descripcion - Boton Compra */}
@@ -143,9 +140,9 @@ export const ProductInfo = ({
 
           <div className="flex space-x-6">
             <div className="flex space-x-2">
-              <div className="bg-[#F4F4F4] rounded-lg p-2">
+              <Card className="bg-[#F4F4F4] rounded-lg p-2">
                 <i className="bx bx-store" />
-              </div>
+              </Card>
               <div className="inline-block text-xs text-grey">
                 <p>En stock</p>
                 <p>{productData.inStock}</p>
@@ -153,19 +150,24 @@ export const ProductInfo = ({
             </div>
 
             <div className="flex space-x-2">
-              <div className="bg-[#F4F4F4] rounded-lg p-2">
+              <Card className="bg-[#F4F4F4] rounded-lg p-2">
                 <i className="bx bx-star" />
-              </div>
+              </Card>
               <div className="inline-block text-xs text-grey">
                 <p>Calificación</p>
-                <p>{calculateAverageRating(productData.comments, productData.qualification)}</p>
+                <p>
+                  {calculateAverageRating(
+                    productData.comments,
+                    productData.qualification
+                  )}
+                </p>
               </div>
             </div>
 
             <div className="flex space-x-2">
-              <div className="bg-[#F4F4F4] rounded-lg p-2">
+              <Card className="bg-[#F4F4F4] rounded-lg p-2">
                 <i className="bx bx-check-shield" />
-              </div>
+              </Card>
               <div className="inline-block text-xs text-grey">
                 <p>Garantia</p>
                 <p>6 meses</p>

@@ -96,7 +96,7 @@ export const ProductDetailsPage = () => {
         </div>
 
         <div className="py-10">
-          <h2 className="font-semibold px-4 md:px-16 lg:px-52 mb-10">
+          <h2 className="text-black font-semibold px-4 md:px-16 lg:px-52 mb-10">
             Productos Relacionados
           </h2>
           <div className="lg:mx-60 md:mx-4 mx-4 grid grid-cols-2 md:grid-cols-4 gap-4">

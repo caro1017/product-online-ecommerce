@@ -28,7 +28,7 @@ export const CardProduct = ({ id, images, title, price, onClick }) => {
   return (
     <>
       {/* Tarjeta de producto */}
-      <Card className="md:max-w-60 max-w-44 bg-[#F6F6F6] relative">
+      <Card className="md:max-w-60 max-w-44 bg-[#F6F6F6] relative text-black">
         {/* Contenedor de la imagen y el botón "Me gusta" */}
         <div className="w-full h-44 flex justify-center items-center overflow-hidden  ">
           {/* Imagen del producto */}

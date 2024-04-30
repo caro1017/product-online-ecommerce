@@ -133,10 +133,13 @@ export const SearchComponent = () => {
 
       {/* Mostrar sugerencias */}
       {suggestions.length > 0 && (
-        <Paper ref={menuRef} className="absolute z-50 lg:mt-20 lg:w-[700px]">
+        <Paper
+          ref={menuRef}
+          className="absolute z-50 lg:mt-20 w-[280px] lg:w-[700px]"
+        >
           {suggestions.map((suggestion, index) => (
             <MenuItem
-              key={index}
+              key={suggestion._id || index}
               onClick={() => handleSuggestionClick(suggestion)}
             >
               {suggestion}
