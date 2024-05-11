@@ -1,17 +1,21 @@
 # PLATAFORMA PRODUCT ONLINE
 
-### Plataforma Ecommerce
+## Plataforma Ecommerce
 
-**Pagina de Inicio**
+***Pagina de Inicio***
+
 ![image](https://i.postimg.cc/YCyT7CGj/home-page.png)
 
-**Pagina Inicio sesion**
+***Pagina Inicio sesion***
+
 ![image](https://i.postimg.cc/CK3tZr4g/inicio-sesion.png)
 
-**Pagina productos**
+***Pagina productos***
+
 ![image](https://i.postimg.cc/7hDW9Cct/product-page.png)
 
-**Pagina detalles productos**
+***Pagina detalles productos***
+
 ![image](https://i.postimg.cc/KzhqckZc/detalle-producto.png)
 
 <hr>
