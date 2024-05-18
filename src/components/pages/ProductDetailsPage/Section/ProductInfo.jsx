@@ -15,7 +15,7 @@
  * Fecha de documentación: 25 de abril de 2024
  */
 import { useState } from "react";
-import { Button, ButtonGroup, Card } from "@mui/material";
+import { Button, ButtonGroup, Card, Rating, Stack } from "@mui/material";
 import { CustomButtons } from "../../../common/CustomButtons/CustomButtons";
 import { calculateAverageRating } from "../../../../utils/calculateAverageRating";
 
@@ -26,6 +26,10 @@ export const ProductInfo = ({
 }) => {
   const [zoomLevel, setZoomLevel] = useState(1); // Estado zoom inicial imagen
   const [position, setPosition] = useState({ x: 0, y: 0 }); // Estado posicion inicial imagen
+  const [selectedOptions, setSelectedOptions] = useState({
+    color: null, // Estado del color seleccionado
+    size: null, // Estado del talla seleccionado
+  });
 
   // Función para manejar el movimiento del mouse sobre la imagen
   const handleMouseMove = (e) => {
@@ -33,6 +37,14 @@ export const ProductInfo = ({
     const x = (e.pageX - left) / width;
     const y = (e.pageY - top) / height;
     setPosition({ x, y });
+  };
+
+  //Función toma un type (que puede ser 'color' o 'size') y un value y actualiza el estado correspondiente.
+  const handleOptionClick = (type, value) => {
+    setSelectedOptions((prevOptions) => ({
+      ...prevOptions,
+      [type]: value,
+    }));
   };
 
   return (
@@ -52,6 +64,7 @@ export const ProductInfo = ({
               />
             ))}
           </div>
+
           {/* Imagen tamaño grande con zoom */}
           <div className="w-[270px] lg:w-[400px] lg:h-[480px] ml-4 relative overflow-hidden">
             <img
@@ -76,7 +89,27 @@ export const ProductInfo = ({
             {productData.title}
           </h2>
           <p className="mb-3">{productData.brand}</p>
-          <p className="text-xl mb-3 font-medium">${productData.price}</p>
+          <div className="flex space-x-2">
+            <p className="text-grey text-sm">
+              {calculateAverageRating(
+                productData.comments,
+                productData.qualification
+              )}
+            </p>
+            <Stack spacing={3} className=" mb-3">
+              <Rating
+                name="half-rating"
+                defaultValue={calculateAverageRating(
+                  productData.comments,
+                  productData.qualification
+                )}
+                precision={0.5}
+                size="small"
+                readOnly
+              />
+            </Stack>
+          </div>
+          <p className="text-2xl mb-3 font-bold">${productData.price}</p>
 
           {/* Colores */}
           <div className="flex">
@@ -84,8 +117,15 @@ export const ProductInfo = ({
             {productData.colors.map((color, index) => (
               <span
                 key={index}
-                className="inline-block w-7 h-7 rounded-full mr-2 mb-4 border-[1px] border-grey cursor-pointer"
-                style={{ backgroundColor: color }}
+                onClick={() => handleOptionClick("color", color)}
+                className={`inline-block w-7 h-7 rounded-full mr-2 mb-4 cursor-pointer border-grey border-[1px] ${
+                  selectedOptions.color === color
+                    ? "border-[1px] ring ring-salmon/[.50] ring-offset-[1.5px] "
+                    : " "
+                }`}
+                style={{
+                  backgroundColor: color,
+                }}
               ></span>
             ))}
           </div>
@@ -102,7 +142,12 @@ export const ProductInfo = ({
               {productData.sizes.map((size, index) => (
                 <Button
                   key={index}
-                  className="border-solid border-black text-black hover:border-black normal-case"
+                  onClick={() => handleOptionClick("size", size)}
+                  className={`border-solid border-black text-black hover:border-black normal-case ${
+                    selectedOptions.size === size
+                      ? " ring ring-salmon/[.50] ring-offset-[1px]"
+                      : " "
+                  }`}
                 >
                   {size}
                 </Button>
@@ -145,22 +190,7 @@ export const ProductInfo = ({
               </Card>
               <div className="inline-block text-xs text-grey">
                 <p>En stock</p>
-                <p>{productData.inStock}</p>
-              </div>
-            </div>
-
-            <div className="flex space-x-2">
-              <Card className="bg-[#F4F4F4] rounded-lg p-2">
-                <i className="bx bx-star" />
-              </Card>
-              <div className="inline-block text-xs text-grey">
-                <p>Calificación</p>
-                <p>
-                  {calculateAverageRating(
-                    productData.comments,
-                    productData.qualification
-                  )}
-                </p>
+                <p className="font-semibold">{productData.inStock}</p>
               </div>
             </div>
 
@@ -170,7 +200,17 @@ export const ProductInfo = ({
               </Card>
               <div className="inline-block text-xs text-grey">
                 <p>Garantia</p>
-                <p>6 meses</p>
+                <p className="font-semibold">6 meses</p>
+              </div>
+            </div>
+
+            <div className="flex space-x-2">
+              <Card className="bg-[#F4F4F4] rounded-lg p-2">
+                <i className="bx bx-user" />
+              </Card>
+              <div className="inline-block text-xs text-grey">
+                <p>Vendido por</p>
+                <p className="font-semibold">Jhon2050</p>
               </div>
             </div>
           </div>

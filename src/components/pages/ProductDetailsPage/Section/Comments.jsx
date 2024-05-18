@@ -60,6 +60,7 @@ export const Comments = ({ productData }) => {
       <div className="text-black mt-10 lg:mt-14">
         <h2 className="font-semibold px-4 md:px-16 lg:px-52 mb-4">Reseñas</h2>
         <div className="md:flex px-4 md:px-16 lg:px-52">
+
           {/* Visualización de la calificación promedio */}
           <Card className="bg-[#F4F4F4] w-40 rounded p-5 mb-5">
             <h2 className="text-4xl font-semibold text-center">
@@ -70,6 +71,7 @@ export const Comments = ({ productData }) => {
               )}
             </h2>
             <div className="flex justify-center">
+              
               {/* Visualización de la calificación en forma de estrellas */}
               <Stack spacing={1}>
                 <Rating

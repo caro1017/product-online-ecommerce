@@ -83,6 +83,7 @@ export const ProductDetailsPage = () => {
           </Breadcrumbs>
         </div>
 
+        {/* Informacion del producto actual */}
         <div className="flex justify-center px-20">
           <ProductInfo
             productData={productData}
@@ -91,10 +92,12 @@ export const ProductDetailsPage = () => {
           />
         </div>
 
+        {/* Comentarios del producto */}
         <div>
           <Comments productData={productData} />
         </div>
 
+        {/* Listado de productos relacionados segun su categoria */}
         <div className="py-10">
           <h2 className="text-black font-semibold px-4 md:px-16 lg:px-52 mb-10">
             Productos Relacionados
