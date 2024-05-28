@@ -33,9 +33,9 @@ export const TabsRegistred = () => {
   ];
 
   return (
-    <>
+    <div className="w-full flex justify-center py-10">
       {/* Renderiza las pestañas con el contenido correspondiente */}
       <CustomTabs tabs={tabs} />
-    </>
+    </div>
   );
 };

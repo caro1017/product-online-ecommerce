@@ -7,7 +7,6 @@
  * Documentado por: Carolina Uribe Botero
  * Fecha de documentación: 25 de abril de 2024
  */
-import { IconButton } from "@mui/material";
 import { FormBar } from "../../../shared/FormBar";
 
 export const Login = () => {
@@ -29,13 +28,6 @@ export const Login = () => {
     },
   ];
 
-  // Iconos para registrar por otro medio
-  const iconSocialMedia = [
-    { title: "Facebook", icon: <i className="bx bxl-facebook" /> },
-    { title: "Instagram", icon: <i className="bx bxl-instagram" /> },
-    { title: "Google", icon: <i className="bx bxl-google" /> },
-  ];
-
   // Función que se ejecuta al enviar el formulario
   const onSubmit = (data) => {
     // Lógica para enviar datos del formulario
@@ -45,17 +37,7 @@ export const Login = () => {
   return (
     <>
       <div className="flex flex-col w-72 m-auto">
-        <div className="flex space-x-5 m-auto mb-2">
-          {/* Renderiza los iconos para registrar por otro medio */}
-          {iconSocialMedia.map((iconSocialMedia, index) => (
-            <div key={index} className="py-3">
-              <IconButton aria-label="delete" className="p-3 text-salmon">
-                {iconSocialMedia.icon}
-              </IconButton>
-            </div>
-          ))}
-        </div>
-        <div className="text-center pt-2">
+        <div className="text-center pt-10">
           {/* Renderiza el formulario de inicio de sesión */}
           <FormBar
             fields={fields}

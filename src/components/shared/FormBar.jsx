@@ -16,7 +16,12 @@ import { IconButton, InputAdornment, TextField } from "@mui/material";
 import { CustomButtons } from "../common/CustomButtons/CustomButtons";
 import ValidationRulesCustom from "./ValidationRulesCustom";
 
-export const FormBar = ({ fields, onSubmit, titleButton }) => {
+export const FormBar = ({
+  fields,
+  onSubmit,
+  titleButton,
+  showSubmitButton = true,
+}) => {
   const {
     handleSubmit,
     formState: { errors },
@@ -32,6 +37,7 @@ export const FormBar = ({ fields, onSubmit, titleButton }) => {
     onSubmit(data); // Llama a la función onSubmit pasando los datos del formulario
     reset(); // Resetea el formulario después del envío
   };
+
   return (
     <form onSubmit={handleSubmit(handleFormSubmit)}>
       {/* Renderiza cada campo del formulario */}
@@ -41,13 +47,14 @@ export const FormBar = ({ fields, onSubmit, titleButton }) => {
           variant="standard"
           label={field.label}
           color="error"
-          className="mb-4"
+          className="mb-4 "
           name={field.name}
           defaultValue=""
           required={field.required}
           type={field.type}
           error={!!errors[field.name]}
           helperText={errors[field.name]?.message || ""}
+          fullWidth
           inputProps={{
             style: {
               color: "#D0665B",
@@ -61,6 +68,7 @@ export const FormBar = ({ fields, onSubmit, titleButton }) => {
               fontWeight: 400,
               opacity: 0.5,
             },
+            shrink: field.type === 'date' ? true : undefined,
           }}
           InputProps={{
             endAdornment: (
@@ -77,10 +85,15 @@ export const FormBar = ({ fields, onSubmit, titleButton }) => {
           })}
         />
       ))}
-      <div className="py-5">
-        {/* Renderiza el botón de envío del formulario */}
-        <CustomButtons type="submit" variant="contained" title={titleButton} />
-      </div>
+      {showSubmitButton && (
+        <div className="py-5">
+          <CustomButtons
+            type="submit"
+            variant="contained"
+            title={titleButton}
+          />
+        </div>
+      )}
     </form>
   );
 };

@@ -20,3 +20,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #E3A645;
   border-radius: 50px;
 }
+
+/* Eliminar estilos tipo date de todos los navegadores */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}

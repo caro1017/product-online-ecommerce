@@ -12,7 +12,6 @@ import { CustomTabs } from "../../../common/CustomTabs/CustomTabs";
 import product from "../../../../__mocks__/product.json";
 
 export const TabsHome = () => {
-  
   // Filtrar productos con calificación de 4.6 o superior
   const filteredProductsbestseller = product
     .filter((item) => item.qualification >= 4.7)
@@ -28,7 +27,7 @@ export const TabsHome = () => {
     {
       title: "Nuevos Productos",
       content: (
-        <div className="md:mx-4 mx-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
+        <div className="mt-10 md:mx-4 mx-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
           {product.slice(0, 12).map((item) => (
             <CardProduct
               key={item._id}
@@ -46,7 +45,7 @@ export const TabsHome = () => {
     {
       title: "Mejor vendido",
       content: (
-        <div className="md:mx-4 mx-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
+        <div className="mt-10 md:mx-4 mx-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
           {filteredProductsbestseller.map((item) => (
             <CardProduct
               key={item._id}
@@ -64,7 +63,7 @@ export const TabsHome = () => {
     {
       title: "Productos Destacados",
       content: (
-        <div className="md:mx-4 mx-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
+        <div className="mt-10 md:mx-4 mx-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
           {filteredProductsfeatured.map((item) => (
             <CardProduct
               key={item._id}
@@ -82,8 +81,8 @@ export const TabsHome = () => {
   ];
 
   return (
-    <>
+    <div className="w-full flex justify-center py-10">
       <CustomTabs tabs={tabs} />
-    </>
+    </div>
   );
 };

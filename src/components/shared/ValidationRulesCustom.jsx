@@ -43,6 +43,12 @@ const ValidationRulesCustom = (type) => {
       };
       break;
 
+    case "date":
+      validationRules.validate = {
+        isDate: (value) => !isNaN(Date.parse(value)) || "Fecha no válida",
+      };
+      break;
+
     default:
       validationRules.pattern = {
         message: "No debe tener campos vacíos",

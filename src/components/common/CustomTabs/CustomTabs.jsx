@@ -35,7 +35,7 @@ export const CustomTabs = ({ tabs }) => {
     <>
       <div>
         {/* Contenedor de las pestañas */}
-        <div className="w-full flex justify-center py-10">
+        <div>
           {/* Tabs personalizados */}
           <AntTabs
             value={value}
@@ -54,7 +54,7 @@ export const CustomTabs = ({ tabs }) => {
           </AntTabs>
         </div>
         {/* Contenido de las pestañas */}
-        <div className="lg:w-[900px] mx-auto">
+        <div className=" mx-auto">
           {tabs.map((tab, index) => (
             <div
               key={index}
