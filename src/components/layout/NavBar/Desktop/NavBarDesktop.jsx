@@ -30,7 +30,7 @@ const userIcon = [
     id: uuidv4(),
     title: "Perfil",
     icon: <i className="bx bx-user text-2xl" />,
-    path: "/shoppingCartPage",
+    path: "/profilePage",
   },
   {
     id: uuidv4(),

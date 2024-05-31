@@ -12,71 +12,46 @@ import { CustomTabs } from "../../../common/CustomTabs/CustomTabs";
 import product from "../../../../__mocks__/product.json";
 
 export const TabsHome = () => {
-  // Filtrar productos con calificación de 4.6 o superior
-  const filteredProductsbestseller = product
-    .filter((item) => item.qualification >= 4.7)
-    .slice(0, 12); // Limitar a 12 productos
+  // Función para filtrar y limitar productos
+  const filterAndLimitProducts = (minQualification, limit) => {
+    return product
+      .filter((item) => item.qualification >= minQualification)
+      .slice(0, limit);
+  };
 
-  // Filtrar productos con calificación de 4.8 o superior
-  const filteredProductsfeatured = product
-    .filter((item) => item.qualification >= 4.9)
-    .slice(0, 12); // Limitar a 12 productos
+  // Productos filtrados y limitados
+  const filteredProductsbestseller = filterAndLimitProducts(4.7, 12);
+  const filteredProductsfeatured = filterAndLimitProducts(4.9, 12);
+  const newProducts = product.slice(0, 12);
 
-  // Define la estructura de las pestañas
+  // Función para generar el contenido de una pestaña
+  const renderTabContent = (products) => (
+    <div className="mt-10 mx-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
+      {products.map(({ _id, images, title, price }) => (
+        <CardProduct
+          key={_id}
+          id={_id}
+          images={images && images.length > 0 ? images[0] : null}
+          title={title}
+          price={price}
+        />
+      ))}
+    </div>
+  );
+
+  // Estructura de las pestañas
   const tabs = [
     {
       title: "Nuevos Productos",
-      content: (
-        <div className="mt-10 md:mx-4 mx-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
-          {product.slice(0, 12).map((item) => (
-            <CardProduct
-              key={item._id}
-              id={item._id}
-              images={
-                item.images && item.images.length > 0 ? item.images[0] : null
-              }
-              title={item.title}
-              price={item.price}
-            />
-          ))}
-        </div>
-      ),
+      content: renderTabContent(newProducts),
     },
     {
       title: "Mejor vendido",
-      content: (
-        <div className="mt-10 md:mx-4 mx-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
-          {filteredProductsbestseller.map((item) => (
-            <CardProduct
-              key={item._id}
-              id={item._id}
-              images={
-                item.images && item.images.length > 0 ? item.images[0] : null
-              }
-              title={item.title}
-              price={item.price}
-            />
-          ))}
-        </div>
-      ),
+      content: renderTabContent(filteredProductsbestseller),
     },
     {
       title: "Productos Destacados",
-      content: (
-        <div className="mt-10 md:mx-4 mx-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
-          {filteredProductsfeatured.map((item) => (
-            <CardProduct
-              key={item._id}
-              id={item._id}
-              images={
-                item.images && item.images.length > 0 ? item.images[0] : null
-              }
-              title={item.title}
-              price={item.price}
-            />
-          ))}
-        </div>
-      ),
+      content: renderTabContent(filteredProductsfeatured),
     },
   ];
 

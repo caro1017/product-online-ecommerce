@@ -17,6 +17,7 @@ import { CardShopping } from "../../common/Card/CardShopping";
 import { NavBar } from "../../layout/NavBar/NavBar";
 import { OrderSummary } from "./Section/OrderSummary";
 import { FooterBar } from "../../layout/FooterBar/FooterBar";
+//import { CartEmpaty } from "./Section/CartEmpaty";
 
 export const ShoppingCartPage = () => {
   return (
@@ -28,12 +29,13 @@ export const ShoppingCartPage = () => {
         <h2 className="font-semibold px-4 md:px-16 lg:px-52 mb-8 ">
           Carrito de compra
         </h2>
+        {/* Artículos del carrito de compras */}
+        {/* <CartEmpaty /> */}
         <div className="lg:flex px-4 md:px-16 lg:px-52 space-x-4">
-          {/* Artículos del carrito de compras */}
           <div>
             <CardShopping />
           </div>
-          {/* Resumen del pedido */}
+
           <div>
             <OrderSummary />
           </div>

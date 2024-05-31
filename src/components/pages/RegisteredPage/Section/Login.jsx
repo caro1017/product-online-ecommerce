@@ -8,26 +8,9 @@
  * Fecha de documentación: 25 de abril de 2024
  */
 import { FormBar } from "../../../shared/FormBar";
+import { formFields } from "../../../shared/formFields";
 
 export const Login = () => {
-  // Campos para el formulario de inicio sesion
-  const fields = [
-    {
-      label: "Correo electrónico",
-      name: "email",
-      type: "email",
-      required: true,
-      icon: <i className="bx bx-envelope" />,
-    },
-    {
-      label: "Contraseña",
-      name: "password",
-      type: "password",
-      required: true,
-      icon: <i className="bx bx-lock-alt" />,
-    },
-  ];
-
   // Función que se ejecuta al enviar el formulario
   const onSubmit = (data) => {
     // Lógica para enviar datos del formulario
@@ -40,7 +23,10 @@ export const Login = () => {
         <div className="text-center pt-10">
           {/* Renderiza el formulario de inicio de sesión */}
           <FormBar
-            fields={fields}
+            fields={[
+              formFields.email,
+              formFields.password,
+            ]}
             onSubmit={onSubmit}
             titleButton="Iniciar Sesion"
           />

@@ -76,7 +76,7 @@ const userItems = [
     id: uuidv4(),
     title: "Perfil",
     icon: <i className="bx bx-user text-xl" />,
-    path: "/shoppingCartPage",
+    path: "/profilePage",
   },
   {
     id: uuidv4(),

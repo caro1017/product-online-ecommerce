@@ -13,7 +13,8 @@ import drawerVector from "../../../public/img/drawerVector.png";
 import cardDebito from "../../../public/img/DebitoCard.png";
 import cardCredito from "../../../public/img/CreditoCard.png";
 import pseLogo from "../../../public/img/pse.png";
-import envioCart from "../../../public/img/envio.png"
+import envioCart from "../../../public/img/envio.png";
+import cartEmpaty from "../../../public/img/cartEmpaty.png";
 
 // Imagenes Banner Header
 import iphoneImage from "../../../public/img/iphoneImage.png";
@@ -33,6 +34,7 @@ export const Images = {
   cardDebito,
   pseLogo,
   envioCart,
+  cartEmpaty,
 
   iphoneImage,
   healthImage,

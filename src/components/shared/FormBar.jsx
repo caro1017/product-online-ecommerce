@@ -34,7 +34,7 @@ export const FormBar = ({
    * @param {object} data - Los datos del formulario.
    */
   const handleFormSubmit = (data) => {
-    onSubmit(data); // Llama a la función onSubmit pasando los datos del formulario
+    onSubmit(data); // Llama a la función onSubmit pasando los datos
     reset(); // Resetea el formulario después del envío
   };
 
@@ -68,7 +68,7 @@ export const FormBar = ({
               fontWeight: 400,
               opacity: 0.5,
             },
-            shrink: field.type === 'date' ? true : undefined,
+            shrink: field.type === "date" ? true : undefined,
           }}
           InputProps={{
             endAdornment: (
@@ -79,10 +79,7 @@ export const FormBar = ({
               </InputAdornment>
             ),
           }}
-          {...register(field.name, {
-            // Registrar campo con sus reglas de validación
-            ...ValidationRulesCustom(field.type), // Utilizar ValidationRulesCustom
-          })}
+          {...register(field.name, ValidationRulesCustom(field.type))}
         />
       ))}
       {showSubmitButton && (
@@ -91,6 +88,7 @@ export const FormBar = ({
             type="submit"
             variant="contained"
             title={titleButton}
+            onClick={handleSubmit(handleFormSubmit)}
           />
         </div>
       )}

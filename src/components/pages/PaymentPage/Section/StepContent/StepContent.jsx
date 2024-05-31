@@ -62,7 +62,7 @@ export const StepContent = () => {
                 onClick={() => setActiveStep(0)}
                 title="Aceptar Envio"
                 variant="contained"
-                link="#"
+                link="/profilePage"
               />
             </div>
           </div>

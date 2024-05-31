@@ -8,33 +8,9 @@
  * Fecha de documentación: 25 de abril de 2024
  */
 import { FormBar } from "../../../shared/FormBar";
+import { formFields } from "../../../shared/formFields";
 
 export const Register = () => {
-  // Definición de campos para el formulario de registro
-  const fields = [
-    {
-      label: "Nombre Completo",
-      name: "name",
-      type: "text",
-      required: true,
-      icon: <i className="bx bx-user" />,
-    },
-    {
-      label: "Correo electrónico",
-      name: "email",
-      type: "email",
-      required: true,
-      icon: <i className="bx bx-envelope" />,
-    },
-    {
-      label: "Crear Contraseña",
-      name: "contraseña",
-      type: "password",
-      required: true,
-      icon: <i className="bx bx-lock-alt" />,
-    },
-  ];
-
   // Función que se ejecuta al enviar el formulario de registro
   const onSubmit = (data) => {
     // Lógica para enviar los datos del formulario de registro
@@ -47,7 +23,11 @@ export const Register = () => {
         <div className="text-center pt-10">
           {/* Renderiza el formulario de registro */}
           <FormBar
-            fields={fields}
+            fields={[
+              formFields.fullName,
+              formFields.email,
+              formFields.password,
+            ]}
             onSubmit={onSubmit}
             titleButton="Registrar"
           />
