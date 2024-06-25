@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import { FormBar } from "../../../../shared/FormBar";
-import { formFields } from "../../../../shared/formFields";
+import { FormBar } from "../../../../shared/Form/FormBar";
+import { formFields } from "../../../../shared/Form/formFields";
 
 export const TabsContentCards = ({ image }) => {
   const onSubmit = (data) => {

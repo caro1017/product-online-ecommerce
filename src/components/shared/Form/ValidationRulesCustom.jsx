@@ -13,7 +13,7 @@ const ValidationRulesCustom = (type) => {
     required: "Este campo es obligatorio",
   };
 
-  // Función para validar el algoritmo de Luhn
+  // Función para validar numero tarjeta credito o debito
   const luhnCheck = (num) => {
     let arr = (num + "")
       .split("")
@@ -40,8 +40,8 @@ const ValidationRulesCustom = (type) => {
       break;
     case "password":
       validationRules.minLength = {
-        value: 6,
-        message: "La contraseña debe tener al menos 6 caracteres.",
+        value: 8,
+        message: "La contraseña debe tener al menos 8 caracteres.",
       };
       break;
     case "name":
@@ -64,7 +64,7 @@ const ValidationRulesCustom = (type) => {
     case "phone":
       validationRules.pattern = {
         value: /^\+\d{1,3}\d{1,14}$/,
-        message: "Número de celular no válido. debe tener el indicativo pais Ejemplo: +123456789",
+        message: "Número de celular no válido",
       };
       break;
     case "cedula":

@@ -1,6 +1,6 @@
 import { CustomTabs } from "../../../common/CustomTabs/CustomTabs";
-import { FormBar } from "../../../shared/FormBar";
-import { formFields } from "../../../shared/formFields";
+import { FormBar } from "../../../shared/Form/FormBar";
+import { formFields } from "../../../shared/Form/formFields";
 import { CardProductPurchased } from "../../../common/Card/CardProductPurchased";
 
 const productsPurchased = [

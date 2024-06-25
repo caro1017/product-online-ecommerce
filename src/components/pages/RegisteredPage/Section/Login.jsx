@@ -7,8 +7,8 @@
  * Documentado por: Carolina Uribe Botero
  * Fecha de documentación: 25 de abril de 2024
  */
-import { FormBar } from "../../../shared/FormBar";
-import { formFields } from "../../../shared/formFields";
+import { FormBar } from "../../../shared/Form/FormBar";
+import { formFields } from "../../../shared/Form/formFields";
 
 export const Login = () => {
   // Función que se ejecuta al enviar el formulario

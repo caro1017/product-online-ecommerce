@@ -41,9 +41,7 @@ export const CustomButtons = ({
 
   return (
     <>
-      {/* Enlace con botón */}
       <Link to={link}>
-        {/* Botón Material-UI */}
         <Button
           className={colorClass}
           endIcon={icon}
