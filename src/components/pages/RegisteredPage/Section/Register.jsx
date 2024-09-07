@@ -19,13 +19,15 @@ export const Register = () => {
 
   return (
     <>
-      <div className="flex flex-col w-72 m-auto">
-        <div className="text-center pt-10">
+      <div className="flex flex-col m-auto w-72">
+        <div className="pt-10 text-center">
           {/* Renderiza el formulario de registro */}
           <FormBar
             fields={[
               formFields.fullName,
+              formFields.cellPhone,
               formFields.email,
+              formFields.address,
               formFields.password,
             ]}
             onSubmit={onSubmit}

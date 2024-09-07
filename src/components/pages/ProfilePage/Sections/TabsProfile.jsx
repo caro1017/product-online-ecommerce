@@ -21,7 +21,7 @@ export const TabsProfile = () => {
     {
       title: "Datos Personales",
       content: (
-        <div className="w-80 my-10 mx-auto md:mx-0 max-w-full">
+        <div className="max-w-full mx-auto my-10 w-80 md:mx-0">
           <FormBar
             fields={[
               formFields.fullName,
@@ -43,18 +43,17 @@ export const TabsProfile = () => {
           <div className="p-5">
             <p className="font-semibold">
               Estado
-              <span className="font-normal text-grey px-2 ">Entregado</span>
+              <span className="px-2 font-normal text-grey ">Entregado</span>
             </p>
-            <p className="font-semibold mb-5">
+            <p className="mb-5 font-semibold">
               Fecha entrega
-              <span className="font-normal text-grey px-2">24-05-2024</span>
+              <span className="px-2 font-normal text-grey">24-05-2024</span>
             </p>
             <CardProductPurchased products={productsPurchased} />
           </div>
         </div>
       ),
     },
-    { title: "Ventas", content: "Content 3" },
   ];
   return (
     <div className="text-black">

@@ -23,19 +23,19 @@ const userIcon = [
   {
     id: uuidv4(),
     title: "Favoritos",
-    icon: <i className="bx bx-heart text-2xl" />,
-    path: "/shoppingCartPage",
+    icon: <i className="text-2xl bx bx-heart" />,
+    path: "/",
   },
   {
     id: uuidv4(),
     title: "Perfil",
-    icon: <i className="bx bx-user text-2xl" />,
+    icon: <i className="text-2xl bx bx-user" />,
     path: "/profilePage",
   },
   {
     id: uuidv4(),
     title: "Carrito Compras",
-    icon: <i className="bx bx-cart text-2xl" />,
+    icon: <i className="text-2xl bx bx-cart" />,
     cartCount: 3,
     path: "/shoppingCartPage",
   },
@@ -45,7 +45,7 @@ export const NavBarDesktop = () => {
   return (
     <>
       {/* Barra de búsqueda en la parte izquierda */}
-      <div className="hidden lg:flex w-full ml-24">
+      <div className="hidden w-full ml-24 lg:flex">
         <SearchComponent />
       </div>
 
@@ -55,7 +55,7 @@ export const NavBarDesktop = () => {
           {menuItems.map((menuItem) => (
             <MenuItem
               key={menuItem.id}
-              className=" text-grey hover:text-yellow "
+              className=" text-grey hover:text-yellow"
             >
               <Link to={menuItem.path}>{menuItem.title}</Link>
             </MenuItem>

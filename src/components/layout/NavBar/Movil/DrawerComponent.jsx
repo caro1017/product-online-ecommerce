@@ -31,37 +31,37 @@ const menuItems = [
   {
     id: uuidv4(),
     title: "Inicio",
-    icon: <i className="bx bx-home-alt text-xl" />,
+    icon: <i className="text-xl bx bx-home-alt" />,
     path: "/",
   },
   {
     id: uuidv4(),
     title: "Productos",
-    icon: <i className="bx bx-list-ul text-xl" />,
+    icon: <i className="text-xl bx bx-list-ul" />,
     path: "/productPage",
   },
   {
     id: uuidv4(),
     title: "Iniciar Sesión",
-    icon: <i className="bx bx-log-in text-xl" />,
+    icon: <i className="text-xl bx bx-log-in" />,
     path: "/registeredPage",
   },
 ];
 
 // Ítems de categorías
 const categoriesItems = [
-  { id: uuidv4(), title: "Moda", icon: <i className="bx bx-closet text-xl" /> },
+  { id: uuidv4(), title: "Moda", icon: <i className="text-xl bx bx-closet" /> },
   {
     id: uuidv4(),
     title: "Tecnologia",
-    icon: <i className="bx bx-laptop text-xl" />,
+    icon: <i className="text-xl bx bx-laptop" />,
   },
   {
     id: uuidv4(),
     title: "Hogar",
-    icon: <i className="bx bx-home-smile text-xl" />,
+    icon: <i className="text-xl bx bx-home-smile" />,
   },
-  { id: uuidv4(), title: "Salud", icon: <i className="bx bx-spa text-xl" /> },
+  { id: uuidv4(), title: "Salud", icon: <i className="text-xl bx bx-spa" /> },
 ];
 
 // Ítems del usuario
@@ -69,19 +69,19 @@ const userItems = [
   {
     id: uuidv4(),
     title: "Favoritos",
-    icon: <i className="bx bx-heart text-xl" />,
-    path: "/shoppingCartPage",
+    icon: <i className="text-xl bx bx-heart" />,
+    path: "/",
   },
   {
     id: uuidv4(),
     title: "Perfil",
-    icon: <i className="bx bx-user text-xl" />,
+    icon: <i className="text-xl bx bx-user" />,
     path: "/profilePage",
   },
   {
     id: uuidv4(),
     title: "Carrito Compras",
-    icon: <i className="bx bx-cart text-xl" />,
+    icon: <i className="text-xl bx bx-cart" />,
     cartCount: 3,
     path: "/shoppingCartPage",
   },
@@ -111,11 +111,11 @@ const generateListItems = (items) =>
 // eslint-disable-next-line react/prop-types
 const DrawerComponent = ({ open, onClose }) => (
   <Drawer open={open} onClose={onClose} className="lg:hidden">
-    <div className=" h-auto">
+    <div className="h-auto ">
       <img
         src={Images.logoBN}
         alt="logo"
-        className="absolute w-44 mx-12 mt-5"
+        className="absolute mx-12 mt-5 w-44"
       />
       <img src={Images.drawerVector} alt="vector" />
     </div>
