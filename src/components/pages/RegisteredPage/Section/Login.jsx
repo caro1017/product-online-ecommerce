@@ -26,7 +26,7 @@ export const Login = () => {
   const onSubmit = async (data) => {
     try {
       const credenciales = {
-        usuario: data.usuario, // Usa el campo usuario
+        usuario: data.usuario,
         password: data.password,
       };
 
@@ -36,12 +36,30 @@ export const Login = () => {
         message: response.mensaje || "Inicio de sesión exitoso",
         severity: "success",
       });
-      setTimeout(() => navigate("/"), 2000);
+      setTimeout(() => navigate("/profile"), 2000);
     } catch (err) {
-      console.error("Error en login:", err); // Para depuración
+      console.error("Error en login:", {
+        message: err.message,
+        code: err.code,
+        status: err.response?.status,
+        data: err.response?.data,
+      });
+      let errorMessage = "Error al iniciar sesión";
+      if (err.code === "ERR_NETWORK") {
+        errorMessage = "Error de red: No se pudo conectar con el servidor";
+      } else if (err.response) {
+        if (err.response.status === 404) {
+          errorMessage =
+            "Endpoint no encontrado. Verifica la configuración del servidor.";
+        } else if (err.response.status === 401) {
+          errorMessage = "Credenciales incorrectas";
+        } else {
+          errorMessage = err.response.data?.message || "Error desconocido";
+        }
+      }
       setSnackbar({
         open: true,
-        message: "Credenciales incorrectas",
+        message: errorMessage,
         severity: "error",
       });
     }
@@ -55,16 +73,7 @@ export const Login = () => {
     <div className="flex flex-col m-auto w-72">
       <div className="pt-10 text-center">
         <FormBar
-          fields={[
-            {
-              name: "usuario",
-              label: "Usuario",
-              type: "text",
-              required: true,
-              icon: <i className="bx bx-user" />,
-            },
-            formFields.password,
-          ]}
+          fields={[formFields.usuario, formFields.password]}
           onSubmit={onSubmit}
           titleButton="Iniciar Sesión"
         />

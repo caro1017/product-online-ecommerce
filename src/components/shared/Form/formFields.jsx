@@ -13,10 +13,10 @@ export const formFields = {
     required: true,
     icon: <i className="bx bx-mobile-alt" />,
   },
-  idCard: {
-    label: "Cedula titular",
-    name: "holderIdCard",
-    type: "cedula",
+  cedula: {
+    label: "Cédula",
+    name: "cedula",
+    type: "text",
     required: true,
     icon: <i className="bx bx-id-card" />,
   },
@@ -41,6 +41,20 @@ export const formFields = {
     required: true,
     icon: <i className="bx bx-lock" />,
   },
+  nationality: {
+    label: "Nacionalidad",
+    name: "nationality",
+    type: "text",
+    required: true,
+    icon: <i className="bx bx-world" />,
+  },
+  usuario: {
+    label: "Usuario",
+    name: "usuario",
+    type: "text",
+    required: true,
+    icon: <i className="bx bx-user" />,
+  },
   cardNumber: {
     label: "Numero tarjeta",
     name: "cardNumber",
@@ -56,7 +70,7 @@ export const formFields = {
     icon: <i className="bx bx-calendar" />,
   },
   SecurityCode: {
-    label: "Codigo de seguridad",
+    label: "Código de seguridad",
     name: "SecurityCode",
     type: "number",
     required: true,

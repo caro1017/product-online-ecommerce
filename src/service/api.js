@@ -34,6 +34,16 @@ export const crearUsuario = async (usuario) => {
   }
 };
 
+export const getUsuario = async (identifier) => {
+  try {
+    const response = await api.get(`/usuario/${identifier}`);
+    return response.data;
+  } catch (error) {
+    console.error("Error obteniendo usuario:", error);
+    throw error;
+  }
+};
+
 export const eliminarUsuario = async (cedula) => {
   try {
     const response = await api.delete(`/usuario/${cedula}`);
@@ -44,9 +54,9 @@ export const eliminarUsuario = async (cedula) => {
   }
 };
 
-export const actualizarUsuario = async (cedula, usuario) => {
+export const actualizarUsuario = async (cedula, datos) => {
   try {
-    const response = await api.put(`/usuario/${cedula}`, usuario);
+    const response = await api.put(`/usuario/${cedula}`, datos);
     return response.data;
   } catch (error) {
     console.error("Error actualizando usuario:", error);
@@ -134,7 +144,12 @@ export const iniciarSesion = async (credenciales) => {
     }
     return response.data;
   } catch (error) {
-    console.error("Error iniciando sesión:", error);
+    console.error("Error iniciando sesión:", {
+      message: error.message,
+      code: error.code,
+      status: error.response?.status,
+      data: error.response?.data,
+    });
     throw error;
   }
 };

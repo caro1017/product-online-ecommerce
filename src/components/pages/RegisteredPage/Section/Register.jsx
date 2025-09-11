@@ -12,40 +12,62 @@ import { FormBar } from "../../../shared/Form/FormBar";
 import { formFields } from "../../../shared/Form/formFields";
 import { useNavigate } from "react-router-dom";
 import { useEcommerce } from "../../../../service/EcommerceContext";
+import { Alert, Snackbar } from "@mui/material";
 
 export const Register = () => {
-  const { crearUsuario } = useEcommerce();
+  const { crearUsuario, login } = useEcommerce();
   const navigate = useNavigate();
-  const [error, setError] = useState(null);
+  const [snackbar, setSnackbar] = useState({
+    open: false,
+    message: "",
+    severity: "success",
+  });
 
   const onSubmit = async (data) => {
     try {
-      const [nombre, ...apellidoParts] = data.fullName.split(" ");
-      const apellido = apellidoParts.join(" ") || "N/A";
-
       const usuarioData = {
-        cedula: data.holderIdCard, // Mapea a idCard
-        nombre,
-        apellido,
+        cedula: data.cedula,
+        nombre: data.fullName.split(" ")[0], // Primer nombre
+        apellido: data.fullName.split(" ").slice(1).join(" ") || "N/A",
         mail: data.email,
         password: data.password,
-        usuario: data.usuario, // Campo añadido
+        usuario: data.usuario,
         direccion: data.address,
-        telefono: data.cellPhone, // Mapea a cellPhone
-        nacionalidad: "COLOMBIA", // Valor por defecto
+        telefono: data.cellPhone,
+        nacionalidad: data.nationality || "COLOMBIA",
       };
 
       await crearUsuario(usuarioData);
-      alert("Usuario registrado con éxito");
-      setError(null);
-      navigate("/login");
+      // Iniciar sesión automáticamente
+      const credenciales = {
+        usuario: usuarioData.usuario,
+        password: usuarioData.password,
+        cedula: usuarioData.cedula, // Para getUsuario
+      };
+      await login(credenciales);
+      setSnackbar({
+        open: true,
+        message: "Registro exitoso. Sesión iniciada.",
+        severity: "success",
+      });
+      setTimeout(() => navigate("/profile"), 2000);
     } catch (err) {
-      setError(
-        "Error al registrar usuario: " +
-          (err.response?.data?.message || err.message)
-      );
-      console.error("Error al registrar:", err);
+      console.error("Error en registro:", {
+        message: err.message,
+        code: err.code,
+        status: err.response?.status,
+        data: err.response?.data,
+      });
+      setSnackbar({
+        open: true,
+        message: err.response?.data?.message || "Error al registrar el usuario",
+        severity: "error",
+      });
     }
+  };
+
+  const handleSnackbarClose = () => {
+    setSnackbar({ ...snackbar, open: false });
   };
 
   return (
@@ -53,24 +75,32 @@ export const Register = () => {
       <div className="pt-10 text-center">
         <FormBar
           fields={[
-            formFields.idCard, // Cédula
+            formFields.cedula,
             formFields.fullName,
-            {
-              name: "usuario",
-              label: "Nombre de Usuario",
-              type: "text",
-              required: true,
-              icon: <i className="bx bx-user" />,
-            },
-            formFields.cellPhone,
+            formFields.usuario,
             formFields.email,
+            formFields.cellPhone,
             formFields.address,
+            formFields.nationality,
             formFields.password,
           ]}
           onSubmit={onSubmit}
-          titleButton="Registrar"
+          titleButton="Crear Cuenta"
         />
-        {error && <p className="mt-4 text-sm text-red-500">{error}</p>}
+        <Snackbar
+          open={snackbar.open}
+          autoHideDuration={6000}
+          onClose={handleSnackbarClose}
+          anchorOrigin={{ vertical: "top", horizontal: "center" }}
+        >
+          <Alert
+            onClose={handleSnackbarClose}
+            severity={snackbar.severity}
+            sx={{ width: "100%" }}
+          >
+            {snackbar.message}
+          </Alert>
+        </Snackbar>
       </div>
     </div>
   );

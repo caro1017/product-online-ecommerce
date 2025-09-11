@@ -50,12 +50,59 @@ export const EcommerceProvider = ({ children }) => {
     setLoading(true);
     try {
       const response = await iniciarSesion(credenciales);
-      setUser({ usuario: response.usuario, token: response.token });
+      const usuarioData = await getUsuario(response.usuario); // Usar usuario
+      setUser({
+        usuario: response.usuario,
+        token: response.token,
+        cedula: usuarioData.cedula,
+        nombre: usuarioData.nombre,
+        apellido: usuarioData.apellido,
+        mail: usuarioData.mail,
+        direccion: usuarioData.direccion,
+        telefono: usuarioData.telefono,
+        nacionalidad: usuarioData.nacionalidad,
+      });
       setIsAuthenticated(true);
       setError(null);
       return response;
     } catch (err) {
       setError("Credenciales incorrectas");
+      throw err;
+    }
+  }, []);
+
+  const crearUsuario = useCallback(async (usuarioData) => {
+    try {
+      const response = await crearUsuario(usuarioData);
+      setUser({
+        usuario: usuarioData.usuario,
+        cedula: usuarioData.cedula,
+        nombre: usuarioData.nombre,
+        apellido: usuarioData.apellido,
+        mail: usuarioData.mail,
+        direccion: usuarioData.direccion,
+        telefono: usuarioData.telefono,
+        nacionalidad: usuarioData.nacionalidad,
+      });
+      setError(null);
+      return response;
+    } catch (err) {
+      setError("Error al crear el usuario");
+      throw err;
+    }
+  }, []);
+
+  const actualizarUsuario = useCallback(async (cedula, datos) => {
+    try {
+      const response = await actualizarUsuario(cedula, datos);
+      setUser((prev) => ({
+        ...prev,
+        ...datos,
+      }));
+      setError(null);
+      return response;
+    } catch (err) {
+      setError("Error al actualizar los datos del usuario");
       throw err;
     }
   }, []);
