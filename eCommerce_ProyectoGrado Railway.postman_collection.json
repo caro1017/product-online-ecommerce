@@ -1,0 +1,913 @@
+{
+	"info": {
+		"_postman_id": "b72718a4-b6f7-4d19-9280-5d1b0310fc0c",
+		"name": "eCommerce_ProyectoGrado Railway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12293803"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "CrearNuevoUsuario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cedula\": \"1128398098\",\r\n  \"nombre\": \"Daniel Felipe\",\r\n  \"apellido\": \"Jaramillo Agudelo\",\r\n  \"mail\": \"daniel.jaramillo@example.com\",\r\n  \"password\": \"12345\",\r\n  \"usuario\": \"danieloffspring9\",\r\n  \"direccion\": \"Carrera 84 # 79-14\",\r\n  \"telefono\": \"3016608637\",\r\n  \"nacionalidad\": \"COLOMBIA\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarUsuarioByCedula",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/usuario/987654321",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"usuario",
+								"987654321"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarUsuarioByCedula",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Alan\",\r\n    \"apellido\": \"Brito Alvarez\",\r\n    \"mail\": \"alan.brito@example.com\",\r\n    \"password\": \"12345\",\r\n    \"usuario\": \"Alanbrito1234\",\r\n    \"direccion\": \"Carrera 45 #100-20\",\r\n    \"telefono\": \"3109876543\",\r\n    \"nacionalidad\": \"NORUEGA\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/usuario/987456",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuario",
+								"987456"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConsultarUsuarioByCedula",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/usuario/987456",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuario",
+								"987456"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "CrearNuevoProducto",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Honda CRF 250X\",\r\n    \"descripcion\": \"Motocicleta de Competencia OffRoad\",\r\n    \"precio\": 95000,\r\n    \"stock\": 10,\r\n    \"color\": \"Negro\",\r\n    \"talla\": \"M\",\r\n    \"marca\": \"Honda\",\r\n    \"genero\": \"Unisex\",\r\n    \"garantia\": \"3 meses\",\r\n    \"referencia\": \"REF856\",\r\n    \"cedula\": \"987456\",\r\n    \"idcategoria\": 3,\r\n    \"urls\": [\r\n        \"https://img1.jpg\",\r\n        \"https://img2.jpg\"\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/productos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productos"
+							],
+							"query": [
+								{
+									"key": "urls",
+									"value": "https://img1.jpg",
+									"disabled": true
+								},
+								{
+									"key": "urls",
+									"value": "https://img2.jpg",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarProductos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarProductosByCedula",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/listar/cedula?cedula=987456",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"listar",
+								"cedula"
+							],
+							"query": [
+								{
+									"key": "cedula",
+									"value": "987456"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarProductosByNombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/listar/nombre?nombre=Yamaha",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"listar",
+								"nombre"
+							],
+							"query": [
+								{
+									"key": "nombre",
+									"value": "Yamaha"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarProductoById",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Yamaha YZ250F X\",\r\n    \"descripcion\": \"Motocicleta de Competencia OffRoad\",\r\n    \"precio\": 95000,\r\n    \"stock\": 10,\r\n    \"color\": \"Negro\",\r\n    \"talla\": \"M\",\r\n    \"marca\": \"Yamaha\",\r\n    \"genero\": \"Unisex\",\r\n    \"garantia\": \"3 meses\",\r\n    \"referencia\": \"REF855\",\r\n    \"cedula\": \"9876543219\",\r\n    \"idcategoria\": 2,\r\n    \"urls\": [\r\n        \"https://img1.jpg\",\r\n        \"https://img2.jpg\"\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/v1/update/32",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"update",
+								"32"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarProductoById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/producto/25",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"producto",
+								"25"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sesion",
+			"item": [
+				{
+					"name": "IniciarSesion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario\": \"Alanbrito1234\",\r\n    \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/iniciarSesion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"iniciarSesion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CerrarSesion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/cerrarSesion?token=B24DCF8E-C17C-4867-A521-AF4EBA38BF15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"cerrarSesion"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "B24DCF8E-C17C-4867-A521-AF4EBA38BF15"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carrito",
+			"item": [
+				{
+					"name": "ActualizarCantidadProductoenCarrito",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/actualizarcantidad?cedula=15501694&idproducto=32&nuevaCantidad=9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"actualizarcantidad"
+							],
+							"query": [
+								{
+									"key": "cedula",
+									"value": "15501694"
+								},
+								{
+									"key": "idproducto",
+									"value": "32"
+								},
+								{
+									"key": "nuevaCantidad",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarProductosCarritoByCedula",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/Consultarcarrito/1128398098",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"Consultarcarrito",
+								"1128398098"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VaciarCarritoByCedula",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/vaciar/1128398098",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"vaciar",
+								"1128398098"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarProductoById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/eliminar?cedula=15501694&idproducto=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"eliminar"
+							],
+							"query": [
+								{
+									"key": "cedula",
+									"value": "15501694"
+								},
+								{
+									"key": "idproducto",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AgregarNuevoProductoAlCarrito",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/agregar?cedula=1128398098&idProducto=2&cantidad=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"agregar"
+							],
+							"query": [
+								{
+									"key": "cedula",
+									"value": "1128398098"
+								},
+								{
+									"key": "idProducto",
+									"value": "2"
+								},
+								{
+									"key": "cantidad",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Factura",
+			"item": [
+				{
+					"name": "CrearNuevaFactura",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"cedula\": \"1128398098\",\n  \"direccionEnvio\": \"Calle Sure 45 #10-21\",\n  \"idMetodoPago\": 2,\n  \"idMetodoEnvio\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/crear-factura",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"crear-factura"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearDetalleFactura",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numeroPedido\": \"ffa176656a\",\n    \"idFactura\": \"4fedc9af43\",\n    \"idProducto\": \"3\",\n    \"cantidad\": 1,\n    \"precio\": 95000\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/crear-detalle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"crear-detalle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearNuevaFacturaConDetalle",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"cedula\": \"1128398098\",\n  \"direccionEnvio\": \"Avenida Siempreviva 123 #45-67\",\n  \"idMetodoEnvio\": 1,\n  \"idMetodoPago\": 2,\n  \"detalles\": [\n    {\n      \"idProducto\": 3,\n      \"cantidad\": 2,\n      \"precio\": 95000\n    },\n     {\n      \"idProducto\": 2,\n      \"cantidad\": 2,\n      \"precio\": 95000\n    }\n  ]\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/crear-factura-con-detalles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"crear-factura-con-detalles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarFacturas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/obtener-factura",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"obtener-factura"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarFacturaById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/obtener-factura/0cc69b02fa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"obtener-factura",
+								"0cc69b02fa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DetalleFacturaById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/detalle-por-factura/0cc69b02fa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"detalle-por-factura",
+								"0cc69b02fa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarFacturaById",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/eliminar-factura/4fedc9af43",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"eliminar-factura",
+								"4fedc9af43"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comentarios",
+			"item": [
+				{
+					"name": "ListarComentarioByIdProducto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/comentariosProducto/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"comentariosProducto",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarComentarioByUsuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/comentariosUsuario/1128398098",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"comentariosUsuario",
+								"1128398098"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AgregarNuevoComentario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cedula\": \"1128398098\",\r\n    \"idProducto\": \"3\",\r\n    \"textoComentario\": \"Esta es la mejor del Mercado!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/agregarComentario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"agregarComentario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarComentarioById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/eliminarComentario/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"eliminarComentario",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Valoracion",
+			"item": [
+				{
+					"name": "AgregarNuevaValoracionByPoducto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cedula\": \"1128398098\",\r\n    \"idProducto\": 3,\r\n    \"puntuacion\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/agregar/valoracion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"agregar",
+								"valoracion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConsultarValoracionByPuntuacion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/valoraciones/puntuacion/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"valoraciones",
+								"puntuacion",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

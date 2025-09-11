@@ -38,12 +38,12 @@ const ValidationRulesCustom = (type) => {
           "Dirección de correo electrónico no válida. Ejemplo:ejemplo@dominio.com",
       };
       break;
-    case "password":
+    /* case "password":
       validationRules.minLength = {
         value: 8,
         message: "La contraseña debe tener al menos 8 caracteres.",
       };
-      break;
+      break; */
     case "name":
       validationRules.pattern = {
         value: /^[A-Za-z\s]+$/i,

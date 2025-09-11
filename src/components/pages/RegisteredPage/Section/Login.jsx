@@ -7,34 +7,85 @@
  * Documentado por: Carolina Uribe Botero
  * Fecha de documentación: 25 de abril de 2024
  */
+import { useState } from "react";
 import { FormBar } from "../../../shared/Form/FormBar";
 import { formFields } from "../../../shared/Form/formFields";
+import { useNavigate } from "react-router-dom";
+import { useEcommerce } from "../../../../service/EcommerceContext";
+import { Alert, Snackbar } from "@mui/material";
 
 export const Login = () => {
-  // Función que se ejecuta al enviar el formulario
-  const onSubmit = (data) => {
-    // Lógica para enviar datos del formulario
-    console.log("Formulario enviado con éxito", data);
+  const { login } = useEcommerce();
+  const navigate = useNavigate();
+  const [snackbar, setSnackbar] = useState({
+    open: false,
+    message: "",
+    severity: "success",
+  });
+
+  const onSubmit = async (data) => {
+    try {
+      const credenciales = {
+        usuario: data.usuario, // Usa el campo usuario
+        password: data.password,
+      };
+
+      const response = await login(credenciales);
+      setSnackbar({
+        open: true,
+        message: response.mensaje || "Inicio de sesión exitoso",
+        severity: "success",
+      });
+      setTimeout(() => navigate("/"), 2000);
+    } catch (err) {
+      console.error("Error en login:", err); // Para depuración
+      setSnackbar({
+        open: true,
+        message: "Credenciales incorrectas",
+        severity: "error",
+      });
+    }
+  };
+
+  const handleSnackbarClose = () => {
+    setSnackbar({ ...snackbar, open: false });
   };
 
   return (
-    <>
-      <div className="flex flex-col w-72 m-auto">
-        <div className="text-center pt-10">
-          {/* Renderiza el formulario de inicio de sesión */}
-          <FormBar
-            fields={[
-              formFields.email,
-              formFields.password,
-            ]}
-            onSubmit={onSubmit}
-            titleButton="Iniciar Sesion"
-          />
-          <p className="text-grey font-normal text-sm mt-4">
-            ¿Olvidaste tu contraseña?
-          </p>
-        </div>
+    <div className="flex flex-col m-auto w-72">
+      <div className="pt-10 text-center">
+        <FormBar
+          fields={[
+            {
+              name: "usuario",
+              label: "Usuario",
+              type: "text",
+              required: true,
+              icon: <i className="bx bx-user" />,
+            },
+            formFields.password,
+          ]}
+          onSubmit={onSubmit}
+          titleButton="Iniciar Sesión"
+        />
+        <p className="mt-4 text-sm font-normal text-grey">
+          ¿Olvidaste tu contraseña?
+        </p>
+        <Snackbar
+          open={snackbar.open}
+          autoHideDuration={6000}
+          onClose={handleSnackbarClose}
+          anchorOrigin={{ vertical: "top", horizontal: "center" }}
+        >
+          <Alert
+            onClose={handleSnackbarClose}
+            severity={snackbar.severity}
+            sx={{ width: "100%" }}
+          >
+            {snackbar.message}
+          </Alert>
+        </Snackbar>
       </div>
-    </>
+    </div>
   );
 };
