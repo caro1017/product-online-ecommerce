@@ -14,9 +14,9 @@ import { SearchComponent } from "../../../common/SearchComponent/SearchComponent
 
 /* Funciones para determinar cada propiedad de los items  */
 const menuItems = [
-  { id: uuidv4(), title: "Inicio", path: "/" },
+  { id: uuidv4(), title: "Inicio", path: "/home" },
   { id: uuidv4(), title: "Productos", path: "/productPage" },
-  { id: uuidv4(), title: "Iniciar Sesión", path: "/registeredPage" },
+  { id: uuidv4(), title: "Iniciar Sesión", path: "/" },
 ];
 
 const userIcon = [

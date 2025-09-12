@@ -32,7 +32,7 @@ const menuItems = [
     id: uuidv4(),
     title: "Inicio",
     icon: <i className="text-xl bx bx-home-alt" />,
-    path: "/",
+    path: "/home",
   },
   {
     id: uuidv4(),
@@ -44,7 +44,7 @@ const menuItems = [
     id: uuidv4(),
     title: "Iniciar Sesión",
     icon: <i className="text-xl bx bx-log-in" />,
-    path: "/registeredPage",
+    path: "/",
   },
 ];
 
