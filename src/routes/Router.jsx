@@ -25,9 +25,11 @@ export const Router = () => {
     <BrowserRouter>
       <Routes>
         {/* Ruta para la página de inicio */}
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<RegisteredPage />} />
+
         {/* Ruta para la página de registro */}
-        <Route path="/registeredPage" element={<RegisteredPage />} />
+        <Route path="/home" element={<HomePage />} />
+
         {/* Ruta para la página de productos */}
         <Route path="/productPage" element={<ProductPage />} />
         {/* Ruta para la página de detalles del producto */}
@@ -41,6 +43,9 @@ export const Router = () => {
         <Route path="/paymentPage" element={<PaymentPage />} />
         {/* Ruta para la pagina de perfil */}
         <Route path="/profilePage" element={<ProfilePage />} />
+
+        {/* Catch-all: si se va a una ruta inexistente, vuelve a "/" */}
+        <Route path="*" element={<RegisteredPage />} />
       </Routes>
     </BrowserRouter>
   );
