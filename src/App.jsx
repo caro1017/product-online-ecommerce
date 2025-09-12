@@ -1,11 +1,11 @@
 import { Router } from "./routes/Router";
-import { HomePage } from "./components/pages/HomePage/HomePage";
+import { RegisteredPage } from "./components/pages/RegisteredPage/RegisteredPage";
 
 function App() {
   return (
     <>
       <Router>
-        <HomePage />
+        <RegisteredPage />
       </Router>
     </>
   );

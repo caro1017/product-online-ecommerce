@@ -47,7 +47,7 @@ export const Register = () => {
         message: "Registro exitoso. Sesión iniciada.",
         severity: "success",
       });
-      setTimeout(() => navigate("/profile"), 2000);
+      setTimeout(() => navigate("/registeredPage"), 2000);
     } catch (err) {
       console.error("Error en registro:", {
         message: err.message,

@@ -93,7 +93,7 @@ export const EcommerceProvider = ({ children }) => {
       };
       setUser(userData);
       setError(null);
-      localStorage.setItem("cedula", usuarioData.cedula); 
+      localStorage.setItem("cedula", usuarioData.cedula);
       return response;
     } catch (err) {
       console.error("Error creando usuario:", {

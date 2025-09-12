@@ -33,14 +33,14 @@ export const ProfilePage = () => {
             }
           >
             <Avatar
-              alt={`${user.nombre} ${user.apellido}`}
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt={`${user.usuario}`}
+              src=""
               className="w-44 h-44"
             />
           </Badge>
           <div className="mt-5 lg:text-center">
-            <p className="font-bold">{`${user.nombre} ${user.apellido}`}</p>
-            <p className="text-grey">{user.mail}</p>
+            <p className="font-bold">{`${user.usuario}`}</p>
+            
           </div>
         </div>
 
