@@ -37,7 +37,7 @@ export const Login = () => {
         severity: "success",
         variant: "filled",
       });
-      setTimeout(() => navigate("/"), 2000);
+      setTimeout(() => navigate("/home"), 2000);
     } catch (err) {
       console.error("Error en login:", {
         message: err.message,
