@@ -37,18 +37,19 @@ export const TabsProfile = () => {
       const apellido = apellidoParts.join(" ") || user.apellido || "N/A";
 
       const usuarioData = {
-        cedula: user.cedula,
+        cedula: data.cedula || user.cedula,
         nombre,
         apellido,
         mail: data.email,
-        password: data.password,
-        usuario: user.usuario,
+        password: data.password || user.password,
+        usuario: data.usuario || user.usuario,
         direccion: data.address,
         telefono: data.cellPhone,
-        nacionalidad: user.nacionalidad || "COLOMBIA",
+        nacionalidad: data.nationality || user.nacionalidad || "COLOMBIA",
       };
 
       await actualizarUsuario(user.cedula, usuarioData);
+
       setSnackbar({
         open: true,
         message: "Datos actualizados exitosamente",
@@ -87,10 +88,18 @@ export const TabsProfile = () => {
                 <FormBar
                   fields={[
                     {
+                      ...formFields.cedula,
+                      defaultValue: user?.cedula || "",
+                    },
+                    {
                       ...formFields.fullName,
                       defaultValue: user
                         ? `${user.nombre} ${user.apellido}`
                         : "",
+                    },
+                    {
+                      ...formFields.usuario,
+                      defaultValue: user?.usuario || "",
                     },
                     {
                       ...formFields.cellPhone,
@@ -103,6 +112,10 @@ export const TabsProfile = () => {
                     {
                       ...formFields.address,
                       defaultValue: user?.direccion || "",
+                    },
+                    {
+                      ...formFields.nationality,
+                      defaultValue: user?.nacionalidad || "",
                     },
                     formFields.password,
                   ]}

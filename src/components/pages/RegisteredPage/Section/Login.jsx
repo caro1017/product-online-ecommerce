@@ -21,6 +21,7 @@ export const Login = () => {
     open: false,
     message: "",
     severity: "success",
+    variant: "filled",
   });
 
   const onSubmit = async (data) => {
@@ -34,8 +35,9 @@ export const Login = () => {
         open: true,
         message: response.mensaje || "Inicio de sesión exitoso",
         severity: "success",
+        variant: "filled",
       });
-      setTimeout(() => navigate("/profile"), 2000);
+      setTimeout(() => navigate("/profilePage"), 2000);
     } catch (err) {
       console.error("Error en login:", {
         message: err.message,
@@ -59,6 +61,7 @@ export const Login = () => {
         open: true,
         message: errorMessage,
         severity: "error",
+        variant: "filled",
       });
     }
   };
@@ -82,11 +85,12 @@ export const Login = () => {
           open={snackbar.open}
           autoHideDuration={6000}
           onClose={handleSnackbarClose}
-          anchorOrigin={{ vertical: "top", horizontal: "center" }}
+          anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
         >
           <Alert
             onClose={handleSnackbarClose}
             severity={snackbar.severity}
+            variant={snackbar.variant}
             sx={{ width: "100%" }}
           >
             {snackbar.message}

@@ -52,16 +52,17 @@ export const EcommerceProvider = ({ children }) => {
       const response = await iniciarSesion(credenciales);
 
       if (!response.usuario || !response.token) {
-        throw new Error(
-          "Respuesta inválida del servidor: usuario o token no proporcionado"
-        );
+        throw new Error("Respuesta inválida del servidor");
       }
 
-      // 👇 Guardamos solo lo que devuelve el login
-      const userData = {
-        usuario: response.usuario,
-        token: response.token,
-      };
+      // buscar cedula guardada (si existe)
+      const cedulaGuardada = localStorage.getItem("cedula");
+      let userData = { usuario: response.usuario, token: response.token };
+
+      if (cedulaGuardada) {
+        const usuarioData = await consultarUsuario(cedulaGuardada);
+        userData = { ...usuarioData, token: response.token };
+      }
 
       setUser(userData);
       localStorage.setItem("token", response.token);
@@ -70,16 +71,7 @@ export const EcommerceProvider = ({ children }) => {
 
       return response;
     } catch (err) {
-      console.error("Error en login:", {
-        message: err.message,
-        code: err.code,
-        status: err.response?.status,
-        data: err.response?.data,
-      });
-      setError(
-        err.response?.data?.message ||
-          "Credenciales incorrectas o error al iniciar sesión"
-      );
+      setError("Credenciales incorrectas o error al iniciar sesión");
       throw err;
     } finally {
       setLoading(false);
@@ -101,6 +93,7 @@ export const EcommerceProvider = ({ children }) => {
       };
       setUser(userData);
       setError(null);
+      localStorage.setItem("cedula", usuarioData.cedula); 
       return response;
     } catch (err) {
       console.error("Error creando usuario:", {
