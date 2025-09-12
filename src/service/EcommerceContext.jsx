@@ -50,31 +50,24 @@ export const EcommerceProvider = ({ children }) => {
     setLoading(true);
     try {
       const response = await iniciarSesion(credenciales);
+
       if (!response.usuario || !response.token) {
         throw new Error(
           "Respuesta inválida del servidor: usuario o token no proporcionado"
         );
       }
-      // Usar consultarUsuario en lugar de getUsuario
-      const usuarioData = await consultarUsuario(response.usuario);
-      if (!usuarioData) {
-        throw new Error("No se pudieron obtener los datos del usuario");
-      }
+
+      // 👇 Guardamos solo lo que devuelve el login
       const userData = {
         usuario: response.usuario,
         token: response.token,
-        cedula: usuarioData.cedula,
-        nombre: usuarioData.nombre,
-        apellido: usuarioData.apellido,
-        mail: usuarioData.mail,
-        direccion: usuarioData.direccion,
-        telefono: usuarioData.telefono,
-        nacionalidad: usuarioData.nacionalidad,
       };
+
       setUser(userData);
-      localStorage.setItem("token", response.token); // Guardar el token
+      localStorage.setItem("token", response.token);
       setIsAuthenticated(true);
       setError(null);
+
       return response;
     } catch (err) {
       console.error("Error en login:", {
@@ -85,7 +78,7 @@ export const EcommerceProvider = ({ children }) => {
       });
       setError(
         err.response?.data?.message ||
-          "Credenciales incorrectas o error al obtener datos del usuario"
+          "Credenciales incorrectas o error al iniciar sesión"
       );
       throw err;
     } finally {
