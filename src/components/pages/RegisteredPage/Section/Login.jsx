@@ -29,7 +29,6 @@ export const Login = () => {
         usuario: data.usuario,
         password: data.password,
       };
-
       const response = await login(credenciales);
       setSnackbar({
         open: true,
@@ -48,11 +47,10 @@ export const Login = () => {
       if (err.code === "ERR_NETWORK") {
         errorMessage = "Error de red: No se pudo conectar con el servidor";
       } else if (err.response) {
-        if (err.response.status === 404) {
-          errorMessage =
-            "Endpoint no encontrado. Verifica la configuración del servidor.";
-        } else if (err.response.status === 401) {
-          errorMessage = "Credenciales incorrectas";
+        if (err.response.status === 401) {
+          errorMessage = "Usuario o contraseña incorrectos";
+        } else if (err.response.status === 404) {
+          errorMessage = "Servicio no disponible. Verifica el servidor.";
         } else {
           errorMessage = err.response.data?.message || "Error desconocido";
         }

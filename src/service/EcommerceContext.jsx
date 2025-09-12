@@ -50,8 +50,17 @@ export const EcommerceProvider = ({ children }) => {
     setLoading(true);
     try {
       const response = await iniciarSesion(credenciales);
-      const usuarioData = await getUsuario(response.usuario); // Usar usuario
-      setUser({
+      if (!response.usuario || !response.token) {
+        throw new Error(
+          "Respuesta inválida del servidor: usuario o token no proporcionado"
+        );
+      }
+      // Usar consultarUsuario en lugar de getUsuario
+      const usuarioData = await consultarUsuario(response.usuario);
+      if (!usuarioData) {
+        throw new Error("No se pudieron obtener los datos del usuario");
+      }
+      const userData = {
         usuario: response.usuario,
         token: response.token,
         cedula: usuarioData.cedula,
@@ -61,20 +70,33 @@ export const EcommerceProvider = ({ children }) => {
         direccion: usuarioData.direccion,
         telefono: usuarioData.telefono,
         nacionalidad: usuarioData.nacionalidad,
-      });
+      };
+      setUser(userData);
+      localStorage.setItem("token", response.token); // Guardar el token
       setIsAuthenticated(true);
       setError(null);
       return response;
     } catch (err) {
-      setError("Credenciales incorrectas");
+      console.error("Error en login:", {
+        message: err.message,
+        code: err.code,
+        status: err.response?.status,
+        data: err.response?.data,
+      });
+      setError(
+        err.response?.data?.message ||
+          "Credenciales incorrectas o error al obtener datos del usuario"
+      );
       throw err;
+    } finally {
+      setLoading(false);
     }
   }, []);
 
   const crearUsuario = useCallback(async (usuarioData) => {
     try {
       const response = await crearUsuario(usuarioData);
-      setUser({
+      const userData = {
         usuario: usuarioData.usuario,
         cedula: usuarioData.cedula,
         nombre: usuarioData.nombre,
@@ -83,11 +105,18 @@ export const EcommerceProvider = ({ children }) => {
         direccion: usuarioData.direccion,
         telefono: usuarioData.telefono,
         nacionalidad: usuarioData.nacionalidad,
-      });
+      };
+      setUser(userData);
       setError(null);
       return response;
     } catch (err) {
-      setError("Error al crear el usuario");
+      console.error("Error creando usuario:", {
+        message: err.message,
+        code: err.code,
+        status: err.response?.status,
+        data: err.response?.data,
+      });
+      setError(err.response?.data?.message || "Error al crear el usuario");
       throw err;
     }
   }, []);
@@ -102,7 +131,16 @@ export const EcommerceProvider = ({ children }) => {
       setError(null);
       return response;
     } catch (err) {
-      setError("Error al actualizar los datos del usuario");
+      console.error("Error actualizando usuario:", {
+        message: err.message,
+        code: err.code,
+        status: err.response?.status,
+        data: err.response?.data,
+      });
+      setError(
+        err.response?.data?.message ||
+          "Error al actualizar los datos del usuario"
+      );
       throw err;
     }
   }, []);
@@ -115,9 +153,16 @@ export const EcommerceProvider = ({ children }) => {
       setUser(null);
       setIsAuthenticated(false);
       setCarrito([]);
+      localStorage.removeItem("token");
       setError(null);
     } catch (err) {
-      setError(err.message);
+      console.error("Error cerrando sesión:", {
+        message: err.message,
+        code: err.code,
+        status: err.response?.status,
+        data: err.response?.data,
+      });
+      setError(err.response?.data?.message || "Error al cerrar sesión");
       throw err;
     } finally {
       setLoading(false);
@@ -133,7 +178,13 @@ export const EcommerceProvider = ({ children }) => {
       setError(null);
       return data;
     } catch (err) {
-      setError(err.message);
+      console.error("Error consultando carrito:", {
+        message: err.message,
+        code: err.code,
+        status: err.response?.status,
+        data: err.response?.data,
+      });
+      setError(err.response?.data?.message || "Error al consultar el carrito");
       throw err;
     } finally {
       setLoading(false);

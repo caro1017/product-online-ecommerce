@@ -27,21 +27,25 @@ export const TabsProfile = () => {
     severity: "success",
   });
 
+  if (!user) {
+    return <p>Por favor, inicia sesión para ver tus datos.</p>;
+  }
+
   const handleSubmit = async (data) => {
     try {
       const [nombre, ...apellidoParts] = data.fullName.split(" ");
-      const apellido = apellidoParts.join(" ") || user?.apellido || "N/A";
+      const apellido = apellidoParts.join(" ") || user.apellido || "N/A";
 
       const usuarioData = {
-        cedula: user?.cedula,
+        cedula: user.cedula,
         nombre,
         apellido,
         mail: data.email,
         password: data.password,
-        usuario: user?.usuario,
+        usuario: user.usuario,
         direccion: data.address,
         telefono: data.cellPhone,
-        nacionalidad: user?.nacionalidad || "COLOMBIA",
+        nacionalidad: user.nacionalidad || "COLOMBIA",
       };
 
       await actualizarUsuario(user.cedula, usuarioData);

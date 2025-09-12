@@ -27,7 +27,7 @@ export const Register = () => {
     try {
       const usuarioData = {
         cedula: data.cedula,
-        nombre: data.fullName.split(" ")[0], // Primer nombre
+        nombre: data.fullName.split(" ")[0],
         apellido: data.fullName.split(" ").slice(1).join(" ") || "N/A",
         mail: data.email,
         password: data.password,
@@ -36,13 +36,10 @@ export const Register = () => {
         telefono: data.cellPhone,
         nacionalidad: data.nationality || "COLOMBIA",
       };
-
       await crearUsuario(usuarioData);
-      // Iniciar sesión automáticamente
       const credenciales = {
         usuario: usuarioData.usuario,
         password: usuarioData.password,
-        cedula: usuarioData.cedula, // Para getUsuario
       };
       await login(credenciales);
       setSnackbar({
@@ -58,9 +55,17 @@ export const Register = () => {
         status: err.response?.status,
         data: err.response?.data,
       });
+      let errorMessage = "Error al registrar el usuario";
+      if (err.response?.status === 409) {
+        errorMessage = "El usuario o cédula ya están registrados";
+      } else if (err.response?.status === 400) {
+        errorMessage = "Datos inválidos. Verifica los campos.";
+      } else if (err.code === "ERR_NETWORK") {
+        errorMessage = "Error de red: No se pudo conectar con el servidor";
+      }
       setSnackbar({
         open: true,
-        message: err.response?.data?.message || "Error al registrar el usuario",
+        message: errorMessage,
         severity: "error",
       });
     }
